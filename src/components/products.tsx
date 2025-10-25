@@ -100,7 +100,7 @@ export function Products() {
             PRODUTOS
           </motion.div>
           <motion.h2
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2A1A12] mb-4 px-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 px-4"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

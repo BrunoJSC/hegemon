@@ -25,13 +25,7 @@ export function Product({ image, title, badge }: ProductProps) {
 
         {/* Badge */}
         <motion.div
-          className={`absolute top-3 right-3 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg ${
-            badge === "INMETRO"
-              ? "bg-[#A76B3F]"
-              : badge === "ANATEL"
-              ? "bg-blue-600"
-              : "bg-green-600"
-          }`}
+          className="absolute top-3 right-3 bg-[#A76B3F] text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.2 }}

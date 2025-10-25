@@ -1,7 +1,19 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export function Header() {
+interface HeaderProps {
+  onServiceClick?: (serviceId: string) => void;
+  onContactClick?: () => void;
+  onNavigateHome?: () => void;
+  isHomePage?: boolean;
+}
+
+export function Header({
+  onServiceClick,
+  onContactClick,
+  onNavigateHome,
+  isHomePage = true,
+}: HeaderProps = {}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -14,20 +26,6 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Função para navegação inteligente para seções
-  const handleSectionNavigation = (sectionId: string) => {
-    if (location.pathname === "/") {
-      // Se estiver na página inicial, faz scroll para a seção
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      // Se não estiver na página inicial, navega para lá e depois para a seção
-      window.location.href = `/#${sectionId}`;
-    }
-  };
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -35,6 +33,26 @@ export function Header() {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
     setIsServicesOpen(false);
+  };
+
+  const handleNavigation = (sectionId: string) => {
+    if (isHomePage) {
+      // Se estiver na home, faz scroll suave
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      // Se não estiver na home, volta para home e depois faz scroll
+      onNavigateHome?.();
+      // Aguarda a navegação e renderização da home
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 300);
+    }
   };
 
   const services = [
@@ -178,22 +196,21 @@ export function Header() {
           {/* Menu de navegação para desktop */}
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <nav className="flex space-x-6 xl:space-x-8">
-              <a href="/">
-                <motion.div
-                  className={`font-medium transition-colors duration-300 cursor-pointer ${
-                    isScrolled
-                      ? "text-[#2A1A12] hover:text-[#A76B3F]"
-                      : "text-[#2A1A12] hover:text-[#A76B3F]"
-                  }`}
-                  whileHover={{ y: -2 }}
-                >
-                  Home
-                </motion.div>
-              </a>
+              <motion.div
+                onClick={() => handleNavigation("home")}
+                className={`font-medium transition-colors duration-300 cursor-pointer ${
+                  isScrolled
+                    ? "text-[#2A1A12] hover:text-[#A76B3F]"
+                    : "text-[#2A1A12] hover:text-[#A76B3F]"
+                }`}
+                whileHover={{ y: -2 }}
+              >
+                Início
+              </motion.div>
 
-              <motion.button
-                onClick={() => handleSectionNavigation("about")}
-                className={`font-medium transition-colors duration-300 ${
+              <motion.div
+                onClick={() => handleNavigation("about")}
+                className={`font-medium transition-colors duration-300 cursor-pointer ${
                   isScrolled
                     ? "text-[#2A1A12] hover:text-[#A76B3F]"
                     : "text-[#2A1A12] hover:text-[#A76B3F]"
@@ -201,39 +218,38 @@ export function Header() {
                 whileHover={{ y: -2 }}
               >
                 Quem Somos
-              </motion.button>
+              </motion.div>
 
               {/* Menu dropdown de Serviços */}
               <div className="relative group">
-                <a href="/servicos">
-                  <motion.div
-                    className={`font-medium flex items-center transition-colors duration-300 cursor-pointer ${
-                      isScrolled
-                        ? "text-[#2A1A12] hover:text-[#A76B3F]"
-                        : "text-[#2A1A12] hover:text-[#A76B3F]"
-                    }`}
-                    whileHover={{ y: -2 }}
+                <motion.div
+                  onClick={() => handleNavigation("services")}
+                  className={`font-medium flex items-center transition-colors duration-300 cursor-pointer ${
+                    isScrolled
+                      ? "text-[#2A1A12] hover:text-[#A76B3F]"
+                      : "text-[#2A1A12] hover:text-[#A76B3F]"
+                  }`}
+                  whileHover={{ y: -2 }}
+                >
+                  Serviços
+                  <motion.svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    animate={{ rotate: 0 }}
+                    whileHover={{ rotate: 180 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    Serviços
-                    <motion.svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4 ml-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      animate={{ rotate: 0 }}
-                      whileHover={{ rotate: 180 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </motion.svg>
-                  </motion.div>
-                </a>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </motion.svg>
+                </motion.div>
 
                 <motion.div
                   className={`absolute left-0 mt-2 w-96 shadow-xl rounded-xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 max-h-[500px] overflow-y-auto ${
@@ -254,104 +270,97 @@ export function Header() {
                     </h3>
                     <div className="grid gap-2">
                       {services.map((service, index) => (
-                        <a key={service.name} href={`/servicos/${service.id}`}>
-                          <motion.div
-                            className={`flex items-start space-x-3 p-3 rounded-lg transition-all duration-300 cursor-pointer group/item ${
-                              isScrolled
-                                ? "hover:bg-gray-50 hover:shadow-sm"
-                                : "hover:bg-[#E9C89C] hover:shadow-sm"
-                            }`}
-                            whileHover={{ x: 2, scale: 1.01 }}
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.03 }}
-                          >
-                            <div className="w-8 h-8 flex items-center justify-center bg-[#A76B3F]/10 rounded-lg shrink-0 group-hover/item:bg-[#A76B3F]/20 transition-colors duration-300">
-                              <img
-                                src={service.icon}
-                                alt={service.name}
-                                className="w-4 h-4 object-contain"
+                        <motion.div
+                          key={service.name}
+                          onClick={() => onServiceClick?.(service.id)}
+                          className={`flex items-start space-x-3 p-3 rounded-lg transition-all duration-300 cursor-pointer group/item ${
+                            isScrolled
+                              ? "hover:bg-gray-50 hover:shadow-sm"
+                              : "hover:bg-[#E9C89C] hover:shadow-sm"
+                          }`}
+                          whileHover={{ x: 2, scale: 1.01 }}
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: index * 0.03 }}
+                        >
+                          <div className="w-8 h-8 flex items-center justify-center bg-[#A76B3F]/10 rounded-lg shrink-0 group-hover/item:bg-[#A76B3F]/20 transition-colors duration-300">
+                            <img
+                              src={service.icon}
+                              alt={service.name}
+                              className="w-4 h-4 object-contain"
+                            />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <h4
+                              className={`text-sm font-medium leading-tight mb-1 group-hover/item:text-[#A76B3F] transition-colors duration-300 ${
+                                isScrolled ? "text-[#2A1A12]" : "text-[#4E3C2A]"
+                              }`}
+                            >
+                              {service.name.length > 45
+                                ? `${service.name.substring(0, 45)}...`
+                                : service.name}
+                            </h4>
+                            <p
+                              className={`text-xs leading-relaxed ${
+                                isScrolled ? "text-gray-600" : "text-[#6B5B4F]"
+                              }`}
+                            >
+                              {service.description.length > 60
+                                ? `${service.description.substring(0, 60)}...`
+                                : service.description}
+                            </p>
+                          </div>
+                          <div className="shrink-0">
+                            <svg
+                              className={`w-4 h-4 transition-transform duration-300 group-hover/item:translate-x-1 ${
+                                isScrolled ? "text-gray-400" : "text-[#8B7355]"
+                              }`}
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
                               />
-                            </div>
-                            <div className="flex-1 min-w-0">
-                              <h4
-                                className={`text-sm font-medium leading-tight mb-1 group-hover/item:text-[#A76B3F] transition-colors duration-300 ${
-                                  isScrolled
-                                    ? "text-[#2A1A12]"
-                                    : "text-[#4E3C2A]"
-                                }`}
-                              >
-                                {service.name.length > 45
-                                  ? `${service.name.substring(0, 45)}...`
-                                  : service.name}
-                              </h4>
-                              <p
-                                className={`text-xs leading-relaxed ${
-                                  isScrolled
-                                    ? "text-gray-600"
-                                    : "text-[#6B5B4F]"
-                                }`}
-                              >
-                                {service.description.length > 60
-                                  ? `${service.description.substring(0, 60)}...`
-                                  : service.description}
-                              </p>
-                            </div>
-                            <div className="shrink-0">
-                              <svg
-                                className={`w-4 h-4 transition-transform duration-300 group-hover/item:translate-x-1 ${
-                                  isScrolled
-                                    ? "text-gray-400"
-                                    : "text-[#8B7355]"
-                                }`}
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M9 5l7 7-7 7"
-                                />
-                              </svg>
-                            </div>
-                          </motion.div>
-                        </a>
+                            </svg>
+                          </div>
+                        </motion.div>
                       ))}
                     </div>
 
                     <div className="mt-3 pt-3 border-t border-gray-200">
-                      <a href="/servicos">
-                        <motion.div
-                          className="flex items-center justify-center space-x-2 py-2 px-4 bg-[#A76B3F] text-white rounded-lg hover:bg-[#7B4A2E] transition-colors duration-300 text-sm font-medium"
-                          whileHover={{ scale: 1.02 }}
-                          whileTap={{ scale: 0.98 }}
+                      <motion.div
+                        onClick={() => handleNavigation("services")}
+                        className="flex items-center justify-center space-x-2 py-2 px-4 bg-[#A76B3F] text-white rounded-lg hover:bg-[#7B4A2E] transition-colors duration-300 text-sm font-medium cursor-pointer"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        <span>Ver Todos os Serviços</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
                         >
-                          <span>Ver Todos os Serviços</span>
-                          <svg
-                            className="w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M17 8l4 4m0 0l-4 4m4-4H3"
-                            />
-                          </svg>
-                        </motion.div>
-                      </a>
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </motion.div>
                     </div>
                   </div>
                 </motion.div>
               </div>
 
-              <motion.button
-                onClick={() => handleSectionNavigation("products")}
-                className={`font-medium transition-colors duration-300 ${
+              <motion.div
+                onClick={() => handleNavigation("products")}
+                className={`font-medium transition-colors duration-300 cursor-pointer ${
                   isScrolled
                     ? "text-[#2A1A12] hover:text-[#A76B3F]"
                     : "text-[#2A1A12] hover:text-[#A76B3F]"
@@ -359,23 +368,22 @@ export function Header() {
                 whileHover={{ y: -2 }}
               >
                 Produtos
-              </motion.button>
+              </motion.div>
             </nav>
 
             <div className="flex items-center space-x-4">
-              <a href="/contato">
-                <motion.div
-                  className={`px-4 py-2 rounded-full border-2 transition-all duration-300 font-medium text-sm xl:text-base cursor-pointer ${
-                    isScrolled
-                      ? "bg-[#A76B3F] text-white border-[#A76B3F] hover:bg-white hover:text-[#A76B3F]"
-                      : "bg-[#A76B3F] text-[#F6EBD8] border-[#A76B3F] hover:bg-white hover:text-[#A76B3F]"
-                  }`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  Contato
-                </motion.div>
-              </a>
+              <motion.div
+                onClick={onContactClick}
+                className={`px-4 py-2 rounded-full border-2 transition-all duration-300 font-medium text-sm xl:text-base cursor-pointer ${
+                  isScrolled
+                    ? "bg-[#A76B3F] text-white border-[#A76B3F] hover:bg-white hover:text-[#A76B3F]"
+                    : "bg-[#A76B3F] text-[#F6EBD8] border-[#A76B3F] hover:bg-white hover:text-[#A76B3F]"
+                }`}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Contato
+              </motion.div>
 
               <motion.a
                 href="tel:11972916967"
@@ -452,25 +460,27 @@ export function Header() {
                 animate={{ y: 0 }}
                 transition={{ delay: 0.1 }}
               >
-                <a href="/" onClick={closeMobileMenu}>
-                  <motion.div
-                    className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
-                    whileHover={{ x: 4 }}
-                  >
-                    Home
-                  </motion.div>
-                </a>
-
-                <motion.button
+                <motion.div
                   onClick={() => {
-                    handleSectionNavigation("about");
                     closeMobileMenu();
+                    setTimeout(() => handleNavigation("home"), 100);
                   }}
-                  className="block w-full text-left px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium"
+                  className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
+                  whileHover={{ x: 4 }}
+                >
+                  Início
+                </motion.div>
+
+                <motion.div
+                  onClick={() => {
+                    closeMobileMenu();
+                    setTimeout(() => handleNavigation("about"), 100);
+                  }}
+                  className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
                   whileHover={{ x: 4 }}
                 >
                   Quem Somos
-                </motion.button>
+                </motion.div>
 
                 {/* Mobile Services Dropdown */}
                 <div>
@@ -508,69 +518,40 @@ export function Header() {
                         className="ml-2 mt-2 space-y-2 max-h-80 overflow-y-auto"
                       >
                         {services.map((service, index) => (
-                          <a
+                          <motion.div
                             key={service.name}
-                            href={`/servicos/${service.id}`}
-                            onClick={closeMobileMenu}
+                            onClick={() => {
+                              onServiceClick?.(service.id);
+                              closeMobileMenu();
+                            }}
+                            className="flex items-start space-x-3 p-3 bg-white/50 hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 cursor-pointer border border-gray-100"
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: index * 0.05 }}
+                            whileHover={{ x: 2 }}
                           >
-                            <motion.div
-                              className="flex items-start space-x-3 p-3 bg-white/50 hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 cursor-pointer border border-gray-100"
-                              initial={{ opacity: 0, x: -10 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              transition={{ delay: index * 0.05 }}
-                              whileHover={{ x: 2 }}
-                            >
-                              <div className="w-8 h-8 flex items-center justify-center bg-[#A76B3F]/10 rounded-lg shrink-0">
-                                <img
-                                  src={service.icon}
-                                  alt={service.name}
-                                  className="w-4 h-4 object-contain"
-                                />
-                              </div>
-                              <div className="flex-1 min-w-0">
-                                <h4 className="text-sm font-medium text-[#2A1A12] leading-tight mb-1">
-                                  {service.name.length > 35
-                                    ? `${service.name.substring(0, 35)}...`
-                                    : service.name}
-                                </h4>
-                                <p className="text-xs text-[#6B5B4F] leading-relaxed">
-                                  {service.description.length > 50
-                                    ? `${service.description.substring(
-                                        0,
-                                        50
-                                      )}...`
-                                    : service.description}
-                                </p>
-                              </div>
-                              <div className="shrink-0">
-                                <svg
-                                  className="w-4 h-4 text-[#A76B3F]"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M9 5l7 7-7 7"
-                                  />
-                                </svg>
-                              </div>
-                            </motion.div>
-                          </a>
-                        ))}
-
-                        <div className="pt-2">
-                          <a href="/servicos" onClick={closeMobileMenu}>
-                            <motion.div
-                              className="flex items-center justify-center space-x-2 py-3 px-4 bg-[#A76B3F] text-white rounded-lg hover:bg-[#7B4A2E] transition-colors duration-300 text-sm font-medium"
-                              whileHover={{ scale: 1.02 }}
-                              whileTap={{ scale: 0.98 }}
-                            >
-                              <span>Ver Todos os Serviços</span>
+                            <div className="w-8 h-8 flex items-center justify-center bg-[#A76B3F]/10 rounded-lg shrink-0">
+                              <img
+                                src={service.icon}
+                                alt={service.name}
+                                className="w-4 h-4 object-contain"
+                              />
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <h4 className="text-sm font-medium text-[#2A1A12] leading-tight mb-1">
+                                {service.name.length > 35
+                                  ? `${service.name.substring(0, 35)}...`
+                                  : service.name}
+                              </h4>
+                              <p className="text-xs text-[#6B5B4F] leading-relaxed">
+                                {service.description.length > 50
+                                  ? `${service.description.substring(0, 50)}...`
+                                  : service.description}
+                              </p>
+                            </div>
+                            <div className="shrink-0">
                               <svg
-                                className="w-4 h-4"
+                                className="w-4 h-4 text-[#A76B3F]"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -579,27 +560,57 @@ export function Header() {
                                   strokeLinecap="round"
                                   strokeLinejoin="round"
                                   strokeWidth={2}
-                                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                  d="M9 5l7 7-7 7"
                                 />
                               </svg>
-                            </motion.div>
-                          </a>
+                            </div>
+                          </motion.div>
+                        ))}
+
+                        <div className="pt-2">
+                          <motion.div
+                            onClick={() => {
+                              closeMobileMenu();
+                              setTimeout(
+                                () => handleNavigation("services"),
+                                100
+                              );
+                            }}
+                            className="flex items-center justify-center space-x-2 py-3 px-4 bg-[#A76B3F] text-white rounded-lg hover:bg-[#7B4A2E] transition-colors duration-300 text-sm font-medium cursor-pointer"
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                          >
+                            <span>Ver Todos os Serviços</span>
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"
+                              />
+                            </svg>
+                          </motion.div>
                         </div>
                       </motion.div>
                     )}
                   </AnimatePresence>
                 </div>
 
-                <motion.button
+                <motion.div
                   onClick={() => {
-                    handleSectionNavigation("products");
                     closeMobileMenu();
+                    setTimeout(() => handleNavigation("products"), 100);
                   }}
-                  className="block w-full text-left px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium"
+                  className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
                   whileHover={{ x: 4 }}
                 >
                   Produtos
-                </motion.button>
+                </motion.div>
 
                 <motion.a
                   href="https://www.certificmais.com.br/blog"
@@ -614,15 +625,17 @@ export function Header() {
 
                 {/* Mobile Contact Button */}
                 <motion.div className="pt-4 px-4">
-                  <a href="/contato" onClick={closeMobileMenu}>
-                    <motion.div
-                      className="block w-full text-center px-6 py-3 bg-[#A76B3F] text-white rounded-full font-medium transition-colors duration-300 hover:bg-[#7B4A2E] cursor-pointer"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      Contato
-                    </motion.div>
-                  </a>
+                  <motion.div
+                    onClick={() => {
+                      onContactClick?.();
+                      closeMobileMenu();
+                    }}
+                    className="block w-full text-center px-6 py-3 bg-[#A76B3F] text-white rounded-full font-medium transition-colors duration-300 hover:bg-[#7B4A2E] cursor-pointer"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Contato
+                  </motion.div>
                 </motion.div>
 
                 {/* Mobile Phone */}

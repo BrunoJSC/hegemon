@@ -8,11 +8,15 @@ import { servicesData } from "../data/services-data";
 interface ServiceDetailPageProps {
   serviceId: string | null;
   onBack: () => void;
+  onServiceClick?: (serviceId: string) => void;
+  onContactClick?: () => void;
 }
 
 export function ServiceDetailPage({
   serviceId,
   onBack,
+  onServiceClick,
+  onContactClick,
 }: ServiceDetailPageProps) {
   const [activeTab, setActiveTab] = useState<
     "overview" | "benefits" | "process" | "requirements"
@@ -27,7 +31,12 @@ export function ServiceDetailPage({
   if (!service) {
     return (
       <div className="min-h-screen">
-        <Header />
+        <Header
+          onServiceClick={onServiceClick}
+          onContactClick={onContactClick}
+          onNavigateHome={onBack}
+          isHomePage={false}
+        />
         <div className="py-20 text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             Serviço não encontrado
@@ -50,7 +59,12 @@ export function ServiceDetailPage({
         title={`${service.title} - CertificaMais`}
         description={service.description}
       />
-      <Header />
+      <Header
+        onServiceClick={onServiceClick}
+        onContactClick={onContactClick}
+        onNavigateHome={onBack}
+        isHomePage={false}
+      />
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
