@@ -23,7 +23,7 @@ export function ServiceDetailPage({
   >("overview");
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "instant" });
   }, [serviceId]);
 
   const service = servicesData.find((s) => s.id.toString() === serviceId);

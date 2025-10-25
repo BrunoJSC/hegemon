@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Contact } from "./components/contact";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
@@ -14,6 +14,11 @@ export function App() {
     null
   );
   const [showContactForm, setShowContactForm] = useState(false);
+
+  // Scroll ao topo quando mudar de página
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [selectedServiceId, showContactForm]);
 
   const handleNavigateHome = () => {
     setSelectedServiceId(null);

@@ -387,7 +387,7 @@ export function Header({
 
               <motion.a
                 href="tel:11972916967"
-                className={`hidden xl:flex items-center transition-colors duration-300 ${
+                className={`hidden xl:flex items-center transition-colors duration-300 cursor-pointer ${
                   isScrolled
                     ? "text-[#2A1A12] hover:text-[#A76B3F]"
                     : "text-[#2A1A12] hover:text-[#A76B3F]"
@@ -422,7 +422,7 @@ export function Header({
           <div className="lg:hidden flex items-center space-x-2">
             <motion.a
               href="tel:11972916967"
-              className="text-[#2A1A12] p-2 hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300"
+              className="text-[#2A1A12] p-2 hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -614,7 +614,7 @@ export function Header({
 
                 <motion.a
                   href="https://www.certificmais.com.br/blog"
-                  className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium"
+                  className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
                   onClick={closeMobileMenu}
                   whileHover={{ x: 4 }}
                   target="_blank"
@@ -642,7 +642,7 @@ export function Header({
                 <motion.div className="px-4 pt-2">
                   <motion.a
                     href="tel:11972916967"
-                    className="flex items-center justify-center space-x-2 text-[#A76B3F] font-medium"
+                    className="flex items-center justify-center space-x-2 text-[#A76B3F] font-medium cursor-pointer"
                     onClick={closeMobileMenu}
                     whileHover={{ scale: 1.05 }}
                   >

@@ -112,7 +112,7 @@ export function Footer() {
                 <motion.a
                   key={social.name}
                   href={social.href}
-                  className="bg-[#A76B3F] p-3 rounded-full text-[#F6EBD8] hover:bg-[#7B4A2E] transition-colors duration-300"
+                  className="bg-[#A76B3F] p-3 rounded-full text-[#F6EBD8] hover:bg-[#7B4A2E] transition-colors duration-300 cursor-pointer"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0, scale: 0 }}
@@ -153,7 +153,7 @@ export function Footer() {
                 >
                   <motion.button
                     onClick={() => handleSectionNavigation(link.section)}
-                    className="text-[#E9C89C] hover:text-[#A76B3F] transition-colors duration-300 flex items-center group w-full text-left"
+                    className="text-[#E9C89C] hover:text-[#A76B3F] transition-colors duration-300 flex items-center group w-full text-left cursor-pointer"
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -248,7 +248,7 @@ export function Footer() {
                   <p className="text-[#E9C89C] text-sm">Telefone</p>
                   <motion.a
                     href="tel:11972916967"
-                    className="text-[#F6EBD8] font-medium hover:text-[#A76B3F] transition-colors duration-300"
+                    className="text-[#F6EBD8] font-medium hover:text-[#A76B3F] transition-colors duration-300 cursor-pointer"
                     whileHover={{ scale: 1.05 }}
                   >
                     (11) 97291-6967
@@ -285,7 +285,7 @@ export function Footer() {
                   <p className="text-[#E9C89C] text-sm">Email</p>
                   <motion.a
                     href="mailto:contato@certificmais.com.br"
-                    className="text-[#F6EBD8] font-medium hover:text-[#A76B3F] transition-colors duration-300"
+                    className="text-[#F6EBD8] font-medium hover:text-[#A76B3F] transition-colors duration-300 cursor-pointer"
                     whileHover={{ scale: 1.05 }}
                   >
                     contato@certificmais.com.br
@@ -364,14 +364,14 @@ export function Footer() {
             >
               <motion.a
                 href="#"
-                className="text-[#E9C89C] hover:text-[#A76B3F] transition-colors duration-300"
+                className="text-[#E9C89C] hover:text-[#A76B3F] transition-colors duration-300 cursor-pointer"
                 whileHover={{ y: -2 }}
               >
                 Política de Privacidade
               </motion.a>
               <motion.a
                 href="#"
-                className="text-[#E9C89C] hover:text-[#A76B3F] transition-colors duration-300"
+                className="text-[#E9C89C] hover:text-[#A76B3F] transition-colors duration-300 cursor-pointer"
                 whileHover={{ y: -2 }}
               >
                 Termos de Uso
