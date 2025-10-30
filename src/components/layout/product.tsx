@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface ProductProps {
   id: number;
@@ -8,6 +9,7 @@ interface ProductProps {
 }
 
 export function Product({ image, title, badge }: ProductProps) {
+  const { t } = useTranslation();
   return (
     <motion.div
       className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
@@ -57,7 +59,7 @@ export function Product({ image, title, badge }: ProductProps) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Saiba mais
+          {t("products.learnMore")}
         </motion.button>
       </motion.div>
     </motion.div>

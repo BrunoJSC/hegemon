@@ -67,7 +67,16 @@
   },
   "products": {
     "badge": "PRODUCTS",
-    "title": "Check Out Some Products That Can Obtain Certification"
+    "title": "Check Out Some Products That Can Obtain Certification",
+    "learnMore": "Learn more",
+    "items": {
+      "appliances": "Home Appliances",
+      "charger": "Cell Phone Charger",
+      "headphone": "Headphones",
+      "speaker": "Bluetooth Speaker",
+      "school": "School Supplies",
+      "toys": "Toys"
+    }
   },
   "about": {
     "badge": "TRUST & TRANSPARENCY",

@@ -67,7 +67,16 @@
   },
   "products": {
     "badge": "PRODUTOS",
-    "title": "Confira Alguns os Produtos que Podem Obter Certificação"
+    "title": "Confira Alguns os Produtos que Podem Obter Certificação",
+    "learnMore": "Saiba mais",
+    "items": {
+      "appliances": "Eletrodomésticos",
+      "charger": "Carregador de Celular",
+      "headphone": "Fone de Ouvido",
+      "speaker": "Caixa de Som Bluetooth",
+      "school": "Artigos Escolares",
+      "toys": "Brinquedos"
+    }
   },
   "about": {
     "badge": "CONFIANÇA & TRANSPARÊNCIA",

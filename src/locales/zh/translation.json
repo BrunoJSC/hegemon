@@ -67,7 +67,16 @@
   },
   "products": {
     "badge": "产品",
-    "title": "查看一些可以获得认证的产品"
+    "title": "查看一些可以获得认证的产品",
+    "learnMore": "了解更多",
+    "items": {
+      "appliances": "家用电器",
+      "charger": "手机充电器",
+      "headphone": "耳机",
+      "speaker": "蓝牙音箱",
+      "school": "学习用品",
+      "toys": "玩具"
+    }
   },
   "about": {
     "badge": "信任与透明",

@@ -11,37 +11,37 @@ export function Products() {
     {
       id: 1,
       image: "/eletro.png",
-      title: "Eletrodomésticos",
+      title: t("products.items.appliances"),
       badge: "INMETRO",
     },
     {
       id: 2,
       image: "/power.jpg",
-      title: "Carregador de Celular",
+      title: t("products.items.charger"),
       badge: "ANATEL",
     },
     {
       id: 3,
       image: "/fone.png",
-      title: "Fone de Ouvido",
+      title: t("products.items.headphone"),
       badge: "ANATEL",
     },
     {
       id: 4,
       image: "/caixa.jpg",
-      title: "Caixa de Som Bluetooth",
+      title: t("products.items.speaker"),
       badge: "ANATEL",
     },
     {
       id: 5,
       image: "/material.png",
-      title: "Artigos Escolares",
+      title: t("products.items.school"),
       badge: "INMETRO",
     },
     {
       id: 6,
       image: "/brinquedo.png",
-      title: "Brinquedos",
+      title: t("products.items.toys"),
       badge: "INMETRO",
     },
   ];
