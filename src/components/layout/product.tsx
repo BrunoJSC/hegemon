@@ -53,17 +53,11 @@ export function Product({ image, title, badge }: ProductProps) {
         </h3>
 
         <motion.button
-          className="text-[#A76B3F] font-semibold text-sm hover:text-[#8B4513] transition-colors duration-300 flex items-center gap-2"
-          whileHover={{ x: 5 }}
+          className="text-[#A76B3F] font-semibold text-sm hover:text-[#8B4513] transition-colors duration-300"
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           Saiba mais
-          <motion.span
-            animate={{ x: [0, 3, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            →
-          </motion.span>
         </motion.button>
       </motion.div>
     </motion.div>

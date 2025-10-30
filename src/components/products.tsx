@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { Product } from "./layout/product";
+import { useTranslation } from "react-i18next";
 
 export function Products() {
+  const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const products = [
@@ -97,7 +99,7 @@ export function Products() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
-            PRODUTOS
+            {t("products.badge")}
           </motion.div>
           <motion.h2
             className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 px-4"
@@ -106,10 +108,7 @@ export function Products() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            Confira Alguns os Produtos que
-            <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>
-            Podem Obter Certificação
+            {t("products.title")}
           </motion.h2>
         </motion.div>
 

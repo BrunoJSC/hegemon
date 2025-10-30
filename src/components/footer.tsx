@@ -1,24 +1,26 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
-  const whatsappMessage = `Oi! 👋Que bom ter você por aqui! 🚀Sua mensagem já chegou e nosso time vai te responder o quanto antes.Enquanto isso, fique à vontade pra contar um pouquinho do que precisa. 💬`;
+  const whatsappMessage = t("whatsapp.message");
   const whatsappUrl = `https://wa.me/5511993877119?text=${encodeURIComponent(
     whatsappMessage
   )}`;
 
   const services = [
-    "Consultoria Reguladora",
-    "Cumprimento de Exigências",
-    "Defesa Técnica INMETRO",
+    t("footer.service1"),
+    t("footer.service2"),
+    t("footer.service3"),
   ];
 
   const quickLinks = [
-    { name: "Início", section: "hero" },
-    { name: "Quem Somos", section: "about" },
-    { name: "Serviços", section: "services" },
-    { name: "Produtos", section: "products" },
-    { name: "Contato", section: "contact" },
+    { name: t("header.home"), section: "hero" },
+    { name: t("header.about"), section: "about" },
+    { name: t("header.services"), section: "services" },
+    { name: t("header.products"), section: "products" },
+    { name: t("header.contact"), section: "contact" },
   ];
 
   const handleSectionNavigation = (sectionId: string) => {
@@ -95,9 +97,7 @@ export function Footer() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-[#E9C89C] mb-6 leading-relaxed"
             >
-              Especialistas em certificação e conformidade regulatória.
-              Garantimos que sua empresa atenda todas as exigências com
-              agilidade e eficiência.
+              {t("footer.description")}
             </motion.p>
 
             {/* Social Links */}
@@ -140,7 +140,7 @@ export function Footer() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg font-semibold text-[#A76B3F] mb-6"
             >
-              Links Rápidos
+              {t("footer.quickLinks")}
             </motion.h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
@@ -184,7 +184,7 @@ export function Footer() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-lg font-semibold text-[#A76B3F] mb-6"
             >
-              Nossos Serviços
+              {t("footer.ourServices")}
             </motion.h4>
             <ul className="space-y-3">
               {services.map((service, index) => (
@@ -216,7 +216,7 @@ export function Footer() {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="text-lg font-semibold text-[#A76B3F] mb-6"
             >
-              Contato
+              {t("footer.contactTitle")}
             </motion.h4>
             <div className="space-y-4">
               <motion.div
@@ -245,7 +245,7 @@ export function Footer() {
                   </svg>
                 </motion.div>
                 <div>
-                  <p className="text-[#E9C89C] text-sm">Telefone</p>
+                  <p className="text-[#E9C89C] text-sm">{t("footer.phone")}</p>
                   <motion.a
                     href="tel:11993877119"
                     className="text-[#F6EBD8] font-medium hover:text-[#A76B3F] transition-colors duration-300 cursor-pointer"
@@ -282,7 +282,7 @@ export function Footer() {
                   </svg>
                 </motion.div>
                 <div>
-                  <p className="text-[#E9C89C] text-sm">Email</p>
+                  <p className="text-[#E9C89C] text-sm">{t("footer.email")}</p>
                   <motion.a
                     href="mailto:contato@hegemon.com.br"
                     className="text-[#F6EBD8] font-medium hover:text-[#A76B3F] transition-colors duration-300 cursor-pointer"
@@ -325,11 +325,11 @@ export function Footer() {
                   </svg>
                 </motion.div>
                 <div>
-                  <p className="text-[#E9C89C] text-sm">Endereço</p>
+                  <p className="text-[#E9C89C] text-sm">
+                    {t("footer.address")}
+                  </p>
                   <p className="text-[#F6EBD8] font-medium text-sm leading-relaxed">
-                    São Paulo, SP
-                    <br />
-                    Brasil
+                    {t("footer.addressValue")}
                   </p>
                 </div>
               </motion.div>
@@ -353,7 +353,7 @@ export function Footer() {
               transition={{ duration: 0.6, delay: 1.8 }}
               className="text-[#E9C89C] text-sm"
             >
-              © {currentYear} Hegemon. Todos os direitos reservados.
+              © {currentYear} Hegemon. {t("footer.rights")}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -367,14 +367,14 @@ export function Footer() {
                 className="text-[#E9C89C] hover:text-[#A76B3F] transition-colors duration-300 cursor-pointer"
                 whileHover={{ y: -2 }}
               >
-                Política de Privacidade
+                {t("footer.privacy")}
               </motion.a>
               <motion.a
                 href="#"
                 className="text-[#E9C89C] hover:text-[#A76B3F] transition-colors duration-300 cursor-pointer"
                 whileHover={{ y: -2 }}
               >
-                Termos de Uso
+                {t("footer.terms")}
               </motion.a>
             </motion.div>
           </div>

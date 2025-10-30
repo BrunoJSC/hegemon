@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 interface ServiceCardProps {
   id: number;
@@ -13,6 +14,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300 p-6 h-full flex flex-col">
       {/* Icon */}
@@ -35,7 +37,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       {/* Learn More Button */}
       <div className="mt-auto">
         <button className="inline-flex items-center px-4 py-2 bg-[#A76B3F] text-white text-sm font-medium rounded-full hover:bg-[#8B5A33] transition-colors duration-200">
-          Saiba Mais
+          {t("services.learnMore")}
         </button>
       </div>
     </div>

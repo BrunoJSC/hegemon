@@ -1,0 +1,390 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "products": "Products",
+    "contact": "Contact",
+    "blog": "Blog",
+    "phone": "Call Us!",
+    "ourServices": "Our Services",
+    "viewAllServices": "View All Services"
+  },
+  "hero": {
+    "badge1": "PERSONALIZED SUPPORT",
+    "title1": "We Ensure Your Company Meets All Requirements",
+    "description1": "By your side at every step, ensuring your company understands and complies with all requirements.",
+    "button1": "LEARN MORE",
+    "badge2": "SPECIALIZED CONSULTING",
+    "title2": "Complete Regulatory Compliance Solutions",
+    "description2": "We offer specialized consulting to keep your company always in compliance with regulations.",
+    "button2": "DISCOVER OUR SERVICES",
+    "badge3": "TECHNICAL SUPPORT",
+    "title3": "Technical Defense in Assessments and Processes",
+    "description3": "Count on our expertise to defend your company in INMETRO, IPEM and other agencies' processes.",
+    "button3": "CONTACT US"
+  },
+  "services": {
+    "badge": "OUR SERVICES",
+    "title": "Fast, Efficient and Hassle-Free Certification",
+    "learnMore": "Learn More",
+    "service1": {
+      "title": "Technical Defense in INMETRO and IPEM Assessments",
+      "description": "Facing an INMETRO or IPEM assessment can be a complex challenge for..."
+    },
+    "service4": {
+      "title": "Good Distribution Practices (GDP) - Certification",
+      "description": "The EU Directive 'Good Distribution Practices' is intended for companies in the..."
+    },
+    "service5": {
+      "title": "Inspection & Quality Control (China)",
+      "description": "At Hegemon, we ensure that each product meets the highest..."
+    },
+    "service6": {
+      "title": "Product Development & International Outsourcing",
+      "description": "Acting as a strategic bridge between the Brazilian market and manufacturing hubs..."
+    },
+    "service7": {
+      "title": "Regulatory Consulting",
+      "description": "Complete consulting for Inmetro, Anvisa and Anatel certifications."
+    },
+    "service8": {
+      "title": "Requirements Compliance",
+      "description": "Helping each client understand and meet specific requirements..."
+    },
+    "service10": {
+      "title": "Bureaucracy Process",
+      "description": "Ease in bureaucratic and technical processes, saving time and..."
+    },
+    "service11": {
+      "title": "Product Labeling Guidance",
+      "description": "At Hegemon, we offer a specialized service in..."
+    },
+    "service12": {
+      "title": "Simplified Registration Process",
+      "description": "With a team of highly specialized experts, the..."
+    }
+  },
+  "products": {
+    "badge": "PRODUCTS",
+    "title": "Check Out Some Products That Can Obtain Certification"
+  },
+  "about": {
+    "badge": "TRUST & TRANSPARENCY",
+    "title": "The Ideal Partner to Navigate Certification Processes with Peace of Mind",
+    "feature1Title": "Certification Experts",
+    "feature1Desc": "Proven experience in certifications across major areas and sectors.",
+    "feature2Title": "Qualified Team",
+    "feature2Desc": "Specialized professionals to lead your business to regulatory success.",
+    "feature3Title": "Personalized Support",
+    "feature3Desc": "Tailored service for each client's specific needs.",
+    "feature4Title": "Multi-Sector Operations",
+    "feature4Desc": "Consulting for various areas, from electronics to health and telecommunications processes.",
+    "whoWeAre": "WHO WE ARE",
+    "companyName": "Hegemon",
+    "companySubtitle": "Certification Consulting",
+    "description1": "Hegemon is a consulting firm specialized in simplifying the regulatory certification process for companies seeking to ensure compliance of their products and services with agencies such as Inmetro, Anvisa and Anatel.",
+    "description2": "With a highly qualified team and personalized service, we offer complete solutions ranging from initial analysis to final certification, always focusing on process agility and transparency.",
+    "stat1": "Completed Certifications",
+    "stat2": "Approval Rate"
+  },
+  "contact": {
+    "badge": "GET IN TOUCH",
+    "title": "Ready to Certify Your Product?",
+    "subtitle": "Our team is ready to help you navigate certification processes with agility and transparency",
+    "speakWithSpecialist": "Speak with a Specialist",
+    "ctaDescription": "Click the button below and talk directly with our team specialized in certifications. Fast and personalized service.",
+    "whatsappButton": "CHAT ON WHATSAPP",
+    "contactInfo": "Contact Information",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "São Paulo, SP - Brazil",
+    "hours": "Business Hours",
+    "hoursValue": "24/7"
+  },
+  "footer": {
+    "description": "Experts in certification and regulatory compliance. We ensure your company meets all requirements with agility and efficiency.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "service1": "Regulatory Consulting",
+    "service2": "Requirements Compliance",
+    "service3": "INMETRO Technical Defense",
+    "contactTitle": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "São Paulo, SP\nBrazil",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "whatsapp": {
+    "message": "Hi! 👋Great to have you here! 🚀Your message has been received and our team will respond as soon as possible. Feel free to tell us what you need. 💬"
+  },
+  "serviceDetail": {
+    "notFound": "Service not found",
+    "backToHome": "Back to home page",
+    "overview": "Overview",
+    "benefits": "Benefits",
+    "process": "Process",
+    "requirements": "Requirements",
+    "interested": "Interested in this service?",
+    "interestedDesc": "Contact us for more information and personalized quote.",
+    "requestQuote": "Request Quote"
+  },
+  "contactForm": {
+    "title": "Get in Touch",
+    "subtitle": "Fill out the form below and our team will contact you soon",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "serviceInterest": "Service of Interest",
+    "selectService": "Select a service",
+    "message": "Message",
+    "placeholderName": "Your name",
+    "placeholderEmail": "your@email.com",
+    "placeholderPhone": "(11) 99999-9999",
+    "placeholderCompany": "Company name",
+    "placeholderMessage": "Tell us about your needs...",
+    "successMessage": "Message sent successfully! We will contact you soon.",
+    "errorMessage": "Error sending message. Please try again.",
+    "sending": "Sending...",
+    "sendMessage": "Send Message",
+    "contactInfo": "Contact Information",
+    "whatsappTitle": "WhatsApp",
+    "whatsappDesc": "Prefer to talk on WhatsApp? Click the button below to start a conversation.",
+    "chatWhatsapp": "Chat on WhatsApp",
+    "businessHours": "Business Hours",
+    "businessHoursValue": "Monday to Friday: 9am to 6pm"
+  },
+  "servicesData": {
+    "service1": {
+      "title": "Technical Defense in INMETRO and IPEM Assessments",
+      "description": "Facing an INMETRO or IPEM assessment can be a complex challenge for...",
+      "fullDescription": "Facing an INMETRO or IPEM assessment can be a complex challenge for any company. Our specialized team offers complete technical defense, analyzing every aspect of the assessment and preparing the necessary documentation for contestation.",
+      "benefits": {
+        "0": "Detailed assessment analysis",
+        "1": "Preparation of specialized technical defense",
+        "2": "Process follow-up until completion",
+        "3": "Reduction or elimination of fines",
+        "4": "Guidance to avoid future assessments"
+      },
+      "process": {
+        "0": "Initial analysis of assessment and documentation",
+        "1": "Technical evidence gathering",
+        "2": "Technical defense elaboration",
+        "3": "Defense protocol with competent authorities",
+        "4": "Follow-up until final decision"
+      },
+      "requirements": {
+        "0": "Copy of received assessment",
+        "1": "Company documentation",
+        "2": "Product-related reports and certificates",
+        "3": "Compliance history (if available)"
+      }
+    },
+    "service4": {
+      "title": "Good Distribution Practices (GDP) - Certification",
+      "description": "The EU Directive 'Good Distribution Practices' is intended for companies in the...",
+      "fullDescription": "Good Distribution Practices (GDP) certification is essential for companies operating in the distribution of regulated products. We assist in implementation and certification according to national and international guidelines.",
+      "benefits": {
+        "0": "Nationally recognized certification",
+        "1": "Compliance with EU guidelines",
+        "2": "Improvement of distribution processes",
+        "3": "Market credibility",
+        "4": "Access to new markets"
+      },
+      "process": {
+        "0": "Initial process diagnosis",
+        "1": "Implementation of Good Practices",
+        "2": "Team training",
+        "3": "Internal audit",
+        "4": "Official certification"
+      },
+      "requirements": {
+        "0": "Regularized company",
+        "1": "Adequate facilities",
+        "2": "Trained team",
+        "3": "Process documentation"
+      }
+    },
+    "service5": {
+      "title": "Inspection & Quality Control (China)",
+      "description": "At Hegemon, we ensure that each product meets the highest...",
+      "fullDescription": "We offer complete inspection and quality control services for products imported from China. Our local team ensures that each product meets the highest quality standards before shipment.",
+      "benefits": {
+        "0": "On-site inspection in China",
+        "1": "Reduction of defective products",
+        "2": "Compliance with Brazilian standards",
+        "3": "Detailed reports with photos",
+        "4": "Savings on returns and rework"
+      },
+      "process": {
+        "0": "Definition of quality criteria",
+        "1": "Inspection scheduling",
+        "2": "Supplier inspection",
+        "3": "Tests and verifications",
+        "4": "Detailed photographic report",
+        "5": "Batch approval or rejection"
+      },
+      "requirements": {
+        "0": "Product specifications",
+        "1": "Acceptance criteria",
+        "2": "Chinese supplier data",
+        "3": "Production schedule"
+      }
+    },
+    "service6": {
+      "title": "Product Development & International Outsourcing",
+      "description": "Acting as a strategic bridge between the Brazilian market and manufacturing hubs...",
+      "fullDescription": "We act as a strategic bridge between the Brazilian market and the main international manufacturing hubs. We develop customized products and manage the entire outsourcing process.",
+      "benefits": {
+        "0": "Access to qualified suppliers",
+        "1": "Development of customized products",
+        "2": "Reduction of production costs",
+        "3": "Complete process management",
+        "4": "Quality guarantee"
+      },
+      "process": {
+        "0": "Product briefing and specifications",
+        "1": "Supplier selection",
+        "2": "Prototype development",
+        "3": "Sample approval",
+        "4": "Production and quality control",
+        "5": "Logistics and import"
+      },
+      "requirements": {
+        "0": "Product technical specifications",
+        "1": "Estimated production volume",
+        "2": "Available budget",
+        "3": "Desired timeline"
+      }
+    },
+    "service7": {
+      "title": "Regulatory Consulting",
+      "description": "Complete consulting for Inmetro, Anvisa and Anatel certifications.",
+      "fullDescription": "We offer specialized consulting for certifications with the main Brazilian regulatory agencies: Inmetro, Anvisa and Anatel. Our team has deep knowledge of the requirements and processes of each agency.",
+      "benefits": {
+        "0": "Expertise in multiple regulatory agencies",
+        "1": "Agility in certification processes",
+        "2": "Reduction of rework costs",
+        "3": "Strategic guidance",
+        "4": "Continuous support"
+      },
+      "process": {
+        "0": "Product analysis and applicable requirements",
+        "1": "Certification planning",
+        "2": "Documentation preparation",
+        "3": "Laboratory selection",
+        "4": "Test follow-up",
+        "5": "Protocol and certification obtainment"
+      },
+      "requirements": {
+        "0": "Product technical information",
+        "1": "Samples for testing",
+        "2": "Company documentation",
+        "3": "Certification scope definition"
+      }
+    },
+    "service8": {
+      "title": "Requirements Compliance",
+      "description": "Helping each client understand and meet specific requirements...",
+      "fullDescription": "We assist companies in understanding and complying with all specific regulatory requirements of their segment. We offer complete support for adaptation to applicable standards and regulations.",
+      "benefits": {
+        "0": "Guaranteed regulatory compliance",
+        "1": "Avoids fines and sanctions",
+        "2": "Optimized processes",
+        "3": "Organized documentation",
+        "4": "Operational peace of mind"
+      },
+      "process": {
+        "0": "Survey of applicable requirements",
+        "1": "Gap analysis of current situation",
+        "2": "Action plan for adaptation",
+        "3": "Implementation of improvements",
+        "4": "Compliance verification"
+      },
+      "requirements": {
+        "0": "Business information",
+        "1": "Products/services offered",
+        "2": "Available current documentation"
+      }
+    },
+    "service10": {
+      "title": "Bureaucracy Process",
+      "description": "Ease in bureaucratic and technical processes, saving time and...",
+      "fullDescription": "We simplify all bureaucratic and technical processes necessary for certifications and licensing. Our team takes care of all the paperwork, saving you time and resources.",
+      "benefits": {
+        "0": "Time savings",
+        "1": "Reduced operational costs",
+        "2": "Faster processes",
+        "3": "Fewer errors and rework",
+        "4": "Focus on core business"
+      },
+      "process": {
+        "0": "Identification of necessary processes",
+        "1": "Documentation collection",
+        "2": "Preparation and organization",
+        "3": "Protocols with competent authorities",
+        "4": "Follow-up until completion"
+      },
+      "requirements": {
+        "0": "Basic company documentation",
+        "1": "Power of attorney (if necessary)",
+        "2": "Information about desired processes"
+      }
+    },
+    "service11": {
+      "title": "Product Labeling Guidance",
+      "description": "At Hegemon, we offer a specialized service in...",
+      "fullDescription": "We offer specialized service in product labeling guidance, ensuring compliance with all Inmetro, Anvisa standards and applicable legislation. Avoid problems with inspection and recalls.",
+      "benefits": {
+        "0": "100% compliant labeling",
+        "1": "Avoids assessments and recalls",
+        "2": "Adaptation to multiple standards",
+        "3": "Specialized technical review",
+        "4": "Guidance for different product categories"
+      },
+      "process": {
+        "0": "Product and category analysis",
+        "1": "Identification of applicable standards",
+        "2": "Current label review",
+        "3": "Adaptation proposal elaboration",
+        "4": "Final validation"
+      },
+      "requirements": {
+        "0": "Product technical information",
+        "1": "Current label (if existing)",
+        "2": "Product category",
+        "3": "Target market"
+      }
+    },
+    "service12": {
+      "title": "Simplified Registration Process",
+      "description": "With a team of highly specialized experts, the...",
+      "fullDescription": "With a team of highly qualified experts, we offer simplified registration process for various types of products. We make the complex registration process faster and more efficient.",
+      "benefits": {
+        "0": "Faster process",
+        "1": "Less bureaucracy",
+        "2": "Specialized expertise",
+        "3": "Personalized follow-up",
+        "4": "High approval rate"
+      },
+      "process": {
+        "0": "Registration feasibility analysis",
+        "1": "Technical documentation preparation",
+        "2": "Request protocol",
+        "3": "Follow-up with agencies",
+        "4": "Registration obtainment"
+      },
+      "requirements": {
+        "0": "Product technical data",
+        "1": "Company documentation",
+        "2": "Samples (when applicable)",
+        "3": "Existing reports and certificates"
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { LanguageSelector } from "./language-selector";
+import { useTranslation } from "react-i18next";
 
 interface HeaderProps {
   onServiceClick?: (serviceId: string) => void;
@@ -14,6 +16,7 @@ export function Header({
   onNavigateHome,
   isHomePage = true,
 }: HeaderProps = {}) {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -190,7 +193,7 @@ export function Header({
                 }`}
                 whileHover={{ y: -2 }}
               >
-                Início
+                {t("header.home")}
               </motion.div>
 
               <motion.div
@@ -202,7 +205,7 @@ export function Header({
                 }`}
                 whileHover={{ y: -2 }}
               >
-                Quem Somos
+                {t("header.about")}
               </motion.div>
 
               {/* Menu dropdown de Serviços */}
@@ -216,7 +219,7 @@ export function Header({
                   }`}
                   whileHover={{ y: -2 }}
                 >
-                  Serviços
+                  {t("header.services")}
                   <motion.svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4 ml-1"
@@ -251,7 +254,7 @@ export function Header({
                         isScrolled ? "text-[#2A1A12]" : "text-[#4E3C2A]"
                       }`}
                     >
-                      Nossos Serviços
+                      {t("header.ourServices")}
                     </h3>
                     <div className="grid gap-2">
                       {services.map((service, index) => (
@@ -323,7 +326,7 @@ export function Header({
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                       >
-                        <span>Ver Todos os Serviços</span>
+                        <span>{t("header.viewAllServices")}</span>
                         <svg
                           className="w-4 h-4"
                           fill="none"
@@ -352,11 +355,13 @@ export function Header({
                 }`}
                 whileHover={{ y: -2 }}
               >
-                Produtos
+                {t("header.products")}
               </motion.div>
             </nav>
 
             <div className="flex items-center space-x-4">
+              <LanguageSelector />
+
               <motion.div
                 onClick={onContactClick}
                 className={`px-4 py-2 rounded-full border-2 transition-all duration-300 font-medium text-sm xl:text-base cursor-pointer ${
@@ -367,7 +372,7 @@ export function Header({
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Contato
+                {t("header.contact")}
               </motion.div>
 
               <motion.a
@@ -396,7 +401,7 @@ export function Header({
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm">Fale Conosco!</div>
+                  <div className="text-sm">{t("header.phone")}</div>
                   <div className="font-medium">11 99387-7119</div>
                 </div>
               </motion.a>
@@ -453,7 +458,7 @@ export function Header({
                   className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
                   whileHover={{ x: 4 }}
                 >
-                  Início
+                  {t("header.home")}
                 </motion.div>
 
                 <motion.div
@@ -464,7 +469,7 @@ export function Header({
                   className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
                   whileHover={{ x: 4 }}
                 >
-                  Quem Somos
+                  {t("header.about")}
                 </motion.div>
 
                 {/* Mobile Services Dropdown */}
@@ -474,7 +479,7 @@ export function Header({
                     className="w-full flex items-center justify-between px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium"
                     whileHover={{ x: 4 }}
                   >
-                    Serviços
+                    {t("header.services")}
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5"
@@ -565,7 +570,7 @@ export function Header({
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                           >
-                            <span>Ver Todos os Serviços</span>
+                            <span>{t("header.viewAllServices")}</span>
                             <svg
                               className="w-4 h-4"
                               fill="none"
@@ -594,7 +599,7 @@ export function Header({
                   className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
                   whileHover={{ x: 4 }}
                 >
-                  Produtos
+                  {t("header.products")}
                 </motion.div>
 
                 <motion.a
@@ -605,7 +610,7 @@ export function Header({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Blog
+                  {t("header.blog")}
                 </motion.a>
 
                 {/* Mobile Contact Button */}
@@ -619,7 +624,7 @@ export function Header({
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Contato
+                    {t("header.contact")}
                   </motion.div>
                 </motion.div>
 

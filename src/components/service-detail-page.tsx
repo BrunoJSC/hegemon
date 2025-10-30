@@ -3,7 +3,8 @@ import { motion } from "motion/react";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { SEO } from "./seo";
-import { servicesData } from "../data/services-data";
+import { getServicesData } from "../data/services-data";
+import { useTranslation } from "react-i18next";
 
 interface ServiceDetailPageProps {
   serviceId: string | null;
@@ -18,7 +19,8 @@ export function ServiceDetailPage({
   onServiceClick,
   onContactClick,
 }: ServiceDetailPageProps) {
-  const whatsappMessage = `Oi! 👋Que bom ter você por aqui! 🚀Sua mensagem já chegou e nosso time vai te responder o quanto antes.Enquanto isso, fique à vontade pra contar um pouquinho do que precisa. 💬`;
+  const { t } = useTranslation();
+  const whatsappMessage = t("whatsapp.message");
   const whatsappUrl = `https://wa.me/5511993877119?text=${encodeURIComponent(
     whatsappMessage
   )}`;
@@ -31,6 +33,7 @@ export function ServiceDetailPage({
     window.scrollTo({ top: 0, behavior: "instant" });
   }, [serviceId]);
 
+  const servicesData = getServicesData(t);
   const service = servicesData.find((s) => s.id.toString() === serviceId);
 
   if (!service) {
@@ -44,13 +47,13 @@ export function ServiceDetailPage({
         />
         <div className="py-20 text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Serviço não encontrado
+            {t("serviceDetail.notFound")}
           </h1>
           <button
             onClick={onBack}
             className="text-[#A76B3F] hover:text-[#7B4A2E] font-medium"
           >
-            ← Voltar para página inicial
+            ← {t("serviceDetail.backToHome")}
           </button>
         </div>
         <Footer />
@@ -82,7 +85,7 @@ export function ServiceDetailPage({
                 onClick={onBack}
                 className="text-[#A76B3F] hover:text-[#7B4A2E] font-medium mb-4 inline-block"
               >
-                ← Voltar para página inicial
+                ← {t("serviceDetail.backToHome")}
               </button>
               <div className="flex items-center mb-6">
                 <img
@@ -100,10 +103,13 @@ export function ServiceDetailPage({
             <div className="border-b border-gray-200 mb-8">
               <nav className="flex space-x-8 overflow-x-auto">
                 {[
-                  { key: "overview", label: "Visão Geral" },
-                  { key: "benefits", label: "Benefícios" },
-                  { key: "process", label: "Processo" },
-                  { key: "requirements", label: "Requisitos" },
+                  { key: "overview", label: t("serviceDetail.overview") },
+                  { key: "benefits", label: t("serviceDetail.benefits") },
+                  { key: "process", label: t("serviceDetail.process") },
+                  {
+                    key: "requirements",
+                    label: t("serviceDetail.requirements"),
+                  },
                 ].map((tab) => (
                   <button
                     key={tab.key}
@@ -140,7 +146,9 @@ export function ServiceDetailPage({
 
               {activeTab === "benefits" && service.benefits && (
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Benefícios</h3>
+                  <h3 className="text-xl font-semibold mb-4">
+                    {t("serviceDetail.benefits")}
+                  </h3>
                   <ul className="space-y-2">
                     {service.benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start">
@@ -154,7 +162,9 @@ export function ServiceDetailPage({
 
               {activeTab === "process" && service.process && (
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Processo</h3>
+                  <h3 className="text-xl font-semibold mb-4">
+                    {t("serviceDetail.process")}
+                  </h3>
                   <ol className="space-y-3">
                     {service.process.map((step, index) => (
                       <li key={index} className="flex items-start">
@@ -170,7 +180,9 @@ export function ServiceDetailPage({
 
               {activeTab === "requirements" && service.requirements && (
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">Requisitos</h3>
+                  <h3 className="text-xl font-semibold mb-4">
+                    {t("serviceDetail.requirements")}
+                  </h3>
                   <ul className="space-y-2">
                     {service.requirements.map((requirement, index) => (
                       <li key={index} className="flex items-start">
@@ -186,11 +198,10 @@ export function ServiceDetailPage({
             {/* CTA */}
             <div className="mt-12 p-6 bg-[#F6EBD8] rounded-lg text-center">
               <h3 className="text-xl font-semibold text-[#2A1A12] mb-4">
-                Interessado neste serviço?
+                {t("serviceDetail.interested")}
               </h3>
               <p className="text-[#4E3C2A] mb-6">
-                Entre em contato conosco para mais informações e orçamento
-                personalizado.
+                {t("serviceDetail.interestedDesc")}
               </p>
               <motion.a
                 href={whatsappUrl}
@@ -200,7 +211,7 @@ export function ServiceDetailPage({
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Solicitar Orçamento
+                {t("serviceDetail.requestQuote")}
               </motion.a>
             </div>
           </motion.div>

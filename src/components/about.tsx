@@ -1,6 +1,9 @@
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 export function About() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="about"
@@ -27,7 +30,7 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            CONFIANÇA & TRANSPARÊNCIA
+            {t("about.badge")}
           </motion.div>
 
           <motion.h2
@@ -37,11 +40,7 @@ export function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           >
-            Parceira Ideal para Navegar com Tranquilidade
-            <br />
-            <span className="text-[#A76B3F]">
-              pelos Processos de Certificação
-            </span>
+            {t("about.title")}
           </motion.h2>
         </motion.div>
 
@@ -70,9 +69,8 @@ export function About() {
                   />
                 </svg>
               ),
-              title: "Especialistas em Certificações",
-              description:
-                "Experiência comprovada em certificações das principais áreas e setores.",
+              titleKey: "about.feature1Title",
+              descKey: "about.feature1Desc",
             },
             {
               icon: (
@@ -90,9 +88,8 @@ export function About() {
                   />
                 </svg>
               ),
-              title: "Equipe Qualificada",
-              description:
-                "Profissionais especializados para conduzir seu negócio ao sucesso regulatório.",
+              titleKey: "about.feature2Title",
+              descKey: "about.feature2Desc",
             },
             {
               icon: (
@@ -110,9 +107,8 @@ export function About() {
                   />
                 </svg>
               ),
-              title: "Suporte Personalizado",
-              description:
-                "Atendimento sob medida para as necessidades específicas de cada cliente.",
+              titleKey: "about.feature3Title",
+              descKey: "about.feature3Desc",
             },
             {
               icon: (
@@ -130,13 +126,12 @@ export function About() {
                   />
                 </svg>
               ),
-              title: "Atuação Multissetorial",
-              description:
-                "Consultoria para diversas áreas, desde eletrônicos até processos de saúde e telecomunicações.",
+              titleKey: "about.feature4Title",
+              descKey: "about.feature4Desc",
             },
           ].map((feature, index) => (
             <motion.div
-              key={feature.title}
+              key={feature.titleKey}
               className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/15 transition-all duration-300"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -151,9 +146,9 @@ export function About() {
               >
                 {feature.icon}
               </motion.div>
-              <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
+              <h3 className="text-xl font-bold mb-4">{t(feature.titleKey)}</h3>
               <p className="text-gray-300 leading-relaxed text-sm">
-                {feature.description}
+                {t(feature.descKey)}
               </p>
             </motion.div>
           ))}
@@ -217,7 +212,7 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              QUEM SOMOS
+              {t("about.whoWeAre")}
             </motion.div>
 
             <motion.h3
@@ -227,10 +222,10 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Hegemon
+              {t("about.companyName")}
               <br />
               <span className="text-[#A76B3F]">
-                Consultoria em Certificação
+                {t("about.companySubtitle")}
               </span>
             </motion.h3>
 
@@ -241,23 +236,8 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <p>
-                A <strong className="text-white">Hegemon</strong> é uma
-                consultoria especializada em simplificar o processo de
-                certificação regulatória para empresas que buscam garantir a
-                conformidade de seus produtos e serviços junto a órgãos como{" "}
-                <strong className="text-[#A76B3F]">
-                  Inmetro, Anvisa e Anatel
-                </strong>
-                .
-              </p>
-
-              <p>
-                Com uma equipe altamente qualificada e atendimento
-                personalizado, oferecemos soluções completas que vão desde a
-                análise inicial até a obtenção final da certificação, sempre com
-                foco na agilidade e transparência do processo.
-              </p>
+              <p>{t("about.description1")}</p>
+              <p>{t("about.description2")}</p>
             </motion.div>
 
             {/* Stats */}
@@ -272,15 +252,13 @@ export function About() {
                 <div className="text-3xl font-bold text-[#A76B3F] mb-2">
                   500+
                 </div>
-                <div className="text-sm text-gray-400">
-                  Certificações Concluídas
-                </div>
+                <div className="text-sm text-gray-400">{t("about.stat1")}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-[#A76B3F] mb-2">
                   98%
                 </div>
-                <div className="text-sm text-gray-400">Taxa de Aprovação</div>
+                <div className="text-sm text-gray-400">{t("about.stat2")}</div>
               </div>
             </motion.div>
           </motion.div>

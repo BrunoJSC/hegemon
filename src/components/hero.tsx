@@ -1,38 +1,37 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
-
-const slides = [
-  {
-    id: 1,
-    badge: "ACOMPANHAMENTO PERSONALIZADO",
-    title: "Garantimos que sua Empresa Cumpra Todas as Exigências",
-    description:
-      "Ao seu lado em cada etapa, garantindo que sua empresa compreenda e cumpra todas as exigências.",
-    buttonText: "SAIBA MAIS",
-    image: "/image3.png",
-  },
-  {
-    id: 2,
-    badge: "CONSULTORIA ESPECIALIZADA",
-    title: "Soluções Completas em Conformidade Regulatória",
-    description:
-      "Oferecemos consultoria especializada para manter sua empresa sempre em conformidade com as normas.",
-    buttonText: "CONHEÇA NOSSOS SERVIÇOS",
-    image: "/people.png",
-  },
-  {
-    id: 3,
-    badge: "SUPORTE TÉCNICO",
-    title: "Defesa Técnica em Autuações e Processos",
-    description:
-      "Conte com nossa expertise para defender sua empresa em processos do INMETRO, IPEM e outros órgãos.",
-    buttonText: "FALE CONOSCO",
-    image: "/user.png",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export function Hero() {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slides = [
+    {
+      id: 1,
+      badge: t("hero.badge1"),
+      title: t("hero.title1"),
+      description: t("hero.description1"),
+      buttonText: t("hero.button1"),
+      image: "/image3.png",
+    },
+    {
+      id: 2,
+      badge: t("hero.badge2"),
+      title: t("hero.title2"),
+      description: t("hero.description2"),
+      buttonText: t("hero.button2"),
+      image: "/people.png",
+    },
+    {
+      id: 3,
+      badge: t("hero.badge3"),
+      title: t("hero.title3"),
+      description: t("hero.description3"),
+      buttonText: t("hero.button3"),
+      image: "/user.png",
+    },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -40,7 +39,7 @@ export function Hero() {
     }, 5000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [slides.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
