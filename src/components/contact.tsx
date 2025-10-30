@@ -95,7 +95,7 @@ export function Contact() {
                 onClick={() => {
                   if (typeof window !== "undefined") {
                     window.open(
-                      "https://wa.me/5511993877119?text=Oi!%20👋%20Que%20bom%20ter%20você%20por%20aqui!%20🚀%20Sua%20mensagem%20já%20chegou%20e%20nosso%20time%20vai%20te%20responder%20o%20quanto%20antes.%20Enquanto%20isso,%20fique%20à%20vontade%20pra%20contar%20um%20pouquinho%20do%20que%20precisa.%20💬",
+                      "https://wa.me/5511993877119?text=Oi!%20👋Que%20bom%20ter%20você%20por%20aqui!%20🚀Sua%20mensagem%20já%20chegou%20e%20nosso%20time%20vai%20te%20responder%20o%20quanto%20antes.Enquanto%20isso,%20fique%20à%20vontade%20pra%20contar%20um%20pouquinho%20do%20que%20precisa.%20💬",
                       "_blank"
                     );
                   }
