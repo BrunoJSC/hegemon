@@ -1,6 +1,11 @@
 import { motion } from "motion/react";
 
 export function Contact() {
+  const whatsappMessage = `Oi! 👋Que bom ter você por aqui! 🚀Sua mensagem já chegou e nosso time vai te responder o quanto antes.Enquanto isso, fique à vontade pra contar um pouquinho do que precisa. 💬`;
+  const whatsappUrl = `https://wa.me/5511993877119?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -94,10 +99,7 @@ export function Contact() {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 onClick={() => {
                   if (typeof window !== "undefined") {
-                    window.open(
-                      "https://wa.me/5511993877119?text=Oi!%20👋Que%20bom%20ter%20você%20por%20aqui!%20🚀Sua%20mensagem%20já%20chegou%20e%20nosso%20time%20vai%20te%20responder%20o%20quanto%20antes.Enquanto%20isso,%20fique%20à%20vontade%20pra%20contar%20um%20pouquinho%20do%20que%20precisa.%20💬",
-                      "_blank"
-                    );
+                    window.open(whatsappUrl, "_blank");
                   }
                 }}
               >

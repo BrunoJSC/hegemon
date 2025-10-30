@@ -18,6 +18,11 @@ export function ServiceDetailPage({
   onServiceClick,
   onContactClick,
 }: ServiceDetailPageProps) {
+  const whatsappMessage = `Oi! 👋Que bom ter você por aqui! 🚀Sua mensagem já chegou e nosso time vai te responder o quanto antes.Enquanto isso, fique à vontade pra contar um pouquinho do que precisa. 💬`;
+  const whatsappUrl = `https://wa.me/5511993877119?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
   const [activeTab, setActiveTab] = useState<
     "overview" | "benefits" | "process" | "requirements"
   >("overview");
@@ -188,7 +193,7 @@ export function ServiceDetailPage({
                 personalizado.
               </p>
               <motion.a
-                href="https://wa.me/5511993877119?text=Oi!%20👋Que%20bom%20ter%20você%20por%20aqui!%20�Sua%20muensagem%20já%20chegou%20e%20nosso%20time%20vai%20te%20responder%20o%20quanto%20antes.Enquanto%20isso,%20fique%20à%20vontade%20pra%20contar%20um%20pouquinho%20do%20que%20precisa.%20💬"
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#A76B3F] text-white px-8 py-3 rounded-full font-medium hover:bg-[#7B4A2E] transition-colors inline-block"
