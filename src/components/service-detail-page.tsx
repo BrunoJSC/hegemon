@@ -56,7 +56,7 @@ export function ServiceDetailPage({
   return (
     <div className="min-h-screen">
       <SEO
-        title={`${service.title} - CertificaMais`}
+        title={`${service.title} - Hegemon`}
         description={service.description}
       />
       <Header
@@ -188,7 +188,7 @@ export function ServiceDetailPage({
                 personalizado.
               </p>
               <motion.a
-                href="https://wa.me/5511972916967"
+                href="https://wa.me/5511993877119"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#A76B3F] text-white px-8 py-3 rounded-full font-medium hover:bg-[#7B4A2E] transition-colors inline-block"

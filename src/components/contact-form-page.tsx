@@ -69,7 +69,7 @@ export function ContactFormPage({
   return (
     <div className="min-h-screen bg-[#F6EBD8]">
       <SEO
-        title="Contato - CertificaMais"
+        title="Contato - Hegemon"
         description="Entre em contato conosco para mais informações sobre nossos serviços de certificação e consultoria."
       />
       <Header
@@ -204,12 +204,6 @@ export function ContactFormPage({
                       <option value="1">
                         Defesa Técnica em Autuações do INMETRO e IPEM
                       </option>
-                      <option value="2">
-                        Vigilância Sanitária | Anvisa | CNES | Mapa
-                      </option>
-                      <option value="3">
-                        Laudo de Ergonomia 100% Conforme a NR-17
-                      </option>
                       <option value="4">
                         Boas Práticas de Distribuição (BPD)
                       </option>
@@ -315,10 +309,10 @@ export function ContactFormPage({
                       <div>
                         <p className="text-sm text-gray-600">Telefone</p>
                         <a
-                          href="tel:11972916967"
+                          href="tel:11993877119"
                           className="text-[#A76B3F] font-medium hover:text-[#7B4A2E]"
                         >
-                          (11) 97291-6967
+                          (11) 99387-7119
                         </a>
                       </div>
                     </div>
@@ -342,10 +336,10 @@ export function ContactFormPage({
                       <div>
                         <p className="text-sm text-gray-600">E-mail</p>
                         <a
-                          href="mailto:contato@certificamais.com.br"
+                          href="mailto:contato@hegemon.com.br"
                           className="text-[#A76B3F] font-medium hover:text-[#7B4A2E]"
                         >
-                          contato@certificamais.com.br
+                          contato@hegemon.com.br
                         </a>
                       </div>
                     </div>
@@ -387,7 +381,7 @@ export function ContactFormPage({
                     iniciar uma conversa.
                   </p>
                   <motion.a
-                    href="https://wa.me/5511972916967"
+                    href="https://wa.me/5511993877119"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-medium hover:bg-[#20BA5A] transition-colors"

@@ -16,23 +16,7 @@ export const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
         "Enfrentar uma autuação do INMETRO ou IPEM pode ser um desafio complexo para...",
       link: "#",
     },
-    {
-      id: 2,
-      icon: "/eyes.svg",
-      title: "Vigilância Sanitária | Anvisa | CNES | Mapa",
-      description:
-        "Licenciamento completo para sua empresa junto aos órgãos reguladores...",
-      link: "#",
-    },
-    {
-      id: 3,
-      icon: "/paper.svg",
-      title:
-        "Laudo de Ergonomia 100% Conforme a NR-17: Evite multas e processos trabalhistas",
-      description:
-        "Melhor Preço e Qualidade. Técnica em Laudos. Ergonomistas para empresas...",
-      link: "#",
-    },
+
     {
       id: 4,
       icon: "/certification.svg",
@@ -45,8 +29,7 @@ export const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
       id: 5,
       icon: "/inspection.svg",
       title: "Inspeção & Controle de Qualidade (China)",
-      description:
-        "Na CERTIFICAMAIS, garantimos que cada produto atenda aos mais...",
+      description: "Na Hegemon, garantimos que cada produto atenda aos mais...",
       link: "#",
     },
     {
@@ -86,8 +69,7 @@ export const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
       id: 11,
       icon: "/piece.svg",
       title: "Orientação Rotulagem de Produtos",
-      description:
-        "Na CERTIFICAMAIS, oferecemos um serviço especializado em...",
+      description: "Na Hegemon, oferecemos um serviço especializado em...",
       link: "#",
     },
     {

@@ -172,7 +172,7 @@ export function About() {
             <div className="relative rounded-2xl overflow-hidden">
               <img
                 src="/people.png"
-                alt="Equipe CertificaMais"
+                alt="Equipe Hegemon"
                 className="w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
@@ -227,7 +227,7 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              CertificaMais
+              Hegemon
               <br />
               <span className="text-[#A76B3F]">
                 Consultoria em Certificação
@@ -242,7 +242,7 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <p>
-                A <strong className="text-white">CertificaMais</strong> é uma
+                A <strong className="text-white">Hegemon</strong> é uma
                 consultoria especializada em simplificar o processo de
                 certificação regulatória para empresas que buscam garantir a
                 conformidade de seus produtos e serviços junto a órgãos como{" "}

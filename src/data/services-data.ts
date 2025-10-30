@@ -39,68 +39,7 @@ export const servicesData: Service[] = [
       "Histórico de conformidade (se disponível)",
     ],
   },
-  {
-    id: 2,
-    icon: "/eyes.svg",
-    title: "Vigilância Sanitária | Anvisa | CNES | Mapa",
-    description:
-      "Licenciamento completo para sua empresa junto aos órgãos reguladores...",
-    fullDescription:
-      "Oferecemos licenciamento completo para sua empresa junto aos principais órgãos reguladores de saúde e segurança. Nossa equipe cuida de todo o processo burocrático, garantindo conformidade com as normas da Vigilância Sanitária, Anvisa, CNES e Mapa.",
-    benefits: [
-      "Licenciamento ágil e sem complicações",
-      "Conformidade com todas as normas sanitárias",
-      "Acompanhamento de todo o processo",
-      "Renovações e atualizações de licenças",
-      "Suporte contínuo pós-licenciamento",
-    ],
-    process: [
-      "Diagnóstico inicial das necessidades",
-      "Preparação da documentação necessária",
-      "Adequação das instalações (se necessário)",
-      "Protocolo nos órgãos competentes",
-      "Acompanhamento de vistorias",
-      "Emissão das licenças",
-    ],
-    requirements: [
-      "Documentação da empresa atualizada",
-      "Planta baixa das instalações",
-      "Descrição dos processos e produtos",
-      "Responsável técnico habilitado",
-    ],
-  },
-  {
-    id: 3,
-    icon: "/paper.svg",
-    title:
-      "Laudo de Ergonomia 100% Conforme a NR-17: Evite multas e processos trabalhistas",
-    description:
-      "Melhor Preço e Qualidade. Técnica em Laudos. Ergonomistas para empresas...",
-    fullDescription:
-      "Elaboramos laudos ergonômicos completos e 100% conformes com a NR-17, protegendo sua empresa de multas e processos trabalhistas. Nossa equipe de ergonomistas certificados realiza análise detalhada de todos os postos de trabalho.",
-    benefits: [
-      "Conformidade total com a NR-17",
-      "Prevenção de multas e processos",
-      "Melhoria das condições de trabalho",
-      "Redução de afastamentos por LER/DORT",
-      "Aumento da produtividade",
-      "Laudo assinado por ergonomista certificado",
-    ],
-    process: [
-      "Visita técnica às instalações",
-      "Análise ergonômica dos postos de trabalho",
-      "Avaliação de riscos ergonômicos",
-      "Elaboração do laudo técnico",
-      "Recomendações de melhorias",
-      "Entrega do laudo final",
-    ],
-    requirements: [
-      "Acesso às instalações da empresa",
-      "Layout dos postos de trabalho",
-      "Descrição das atividades realizadas",
-      "Número de funcionários por posto",
-    ],
-  },
+
   {
     id: 4,
     icon: "/certification.svg",
@@ -134,8 +73,7 @@ export const servicesData: Service[] = [
     id: 5,
     icon: "/inspection.svg",
     title: "Inspeção & Controle de Qualidade (China)",
-    description:
-      "Na CERTIFICAMAIS, garantimos que cada produto atenda aos mais...",
+    description: "Na Hegemon, garantimos que cada produto atenda aos mais...",
     fullDescription:
       "Oferecemos serviços completos de inspeção e controle de qualidade para produtos importados da China. Nossa equipe local garante que cada produto atenda aos mais altos padrões de qualidade antes do embarque.",
     benefits: [
@@ -280,7 +218,7 @@ export const servicesData: Service[] = [
     id: 11,
     icon: "/piece.svg",
     title: "Orientação Rotulagem de Produtos",
-    description: "Na CERTIFICAMAIS, oferecemos um serviço especializado em...",
+    description: "Na Hegemon, oferecemos um serviço especializado em...",
     fullDescription:
       "Oferecemos serviço especializado em orientação para rotulagem de produtos, garantindo conformidade com todas as normas do Inmetro, Anvisa e legislação aplicável. Evite problemas com fiscalização e recalls.",
     benefits: [

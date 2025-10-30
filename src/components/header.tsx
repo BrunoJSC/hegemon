@@ -63,20 +63,7 @@ export function Header({
       description:
         "Enfrentar uma autuação do INMETRO ou IPEM pode ser um desafio complexo...",
     },
-    {
-      name: "Vigilância Sanitária | Anvisa | CNES | Mapa",
-      id: "2",
-      icon: "/eyes.svg",
-      description:
-        "Licenciamento completo para sua empresa junto aos órgãos reguladores...",
-    },
-    {
-      name: "Laudo de Ergonomia 100% Conforme a NR-17",
-      id: "3",
-      icon: "/paper.svg",
-      description:
-        "Melhor Preço e Qualidade. Técnica em Laudos. Ergonomistas para empresas...",
-    },
+
     {
       name: "Boas Práticas de Distribuição (BPD) - Certificação",
       id: "4",
@@ -88,8 +75,7 @@ export function Header({
       name: "Inspeção & Controle de Qualidade (China)",
       id: "5",
       icon: "/inspection.svg",
-      description:
-        "Na CERTIFICAMAIS, garantimos que cada produto atenda aos mais...",
+      description: "Na Hegemon, garantimos que cada produto atenda aos mais...",
     },
     {
       name: "Desenvolvimento de Produto & Outsourcing Internacional",
@@ -123,8 +109,7 @@ export function Header({
       name: "Orientação Rotulagem de Produtos",
       id: "11",
       icon: "/piece.svg",
-      description:
-        "Na CERTIFICAMAIS, oferecemos um serviço especializado em...",
+      description: "Na Hegemon, oferecemos um serviço especializado em...",
     },
     {
       name: "Processo de Registro Simplificado",
@@ -180,14 +165,14 @@ export function Header({
           {/* Logo principal */}
           <a href="/">
             <motion.div
-              title="Certifica Mais"
+              title="Hegemon"
               className="header-logo shrink-0 cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <img
                 src="/logo.png"
-                alt="Certifica Mais"
+                alt="Hegemon"
                 className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain transition-transform duration-300"
               />
             </motion.div>
@@ -386,7 +371,7 @@ export function Header({
               </motion.div>
 
               <motion.a
-                href="tel:11972916967"
+                href="tel:11993877119"
                 className={`hidden xl:flex items-center transition-colors duration-300 cursor-pointer ${
                   isScrolled
                     ? "text-[#2A1A12] hover:text-[#A76B3F]"
@@ -412,7 +397,7 @@ export function Header({
                 </div>
                 <div>
                   <div className="text-sm">Fale Conosco!</div>
-                  <div className="font-medium">11 97291-6967</div>
+                  <div className="font-medium">11 99387-7119</div>
                 </div>
               </motion.a>
             </div>
@@ -421,7 +406,7 @@ export function Header({
           {/* Mobile Actions */}
           <div className="lg:hidden flex items-center space-x-2">
             <motion.a
-              href="tel:11972916967"
+              href="tel:11993877119"
               className="text-[#2A1A12] p-2 hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 cursor-pointer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -613,7 +598,7 @@ export function Header({
                 </motion.div>
 
                 <motion.a
-                  href="https://www.certificmais.com.br/blog"
+                  href="https://www.hegemon.com.br/blog"
                   className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
                   onClick={closeMobileMenu}
                   whileHover={{ x: 4 }}
@@ -641,7 +626,7 @@ export function Header({
                 {/* Mobile Phone */}
                 <motion.div className="px-4 pt-2">
                   <motion.a
-                    href="tel:11972916967"
+                    href="tel:11993877119"
                     className="flex items-center justify-center space-x-2 text-[#A76B3F] font-medium cursor-pointer"
                     onClick={closeMobileMenu}
                     whileHover={{ scale: 1.05 }}
@@ -660,7 +645,7 @@ export function Header({
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    <span>(11) 97291-6967</span>
+                    <span>(11) 99387-7119</span>
                   </motion.a>
                 </motion.div>
               </motion.nav>

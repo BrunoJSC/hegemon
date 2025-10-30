@@ -94,7 +94,7 @@ export function Contact() {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 onClick={() => {
                   if (typeof window !== "undefined") {
-                    window.open("https://wa.me/5511972916967", "_blank");
+                    window.open("https://wa.me/5511993877119", "_blank");
                   }
                 }}
               >
@@ -146,7 +146,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-[#2A1A12]">Telefone</p>
-                  <p className="text-gray-600">(11) 97291-6967</p>
+                  <p className="text-gray-600">(11) 99387-7119</p>
                 </div>
               </motion.div>
 
@@ -175,7 +175,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-[#2A1A12]">E-mail</p>
-                  <p className="text-gray-600">contato@certificamais.com.br</p>
+                  <p className="text-gray-600">contato@hegemon.com.br</p>
                 </div>
               </motion.div>
 
