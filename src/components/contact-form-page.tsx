@@ -370,7 +370,7 @@ export function ContactFormPage({
                           Horário de Atendimento
                         </p>
                         <p className="text-gray-800 font-medium">
-                          Segunda a Sexta: 9h às 18h
+                          24h por dia, 7 dias por semana
                         </p>
                       </div>
                     </div>

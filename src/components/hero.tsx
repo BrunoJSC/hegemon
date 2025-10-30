@@ -53,7 +53,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen min-h-[600px] overflow-hidden"
+      className="relative h-[70vh] min-h-[500px] overflow-hidden"
     >
       {/* Slides Container */}
       <motion.div
@@ -83,7 +83,7 @@ export function Hero() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 flex items-center h-full">
+            <div className="relative z-10 flex items-center h-full pt-16">
               <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl">
                   <motion.div
@@ -93,8 +93,8 @@ export function Hero() {
                       x: index === currentSlide ? 0 : -50,
                     }}
                     transition={{
-                      delay: index === currentSlide ? 0.2 : 0,
-                      duration: 0.8,
+                      delay: index === currentSlide ? 0.3 : 0,
+                      duration: 1.2,
                       ease: "easeOut",
                     }}
                     className="mb-6"
@@ -111,8 +111,8 @@ export function Hero() {
                       x: index === currentSlide ? 0 : -80,
                     }}
                     transition={{
-                      delay: index === currentSlide ? 0.4 : 0,
-                      duration: 0.9,
+                      delay: index === currentSlide ? 0.6 : 0,
+                      duration: 1.4,
                       ease: "easeOut",
                     }}
                     className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
@@ -127,8 +127,8 @@ export function Hero() {
                       x: index === currentSlide ? 0 : -60,
                     }}
                     transition={{
-                      delay: index === currentSlide ? 0.6 : 0,
-                      duration: 0.8,
+                      delay: index === currentSlide ? 0.9 : 0,
+                      duration: 1.2,
                       ease: "easeOut",
                     }}
                     className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 leading-relaxed max-w-3xl"
@@ -143,13 +143,13 @@ export function Hero() {
                       x: index === currentSlide ? 0 : -40,
                     }}
                     transition={{
-                      delay: index === currentSlide ? 0.8 : 0,
-                      duration: 0.7,
+                      delay: index === currentSlide ? 1.2 : 0,
+                      duration: 1.0,
                       ease: "easeOut",
                     }}
                   >
                     <button className="bg-[#A76B3F] hover:bg-[#bd550c] rounded-full text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                      {slide.buttonText} →
+                      {slide.buttonText}
                     </button>
                   </motion.div>
                 </div>

@@ -246,7 +246,9 @@ export function Contact() {
                   <p className="font-semibold text-[#2A1A12]">
                     Horário de Atendimento
                   </p>
-                  <p className="text-gray-600">Segunda a Sexta: 8h às 18h</p>
+                  <p className="text-gray-600">
+                    24h por dia, 7 dias por semana
+                  </p>
                 </div>
               </motion.div>
             </motion.div>

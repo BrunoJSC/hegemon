@@ -29,7 +29,7 @@ export const Card: React.FC<CardProps> = ({ icon, title, description }) => {
       {/* Learn More Link */}
       <div className="mt-4 pt-4 shrink-0">
         <button className="px-4 py-2 bg-[#A76B3F] text-white text-sm font-medium rounded-full hover:bg-[#8B5A33] transition-colors duration-200">
-          Saiba Mais →
+          Saiba Mais
         </button>
       </div>
     </div>

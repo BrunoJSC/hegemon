@@ -35,7 +35,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       {/* Learn More Button */}
       <div className="mt-auto">
         <button className="inline-flex items-center px-4 py-2 bg-[#A76B3F] text-white text-sm font-medium rounded-full hover:bg-[#8B5A33] transition-colors duration-200">
-          Saiba Mais →
+          Saiba Mais
         </button>
       </div>
     </div>
