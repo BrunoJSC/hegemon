@@ -75,7 +75,7 @@ export function Header({
         "A Diretriz da UE 'Boas Práticas na Distribuição' é destinada às empresas...",
     },
     {
-      name: "Inspeção & Controle de Qualidade (China)",
+      name: "Inspeção & Controle de Qualidade",
       id: "5",
       icon: "/inspection.svg",
       description: "Na Hegemon, garantimos que cada produto atenda aos mais...",

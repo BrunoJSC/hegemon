@@ -214,7 +214,7 @@ export function ContactFormPage({
                         Boas Práticas de Distribuição (BPD)
                       </option>
                       <option value="5">
-                        Inspeção & Controle de Qualidade (China)
+                        Inspeção & Controle de Qualidade
                       </option>
                       <option value="6">
                         Desenvolvimento de Produto & Outsourcing

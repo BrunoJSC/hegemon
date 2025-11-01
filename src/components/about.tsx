@@ -238,6 +238,11 @@ export function About() {
             >
               <p>{t("about.description1")}</p>
               <p>{t("about.description2")}</p>
+              <p>{t("about.description3")}</p>
+              <p>{t("about.description4")}</p>
+              <p className="font-semibold text-[#D4A574]">
+                {t("about.description5")}
+              </p>
             </motion.div>
 
             {/* Stats */}

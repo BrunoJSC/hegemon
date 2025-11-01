@@ -37,7 +37,7 @@
       "description": "A Diretriz da UE 'Boas Práticas na Distribuição' é destinada às empresas do..."
     },
     "service5": {
-      "title": "Inspeção & Controle de Qualidade (China)",
+      "title": "Inspeção & Controle de Qualidade",
       "description": "Na Hegemon, garantimos que cada produto atenda aos mais..."
     },
     "service6": {
@@ -92,8 +92,11 @@
     "whoWeAre": "QUEM SOMOS",
     "companyName": "Hegemon",
     "companySubtitle": "Consultoria em Certificação",
-    "description1": "A Hegemon é uma consultoria especializada em simplificar o processo de certificação regulatória para empresas que buscam garantir a conformidade de seus produtos e serviços junto a órgãos como Inmetro, Anvisa e Anatel.",
-    "description2": "Com uma equipe altamente qualificada e atendimento personalizado, oferecemos soluções completas que vão desde a análise inicial até a obtenção final da certificação, sempre com foco na agilidade e transparência do processo.",
+    "description1": "Na Hegemon Consultoria, acreditamos que a certificação de produtos junto ao INMETRO é mais do que um requisito técnico — é uma oportunidade de fortalecer a credibilidade, a segurança e o valor de marca de cada empresa. Por isso, oferecemos consultoria de certificação de produtos com foco em excelência, transparência e parceria, ajudando nossos clientes a navegar com segurança pelo universo da avaliação da conformidade e das normas técnicas brasileiras.",
+    "description2": "Nossa equipe é formada por especialistas com ampla experiência em consultoria regulatória, certificação INMETRO e gestão de conformidade técnica. Atuamos em todas as etapas do processo — desde o diagnóstico inicial, análise documental e acompanhamento de ensaios laboratoriais até o relacionamento com organismos acreditados. Cada projeto é conduzido com rigor técnico e um atendimento humano e personalizado, garantindo agilidade, clareza e tranquilidade a quem confia em nós.",
+    "description3": "Mais do que prestar uma consultoria, nosso propósito é criar conexões de confiança e resultados sustentáveis. Por isso, nossa missão é tornar a certificação INMETRO acessível, segura e eficiente, oferecendo soluções que simplificam a complexidade regulatória e fortalecem a competitividade dos nossos clientes no mercado. Cada atendimento é uma parceria, cada certificação, uma conquista compartilhada.",
+    "description4": "Nossos valores refletem o que somos e como atuamos: confiança como base de toda relação; transparência em cada etapa do processo; excelência técnica que garante resultados; empatia para compreender cada necessidade; e comprometimento para transformar desafios em conquistas. Também acreditamos na evolução constante, porque qualidade e aprendizado caminham lado a lado.",
+    "description5": "Na Hegemon, hegemonia não é estar acima — é fazer o melhor, juntos. Somos movidos pelo propósito de elevar padrões, promover segurança e inspirar confiança em cada certificação. Hegemon Consultoria – Certificação com propósito, parceria e resultados que transformam.",
     "stat1": "Certificações Concluídas",
     "stat2": "Taxa de Aprovação"
   },
@@ -220,11 +223,11 @@
       }
     },
     "service5": {
-      "title": "Inspeção & Controle de Qualidade (China)",
+      "title": "Inspeção & Controle de Qualidade",
       "description": "Na Hegemon, garantimos que cada produto atenda aos mais...",
-      "fullDescription": "Oferecemos serviços completos de inspeção e controle de qualidade para produtos importados da China. Nossa equipe local garante que cada produto atenda aos mais altos padrões de qualidade antes do embarque.",
+      "fullDescription": "Oferecemos serviços completos de inspeção e controle de qualidade para produtos importados. Nossa equipe local garante que cada produto atenda aos mais altos padrões de qualidade antes do embarque.",
       "benefits": {
-        "0": "Inspeção in loco na China",
+        "0": "Inspeção in loco",
         "1": "Redução de produtos defeituosos",
         "2": "Conformidade com normas brasileiras",
         "3": "Relatórios detalhados com fotos",

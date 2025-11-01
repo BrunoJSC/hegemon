@@ -37,7 +37,7 @@
       "description": "The EU Directive 'Good Distribution Practices' is intended for companies in the..."
     },
     "service5": {
-      "title": "Inspection & Quality Control (China)",
+      "title": "Inspection & Quality Control",
       "description": "At Hegemon, we ensure that each product meets the highest..."
     },
     "service6": {
@@ -92,8 +92,11 @@
     "whoWeAre": "WHO WE ARE",
     "companyName": "Hegemon",
     "companySubtitle": "Certification Consulting",
-    "description1": "Hegemon is a consulting firm specialized in simplifying the regulatory certification process for companies seeking to ensure compliance of their products and services with agencies such as Inmetro, Anvisa and Anatel.",
-    "description2": "With a highly qualified team and personalized service, we offer complete solutions ranging from initial analysis to final certification, always focusing on process agility and transparency.",
+    "description1": "At Hegemon Consulting, we believe that product certification with INMETRO is more than a technical requirement — it's an opportunity to strengthen the credibility, safety, and brand value of each company. Therefore, we offer product certification consulting focused on excellence, transparency, and partnership, helping our clients navigate safely through the universe of conformity assessment and Brazilian technical standards.",
+    "description2": "Our team consists of specialists with extensive experience in regulatory consulting, INMETRO certification, and technical compliance management. We work at all stages of the process — from initial diagnosis, document analysis, and laboratory testing monitoring to relationships with accredited bodies. Each project is conducted with technical rigor and personalized, human service, ensuring agility, clarity, and peace of mind for those who trust us.",
+    "description3": "More than providing consulting, our purpose is to create connections of trust and sustainable results. Therefore, our mission is to make INMETRO certification accessible, safe, and efficient, offering solutions that simplify regulatory complexity and strengthen our clients' competitiveness in the market. Each service is a partnership, each certification, a shared achievement.",
+    "description4": "Our values reflect who we are and how we operate: trust as the foundation of every relationship; transparency at every stage of the process; technical excellence that guarantees results; empathy to understand each need; and commitment to transform challenges into achievements. We also believe in constant evolution, because quality and learning go hand in hand.",
+    "description5": "At Hegemon, hegemony is not about being above — it's about doing the best, together. We are driven by the purpose of raising standards, promoting safety, and inspiring confidence in every certification. Hegemon Consulting – Certification with purpose, partnership, and results that transform.",
     "stat1": "Completed Certifications",
     "stat2": "Approval Rate"
   },
@@ -220,11 +223,11 @@
       }
     },
     "service5": {
-      "title": "Inspection & Quality Control (China)",
+      "title": "Inspection & Quality Control",
       "description": "At Hegemon, we ensure that each product meets the highest...",
-      "fullDescription": "We offer complete inspection and quality control services for products imported from China. Our local team ensures that each product meets the highest quality standards before shipment.",
+      "fullDescription": "We offer complete inspection and quality control services for products imported. Our local team ensures that each product meets the highest quality standards before shipment.",
       "benefits": {
-        "0": "On-site inspection in China",
+        "0": "On-site inspection",
         "1": "Reduction of defective products",
         "2": "Compliance with Brazilian standards",
         "3": "Detailed reports with photos",
