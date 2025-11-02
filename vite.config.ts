@@ -8,32 +8,17 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
-          // Separar node_modules em chunks específicos
-          if (id.includes("node_modules")) {
-            // React core
-            if (id.includes("react") || id.includes("react-dom")) {
-              return "react-vendor";
-            }
-            // React Router
-            if (id.includes("react-router")) {
-              return "router";
-            }
-            // Motion/Framer Motion
-            if (id.includes("motion")) {
-              return "motion";
-            }
-            // i18next
-            if (id.includes("i18next")) {
-              return "i18n";
-            }
-            // Lucide icons
-            if (id.includes("lucide-react")) {
-              return "icons";
-            }
-            // Outros vendors
-            return "vendor";
-          }
+        manualChunks: {
+          // React core e React Router juntos
+          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          // Motion/Framer Motion
+          motion: ["motion"],
+          // i18next
+          i18n: [
+            "i18next",
+            "react-i18next",
+            "i18next-browser-languagedetector",
+          ],
         },
       },
     },
