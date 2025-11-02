@@ -217,7 +217,7 @@ export function ContactFormPage({
                       </option>
                       <option value="7">Consultoria Reguladora</option>
                       <option value="8">Cumprimento de Exigências</option>
-                      <option value="10">Processo de Burocrácia</option>
+                      <option value="10">Processos Burocráticos</option>
                       <option value="11">
                         Orientação Rotulagem de Produtos
                       </option>

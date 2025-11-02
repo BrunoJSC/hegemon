@@ -53,7 +53,7 @@
       "description": "Helping each client understand and meet specific requirements..."
     },
     "service10": {
-      "title": "Bureaucracy Process",
+      "title": "Bureaucratic Processes",
       "description": "Ease in bureaucratic and technical processes, saving time and..."
     },
     "service11": {
@@ -79,7 +79,9 @@
       "stroller": "Baby Stroller",
       "carSeat": "Baby Car Seat",
       "cookware": "Cookware",
-      "walker": "Baby Walker"
+      "walker": "Baby Walker",
+      "highChair": "High Chair for Children",
+      "plasticChair": "Plastic Monoblock Chair"
     }
   },
   "about": {
@@ -329,7 +331,7 @@
       }
     },
     "service10": {
-      "title": "Bureaucracy Process",
+      "title": "Bureaucratic Processes",
       "description": "Ease in bureaucratic and technical processes, saving time and...",
       "fullDescription": "We simplify all bureaucratic and technical processes necessary for certifications and licensing. Our team takes care of all the paperwork, saving you time and resources.",
       "benefits": {
@@ -402,5 +404,92 @@
         "3": "Existing reports and certificates"
       }
     }
+  },
+  "compliancePage": {
+    "badge": "Personalized Support",
+    "title": "We Guarantee Your Company Meets All Requirements",
+    "subtitle": "By your side at every step, ensuring your company understands and complies with all regulatory requirements.",
+    "missionTitle": "Our Mission",
+    "missionText1": "At Hegemon Consulting, we understand that navigating the complex world of regulations can be challenging. That's why we offer personalized support that ensures your company not only complies but deeply understands all regulatory requirements applicable to your business.",
+    "missionText2": "Our commitment is to be by your side at every step of the process, transforming regulatory compliance from a challenge into a competitive advantage.",
+    "howWeWorkTitle": "How We Work",
+    "step1Title": "Complete Diagnosis",
+    "step1Text": "We analyze your company, products and processes to identify all applicable regulatory requirements.",
+    "step2Title": "Personalized Action Plan",
+    "step2Text": "We develop a detailed plan with all necessary steps to achieve and maintain compliance.",
+    "step3Title": "Continuous Support",
+    "step3Text": "We are present at every step, guiding, clarifying doubts and ensuring everything is done correctly.",
+    "step4Title": "Team Training",
+    "step4Text": "We train your team so they understand the requirements and can maintain compliance autonomously.",
+    "benefitsTitle": "Benefits of Our Support",
+    "benefit1Title": "Peace of Mind",
+    "benefit1Text": "Be sure you are in compliance with all standards.",
+    "benefit2Title": "Time Savings",
+    "benefit2Text": "Focus on your business while we handle the bureaucracy.",
+    "benefit3Title": "Avoid Fines",
+    "benefit3Text": "Prevent assessments and penalties for non-compliance.",
+    "benefit4Title": "Credibility",
+    "benefit4Text": "Strengthen trust with clients and partners.",
+    "areasTitle": "Areas of Expertise",
+    "area1Title": "INMETRO",
+    "area1Text": "Product certification and technical compliance",
+    "area2Title": "ANVISA",
+    "area2Text": "Product registration and regularization",
+    "area3Title": "ANATEL",
+    "area3Text": "Telecommunications equipment approval",
+    "ctaTitle": "Ready to Ensure Your Company's Compliance?",
+    "ctaText": "Contact us and discover how we can help your company meet all regulatory requirements.",
+    "ctaButton": "Speak with a Specialist"
+  },
+  "technicalDefensePage": {
+    "badge": "Technical Support",
+    "title": "Technical Defense in Assessments and Processes",
+    "subtitle": "Count on our expertise to defend your company in INMETRO, IPEM and other regulatory agency processes.",
+    "protectionTitle": "Specialized Protection for Your Company",
+    "protectionText1": "Receiving an assessment from INMETRO, IPEM or other regulatory agencies can be a critical moment for any company. Our team of experts is prepared to offer the most robust and effective technical defense in the market.",
+    "protectionText2": "With years of experience and deep knowledge of technical standards and regulatory procedures, we develop personalized strategies for each case, always seeking the best solution for our clients.",
+    "whenNeedTitle": "When You Need Technical Defense",
+    "situation1Title": "INMETRO Assessments",
+    "situation1Text": "Notifications and fines for product non-compliance",
+    "situation2Title": "IPEM Inspections",
+    "situation2Text": "Infraction notices and administrative processes",
+    "situation3Title": "Product Seizure",
+    "situation3Text": "Products retained due to irregularities",
+    "situation4Title": "Administrative Processes",
+    "situation4Text": "Defense in processes with regulatory agencies",
+    "howWeActTitle": "How We Act in Your Defense",
+    "step1Title": "Detailed Case Analysis",
+    "step1Text": "We thoroughly study all documentation, assessments and evidence to identify the best defense arguments.",
+    "step2Title": "Technical Evidence Gathering",
+    "step2Text": "We collect reports, certificates, documents and all technical evidence that strengthen your defense.",
+    "step3Title": "Technical Defense Preparation",
+    "step3Text": "We prepare a robust technical defense, based on standards, regulations and jurisprudence.",
+    "step4Title": "Protocol and Follow-up",
+    "step4Text": "We file the defense with competent authorities and follow the entire process until the final decision.",
+    "step5Title": "Appeals and Additional Measures",
+    "step5Text": "If necessary, we prepare administrative appeals and provide guidance on applicable legal measures.",
+    "resultsTitle": "Results We Achieve",
+    "result1Value": "85%",
+    "result1Title": "Success Rate",
+    "result1Text": "In technical defenses",
+    "result2Value": "70%",
+    "result2Title": "Fine Reduction",
+    "result2Text": "Average achieved",
+    "result3Value": "100+",
+    "result3Title": "Cases Handled",
+    "result3Text": "Successfully",
+    "differentialsTitle": "Our Differentials",
+    "differential1Title": "Proven Expertise",
+    "differential1Text": "Years of experience in technical defenses with major regulatory agencies.",
+    "differential2Title": "Deep Technical Knowledge",
+    "differential2Text": "Complete mastery of technical standards, regulations and administrative procedures.",
+    "differential3Title": "Service Agility",
+    "differential3Text": "Quick response and strict compliance with procedural deadlines.",
+    "differential4Title": "Personalized Strategy",
+    "differential4Text": "Each case is unique and deserves a specific and well-founded strategy.",
+    "urgentCtaTitle": "Received an Assessment? Act Fast!",
+    "urgentCtaSubtitle": "Defense deadlines are short. Don't waste time!",
+    "urgentCtaDescription": "Contact us immediately and protect your company.",
+    "contactNow": "Contact Us Now"
   }
 }

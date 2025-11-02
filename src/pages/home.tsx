@@ -4,6 +4,7 @@ import { Products } from "../components/products";
 import { About } from "../components/about";
 import { Contact } from "../components/contact";
 import { MainLayout } from "../components/layout/main-layout";
+import { SEO } from "../components/seo";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -37,6 +38,12 @@ export function HomePage() {
 
   return (
     <MainLayout isHomePage={true}>
+      <SEO
+        title="Hegemon Consultoria - Certificação INMETRO, ANVISA e ANATEL | Consultoria Regulatória"
+        description="Especialistas em certificação de produtos junto ao INMETRO, ANVISA e ANATEL. Consultoria regulatória completa, defesa técnica em autuações e conformidade técnica. Certificação rápida, eficiente e sem complicações."
+        keywords="certificação INMETRO, consultoria INMETRO, certificação produtos, ANVISA, ANATEL, conformidade técnica, defesa técnica IPEM, consultoria regulatória Brasil"
+        type="website"
+      />
       <div id="home">
         <Hero />
       </div>

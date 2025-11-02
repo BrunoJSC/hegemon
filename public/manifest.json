@@ -1,0 +1,21 @@
+{
+  "name": "Hegemon Consultoria",
+  "short_name": "Hegemon",
+  "description": "Consultoria especializada em certificação INMETRO, ANVISA e ANATEL",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6EBD8",
+  "theme_color": "#A76B3F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}

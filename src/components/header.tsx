@@ -111,7 +111,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
         "Ajudando cada cliente a entender e cumprir as exigências específicas...",
     },
     {
-      name: "Processo de Burocrácia",
+      name: "Processos Burocráticos",
       id: "10",
       icon: "/process.svg",
       description:
@@ -143,7 +143,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMobileMenu}
-            className="md:hidden cursor-pointer text-[#2A1A12] p-2 hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300"
+            className="xl:hidden cursor-pointer text-[#2A1A12] p-2 hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300"
             aria-label="Toggle mobile menu"
           >
             <motion.div
@@ -185,12 +185,12 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
             <img
               src="/logo.svg"
               alt="Hegemon"
-              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain transition-transform duration-300"
+              className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 object-contain transition-transform duration-300"
             />
           </motion.div>
 
           {/* Menu de navegação para desktop */}
-          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+          <div className="hidden xl:flex items-center space-x-6 xl:space-x-8">
             <nav className="flex space-x-6 xl:space-x-8">
               <motion.div
                 onClick={() => handleNavigation("home")}
@@ -437,7 +437,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
           </div>
 
           {/* Mobile Actions */}
-          <div className="lg:hidden flex items-center space-x-2">
+          <div className="xl:hidden flex items-center space-x-2">
             <motion.a
               href="tel:11993877119"
               className="text-[#2A1A12] p-2 hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 cursor-pointer"
@@ -470,7 +470,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="lg:hidden border-t border-[#A76B3F]/20 overflow-hidden"
+              className="xl:hidden border-t border-[#A76B3F]/20 overflow-hidden"
             >
               <motion.nav
                 className="py-4 space-y-2"
@@ -629,17 +629,6 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
                 >
                   {t("header.products")}
                 </motion.div>
-
-                <motion.a
-                  href="https://www.hegemon.com.br/blog"
-                  className="block px-4 py-3 text-[#2A1A12] hover:bg-[#A76B3F]/10 rounded-lg transition-colors duration-300 font-medium cursor-pointer"
-                  onClick={closeMobileMenu}
-                  whileHover={{ x: 4 }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("header.blog")}
-                </motion.a>
 
                 {/* Mobile Contact Button */}
                 <motion.div className="pt-4 px-4">

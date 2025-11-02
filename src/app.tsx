@@ -5,6 +5,19 @@ import { lazy, Suspense } from "react";
 const HomePage = lazy(() =>
   import("./pages/home").then((module) => ({ default: module.HomePage }))
 );
+const AboutPage = lazy(() =>
+  import("./pages/about").then((module) => ({ default: module.AboutPage }))
+);
+const CompliancePage = lazy(() =>
+  import("./pages/compliance").then((module) => ({
+    default: module.CompliancePage,
+  }))
+);
+const TechnicalDefensePage = lazy(() =>
+  import("./pages/technical-defense").then((module) => ({
+    default: module.TechnicalDefensePage,
+  }))
+);
 const ServiceDetailPageRoute = lazy(() =>
   import("./pages/service-detail").then((module) => ({
     default: module.ServiceDetailPageRoute,
@@ -32,6 +45,9 @@ export function App() {
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/sobre" element={<AboutPage />} />
+          <Route path="/cumprimento-exigencias" element={<CompliancePage />} />
+          <Route path="/defesa-tecnica" element={<TechnicalDefensePage />} />
           <Route path="/servicos/:id" element={<ServiceDetailPageRoute />} />
           <Route path="/contato" element={<ContactPage />} />
         </Routes>

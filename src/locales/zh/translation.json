@@ -53,7 +53,7 @@
       "description": "帮助每个客户理解并满足特定要求..."
     },
     "service10": {
-      "title": "官僚流程",
+      "title": "行政流程简化",
       "description": "简化官僚和技术流程，节省时间和..."
     },
     "service11": {
@@ -79,7 +79,9 @@
       "stroller": "婴儿车",
       "carSeat": "婴儿汽车座椅",
       "cookware": "炊具",
-      "walker": "学步车"
+      "walker": "学步车",
+      "highChair": "儿童高脚椅",
+      "plasticChair": "塑料单体椅"
     }
   },
   "about": {
@@ -329,7 +331,7 @@
       }
     },
     "service10": {
-      "title": "官僚流程",
+      "title": "行政流程简化",
       "description": "简化官僚和技术流程，节省时间和...",
       "fullDescription": "我们简化认证和许可所需的所有官僚和技术流程。我们的团队处理所有文书工作，为您节省时间和资源。",
       "benefits": {
@@ -402,5 +404,92 @@
         "3": "现有报告和证书"
       }
     }
+  },
+  "compliancePage": {
+    "badge": "个性化支持",
+    "title": "确保您的公司符合所有要求",
+    "subtitle": "在每一步陪伴您，确保您的公司理解并遵守所有监管要求。",
+    "missionTitle": "我们的使命",
+    "missionText1": "在Hegemon咨询公司，我们理解在复杂的法规世界中导航可能具有挑战性。因此，我们提供个性化支持，确保您的公司不仅遵守，而且深入理解适用于您业务的所有监管要求。",
+    "missionText2": "我们的承诺是在流程的每一步陪伴您，将监管合规从挑战转变为竞争优势。",
+    "howWeWorkTitle": "我们如何工作",
+    "step1Title": "全面诊断",
+    "step1Text": "我们分析您的公司、产品和流程，以识别所有适用的监管要求。",
+    "step2Title": "个性化行动计划",
+    "step2Text": "我们制定详细计划，包含实现和维持合规所需的所有步骤。",
+    "step3Title": "持续支持",
+    "step3Text": "我们在每一步都在场，指导、澄清疑问并确保一切正确完成。",
+    "step4Title": "团队培训",
+    "step4Text": "我们培训您的团队，使他们理解要求并能够自主维持合规。",
+    "benefitsTitle": "我们支持的好处",
+    "benefit1Title": "安心",
+    "benefit1Text": "确保您符合所有标准。",
+    "benefit2Title": "节省时间",
+    "benefit2Text": "专注于您的业务，我们处理官僚程序。",
+    "benefit3Title": "避免罚款",
+    "benefit3Text": "预防因不合规而受到的评估和处罚。",
+    "benefit4Title": "信誉",
+    "benefit4Text": "加强与客户和合作伙伴的信任。",
+    "areasTitle": "专业领域",
+    "area1Title": "INMETRO",
+    "area1Text": "产品认证和技术合规",
+    "area2Title": "ANVISA",
+    "area2Text": "产品注册和正规化",
+    "area3Title": "ANATEL",
+    "area3Text": "电信设备批准",
+    "ctaTitle": "准备好确保您公司的合规性了吗？",
+    "ctaText": "联系我们，了解我们如何帮助您的公司满足所有监管要求。",
+    "ctaButton": "与专家交谈"
+  },
+  "technicalDefensePage": {
+    "badge": "技术支持",
+    "title": "评估和流程中的技术辩护",
+    "subtitle": "依靠我们的专业知识为您的公司在INMETRO、IPEM和其他监管机构的流程中辩护。",
+    "protectionTitle": "为您的公司提供专业保护",
+    "protectionText1": "收到INMETRO、IPEM或其他监管机构的评估通知对任何公司来说都可能是一个关键时刻。我们的专家团队准备提供市场上最强大和最有效的技术辩护。",
+    "protectionText2": "凭借多年的经验和对技术标准和监管程序的深入了解，我们为每个案例制定个性化策略，始终为客户寻求最佳解决方案。",
+    "whenNeedTitle": "何时需要技术辩护",
+    "situation1Title": "INMETRO评估",
+    "situation1Text": "产品不合规的通知和罚款",
+    "situation2Title": "IPEM检查",
+    "situation2Text": "违规通知和行政程序",
+    "situation3Title": "产品扣押",
+    "situation3Text": "因违规而被扣留的产品",
+    "situation4Title": "行政程序",
+    "situation4Text": "在监管机构的程序中进行辩护",
+    "howWeActTitle": "我们如何为您辩护",
+    "step1Title": "详细案例分析",
+    "step1Text": "我们彻底研究所有文件、评估和证据，以确定最佳辩护论据。",
+    "step2Title": "收集技术证据",
+    "step2Text": "我们收集报告、证书、文件和所有加强您辩护的技术证据。",
+    "step3Title": "准备技术辩护",
+    "step3Text": "我们准备基于标准、法规和判例的强有力的技术辩护。",
+    "step4Title": "提交协议和跟进",
+    "step4Text": "我们向主管部门提交辩护并跟进整个过程直至最终决定。",
+    "step5Title": "上诉和附加措施",
+    "step5Text": "如有必要，我们准备行政上诉并就适用的法律措施提供指导。",
+    "resultsTitle": "我们取得的成果",
+    "result1Value": "85%",
+    "result1Title": "成功率",
+    "result1Text": "在技术辩护中",
+    "result2Value": "70%",
+    "result2Title": "罚款减少",
+    "result2Text": "平均达到",
+    "result3Value": "100+",
+    "result3Title": "处理的案例",
+    "result3Text": "成功",
+    "differentialsTitle": "我们的优势",
+    "differential1Title": "经过验证的专业知识",
+    "differential1Text": "在主要监管机构的技术辩护方面拥有多年经验。",
+    "differential2Title": "深厚的技术知识",
+    "differential2Text": "完全掌握技术标准、法规和行政程序。",
+    "differential3Title": "服务敏捷性",
+    "differential3Text": "快速响应并严格遵守程序期限。",
+    "differential4Title": "个性化策略",
+    "differential4Text": "每个案例都是独特的，值得制定具体且有充分依据的策略。",
+    "urgentCtaTitle": "收到评估通知？立即行动！",
+    "urgentCtaSubtitle": "辩护期限很短。不要浪费时间！",
+    "urgentCtaDescription": "立即联系我们，保护您的公司。",
+    "contactNow": "立即联系我们"
   }
 }

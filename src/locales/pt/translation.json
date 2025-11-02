@@ -53,7 +53,7 @@
       "description": "Ajudando cada cliente a entender e cumprir as exigências específicas de..."
     },
     "service10": {
-      "title": "Processo de Burocrácia",
+      "title": "Processos Burocráticos",
       "description": "Facilidade nos processos burocráticos e técnicos, economizando tempo e..."
     },
     "service11": {
@@ -79,7 +79,9 @@
       "stroller": "Carrinho de Bebê",
       "carSeat": "Cadeirinha de Bebê",
       "cookware": "Panelas",
-      "walker": "Andador"
+      "walker": "Andador",
+      "highChair": "Cadeira Alta para Crianças",
+      "plasticChair": "Cadeira Plástica Monobloco"
     }
   },
   "about": {
@@ -329,7 +331,7 @@
       }
     },
     "service10": {
-      "title": "Processo de Burocrácia",
+      "title": "Processos Burocráticos",
       "description": "Facilidade nos processos burocráticos e técnicos, economizando tempo e...",
       "fullDescription": "Simplificamos todos os processos burocráticos e técnicos necessários para certificações e licenciamentos. Nossa equipe cuida de toda a papelada, economizando seu tempo e recursos.",
       "benefits": {
@@ -402,5 +404,92 @@
         "3": "Laudos e certificados existentes"
       }
     }
+  },
+  "compliancePage": {
+    "badge": "Acompanhamento Personalizado",
+    "title": "Garantimos que sua Empresa Cumpra Todas as Exigências",
+    "subtitle": "Ao seu lado em cada etapa, garantindo que sua empresa compreenda e cumpra todas as exigências regulatórias.",
+    "missionTitle": "Nossa Missão",
+    "missionText1": "Na Hegemon Consultoria, entendemos que navegar pelo complexo mundo das regulamentações pode ser desafiador. Por isso, oferecemos um acompanhamento personalizado que garante que sua empresa não apenas cumpra, mas compreenda profundamente todas as exigências regulatórias aplicáveis ao seu negócio.",
+    "missionText2": "Nosso compromisso é estar ao seu lado em cada etapa do processo, transformando a conformidade regulatória de um desafio em uma vantagem competitiva.",
+    "howWeWorkTitle": "Como Trabalhamos",
+    "step1Title": "Diagnóstico Completo",
+    "step1Text": "Analisamos sua empresa, produtos e processos para identificar todas as exigências regulatórias aplicáveis.",
+    "step2Title": "Plano de Ação Personalizado",
+    "step2Text": "Desenvolvemos um plano detalhado com todas as etapas necessárias para alcançar e manter a conformidade.",
+    "step3Title": "Acompanhamento Contínuo",
+    "step3Text": "Estamos presentes em cada etapa, orientando, esclarecendo dúvidas e garantindo que tudo seja feito corretamente.",
+    "step4Title": "Capacitação da Equipe",
+    "step4Text": "Treinamos sua equipe para que compreendam as exigências e possam manter a conformidade de forma autônoma.",
+    "benefitsTitle": "Benefícios do Nosso Acompanhamento",
+    "benefit1Title": "Tranquilidade",
+    "benefit1Text": "Tenha certeza de que está em conformidade com todas as normas.",
+    "benefit2Title": "Economia de Tempo",
+    "benefit2Text": "Foque no seu negócio enquanto cuidamos da burocracia.",
+    "benefit3Title": "Evite Multas",
+    "benefit3Text": "Previna autuações e penalidades por não conformidade.",
+    "benefit4Title": "Credibilidade",
+    "benefit4Text": "Fortaleça a confiança de clientes e parceiros.",
+    "areasTitle": "Áreas de Atuação",
+    "area1Title": "INMETRO",
+    "area1Text": "Certificação de produtos e conformidade técnica",
+    "area2Title": "ANVISA",
+    "area2Text": "Registro e regularização de produtos",
+    "area3Title": "ANATEL",
+    "area3Text": "Homologação de equipamentos de telecomunicações",
+    "ctaTitle": "Pronto para Garantir a Conformidade da Sua Empresa?",
+    "ctaText": "Entre em contato conosco e descubra como podemos ajudar sua empresa a cumprir todas as exigências regulatórias.",
+    "ctaButton": "Fale com um Especialista"
+  },
+  "technicalDefensePage": {
+    "badge": "Suporte Técnico",
+    "title": "Defesa Técnica em Autuações e Processos",
+    "subtitle": "Conte com nossa expertise para defender sua empresa em processos do INMETRO, IPEM e outros órgãos reguladores.",
+    "protectionTitle": "Proteção Especializada para Sua Empresa",
+    "protectionText1": "Receber uma autuação do INMETRO, IPEM ou outros órgãos fiscalizadores pode ser um momento crítico para qualquer empresa. Nossa equipe de especialistas está preparada para oferecer a defesa técnica mais robusta e eficaz do mercado.",
+    "protectionText2": "Com anos de experiência e profundo conhecimento das normas técnicas e procedimentos regulatórios, desenvolvemos estratégias personalizadas para cada caso, buscando sempre a melhor solução para nossos clientes.",
+    "whenNeedTitle": "Quando Você Precisa de Defesa Técnica",
+    "situation1Title": "Autuações INMETRO",
+    "situation1Text": "Notificações e multas por não conformidade de produtos",
+    "situation2Title": "Fiscalizações IPEM",
+    "situation2Text": "Autos de infração e processos administrativos",
+    "situation3Title": "Apreensão de Produtos",
+    "situation3Text": "Produtos retidos por irregularidades",
+    "situation4Title": "Processos Administrativos",
+    "situation4Text": "Defesa em processos junto aos órgãos reguladores",
+    "howWeActTitle": "Como Atuamos na Sua Defesa",
+    "step1Title": "Análise Detalhada do Caso",
+    "step1Text": "Estudamos minuciosamente toda a documentação, autuação e evidências para identificar os melhores argumentos de defesa.",
+    "step2Title": "Levantamento de Evidências Técnicas",
+    "step2Text": "Coletamos laudos, certificados, documentos e todas as evidências técnicas que fortaleçam sua defesa.",
+    "step3Title": "Elaboração da Defesa Técnica",
+    "step3Text": "Preparamos uma defesa técnica robusta, fundamentada em normas, regulamentos e jurisprudência.",
+    "step4Title": "Protocolo e Acompanhamento",
+    "step4Text": "Protocolamos a defesa nos órgãos competentes e acompanhamos todo o processo até a decisão final.",
+    "step5Title": "Recursos e Medidas Adicionais",
+    "step5Text": "Se necessário, preparamos recursos administrativos e orientamos sobre medidas judiciais cabíveis.",
+    "resultsTitle": "Resultados que Alcançamos",
+    "result1Value": "85%",
+    "result1Title": "Taxa de Sucesso",
+    "result1Text": "Em defesas técnicas",
+    "result2Value": "70%",
+    "result2Title": "Redução de Multas",
+    "result2Text": "Média alcançada",
+    "result3Value": "100+",
+    "result3Title": "Casos Atendidos",
+    "result3Text": "Com sucesso",
+    "differentialsTitle": "Nossos Diferenciais",
+    "differential1Title": "Expertise Comprovada",
+    "differential1Text": "Anos de experiência em defesas técnicas junto aos principais órgãos reguladores.",
+    "differential2Title": "Conhecimento Técnico Profundo",
+    "differential2Text": "Domínio completo das normas técnicas, regulamentos e procedimentos administrativos.",
+    "differential3Title": "Agilidade no Atendimento",
+    "differential3Text": "Resposta rápida e cumprimento rigoroso de prazos processuais.",
+    "differential4Title": "Estratégia Personalizada",
+    "differential4Text": "Cada caso é único e merece uma estratégia específica e bem fundamentada.",
+    "urgentCtaTitle": "Recebeu uma Autuação? Aja Rápido!",
+    "urgentCtaSubtitle": "Os prazos para defesa são curtos. Não perca tempo!",
+    "urgentCtaDescription": "Entre em contato imediatamente e proteja sua empresa.",
+    "contactNow": "Fale Conosco Agora"
   }
 }

@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export function Hero() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -13,6 +15,7 @@ export function Hero() {
       title: t("hero.title1"),
       description: t("hero.description1"),
       buttonText: t("hero.button1"),
+      buttonAction: () => navigate("/cumprimento-exigencias"),
       image: "/image3.png",
     },
     {
@@ -21,6 +24,12 @@ export function Hero() {
       title: t("hero.title2"),
       description: t("hero.description2"),
       buttonText: t("hero.button2"),
+      buttonAction: () => {
+        const element = document.getElementById("services");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      },
       image: "/people.png",
     },
     {
@@ -29,6 +38,7 @@ export function Hero() {
       title: t("hero.title3"),
       description: t("hero.description3"),
       buttonText: t("hero.button3"),
+      buttonAction: () => navigate("/defesa-tecnica"),
       image: "/user.png",
     },
   ];
@@ -36,7 +46,7 @@ export function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
@@ -147,7 +157,10 @@ export function Hero() {
                       ease: "easeOut",
                     }}
                   >
-                    <button className="bg-[#A76B3F] hover:bg-[#bd550c] rounded-full text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    <button
+                      onClick={slide.buttonAction}
+                      className="bg-[#A76B3F] hover:bg-[#bd550c] rounded-full text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+                    >
                       {slide.buttonText}
                     </button>
                   </motion.div>

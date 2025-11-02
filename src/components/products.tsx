@@ -9,27 +9,9 @@ export function Products() {
 
   const products = [
     {
-      id: 1,
-      image: "/eletro.png",
-      title: t("products.items.appliances"),
-      badge: "INMETRO",
-    },
-    {
-      id: 2,
-      image: "/power.jpg",
-      title: t("products.items.charger"),
-      badge: "INMETRO",
-    },
-    {
-      id: 3,
-      image: "/fone.png",
-      title: t("products.items.headphone"),
-      badge: "INMETRO",
-    },
-    {
-      id: 4,
-      image: "/caixa.jpg",
-      title: t("products.items.speaker"),
+      id: 6,
+      image: "/brinquedo.png",
+      title: t("products.items.toys"),
       badge: "INMETRO",
     },
     {
@@ -39,9 +21,21 @@ export function Products() {
       badge: "INMETRO",
     },
     {
-      id: 6,
-      image: "/brinquedo.png",
-      title: t("products.items.toys"),
+      id: 9,
+      image: "/panelas.png",
+      title: t("products.items.cookware"),
+      badge: "INMETRO",
+    },
+    {
+      id: 10,
+      image: "/andador.png",
+      title: t("products.items.walker"),
+      badge: "INMETRO",
+    },
+    {
+      id: 11,
+      image: "/cadeira-alta.png",
+      title: t("products.items.highChair"),
       badge: "INMETRO",
     },
     {
@@ -57,15 +51,9 @@ export function Products() {
       badge: "INMETRO",
     },
     {
-      id: 9,
-      image: "/panelas.png",
-      title: t("products.items.cookware"),
-      badge: "INMETRO",
-    },
-    {
-      id: 10,
-      image: "/andador.png",
-      title: t("products.items.walker"),
+      id: 12,
+      image: "/cadeira-plastica.png",
+      title: t("products.items.plasticChair"),
       badge: "INMETRO",
     },
   ];
