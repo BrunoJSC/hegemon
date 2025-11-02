@@ -83,7 +83,7 @@ export function Footer() {
               className="mb-6"
             >
               <img
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Hegemon"
                 className="w-20 h-20 object-contain mb-4"
               />

@@ -2,21 +2,18 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LanguageSelector } from "./language-selector";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 
 interface HeaderProps {
   onServiceClick?: (serviceId: string) => void;
   onContactClick?: () => void;
-  onNavigateHome?: () => void;
   isHomePage?: boolean;
 }
 
-export function Header({
-  onServiceClick,
-  onContactClick,
-  onNavigateHome,
-  isHomePage = true,
-}: HeaderProps = {}) {
+export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -29,6 +26,18 @@ export function Header({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (isServicesOpen && !target.closest(".services-dropdown")) {
+        setIsServicesOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isServicesOpen]);
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -39,15 +48,15 @@ export function Header({
   };
 
   const handleNavigation = (sectionId: string) => {
-    if (isHomePage) {
+    if (location.pathname === "/") {
       // Se estiver na home, faz scroll suave
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     } else {
-      // Se não estiver na home, volta para home e depois faz scroll
-      onNavigateHome?.();
+      // Se não estiver na home, navega para home com hash
+      navigate(`/#${sectionId}`);
       // Aguarda a navegação e renderização da home
       setTimeout(() => {
         const element = document.getElementById(sectionId);
@@ -130,7 +139,7 @@ export function Header({
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between py-4 lg:py-6">
+        <div className="flex items-center justify-between py-2 lg:py-3">
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMobileMenu}
@@ -166,20 +175,19 @@ export function Header({
           </button>
 
           {/* Logo principal */}
-          <a href="/">
-            <motion.div
-              title="Hegemon"
-              className="header-logo shrink-0 cursor-pointer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <img
-                src="/logo.png"
-                alt="Hegemon"
-                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain transition-transform duration-300"
-              />
-            </motion.div>
-          </a>
+          <motion.div
+            title="Hegemon"
+            className="header-logo shrink-0 cursor-pointer"
+            onClick={() => navigate("/")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <img
+              src="/logo.svg"
+              alt="Hegemon"
+              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain transition-transform duration-300"
+            />
+          </motion.div>
 
           {/* Menu de navegação para desktop */}
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
@@ -209,9 +217,9 @@ export function Header({
               </motion.div>
 
               {/* Menu dropdown de Serviços */}
-              <div className="relative group">
+              <div className="relative services-dropdown">
                 <motion.div
-                  onClick={() => handleNavigation("services")}
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
                   className={`font-medium flex items-center transition-colors duration-300 cursor-pointer ${
                     isScrolled
                       ? "text-[#2A1A12] hover:text-[#A76B3F]"
@@ -226,8 +234,7 @@ export function Header({
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    animate={{ rotate: 0 }}
-                    whileHover={{ rotate: 180 }}
+                    animate={{ rotate: isServicesOpen ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
                     <path
@@ -239,70 +246,115 @@ export function Header({
                   </motion.svg>
                 </motion.div>
 
-                <motion.div
-                  className={`absolute left-0 mt-2 w-96 shadow-xl rounded-xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 max-h-[500px] overflow-y-auto ${
-                    isScrolled
-                      ? "bg-white border border-gray-200"
-                      : "bg-[#F6EBD8] border border-[#E9C89C]"
-                  }`}
-                  initial={{ opacity: 0, y: -10 }}
-                  whileHover={{ opacity: 1, y: 0 }}
-                >
-                  <div className="px-3 py-2">
-                    <h3
-                      className={`text-sm font-semibold mb-3 ${
-                        isScrolled ? "text-[#2A1A12]" : "text-[#4E3C2A]"
+                <AnimatePresence>
+                  {isServicesOpen && (
+                    <motion.div
+                      className={`absolute left-0 mt-2 w-96 shadow-xl rounded-xl py-3 z-50 max-h-[500px] overflow-y-auto ${
+                        isScrolled
+                          ? "bg-white border border-gray-200"
+                          : "bg-[#F6EBD8] border border-[#E9C89C]"
                       }`}
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.2 }}
                     >
-                      {t("header.ourServices")}
-                    </h3>
-                    <div className="grid gap-2">
-                      {services.map((service, index) => (
-                        <motion.div
-                          key={service.name}
-                          onClick={() => onServiceClick?.(service.id)}
-                          className={`flex items-start space-x-3 p-3 rounded-lg transition-all duration-300 cursor-pointer group/item ${
-                            isScrolled
-                              ? "hover:bg-gray-50 hover:shadow-sm"
-                              : "hover:bg-[#E9C89C] hover:shadow-sm"
+                      <div className="px-3 py-2">
+                        <h3
+                          className={`text-sm font-semibold mb-3 ${
+                            isScrolled ? "text-[#2A1A12]" : "text-[#4E3C2A]"
                           }`}
-                          whileHover={{ x: 2, scale: 1.01 }}
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: index * 0.03 }}
                         >
-                          <div className="w-8 h-8 flex items-center justify-center bg-[#A76B3F]/10 rounded-lg shrink-0 group-hover/item:bg-[#A76B3F]/20 transition-colors duration-300">
-                            <img
-                              src={service.icon}
-                              alt={service.name}
-                              className="w-4 h-4 object-contain"
-                            />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <h4
-                              className={`text-sm font-medium leading-tight mb-1 group-hover/item:text-[#A76B3F] transition-colors duration-300 ${
-                                isScrolled ? "text-[#2A1A12]" : "text-[#4E3C2A]"
+                          {t("header.ourServices")}
+                        </h3>
+                        <div className="grid gap-2">
+                          {services.map((service, index) => (
+                            <motion.div
+                              key={service.name}
+                              onClick={() => {
+                                setIsServicesOpen(false);
+                                onServiceClick?.(service.id);
+                              }}
+                              className={`flex items-start space-x-3 p-3 rounded-lg transition-all duration-300 cursor-pointer group/item ${
+                                isScrolled
+                                  ? "hover:bg-gray-50 hover:shadow-sm"
+                                  : "hover:bg-[#E9C89C] hover:shadow-sm"
                               }`}
+                              whileHover={{ x: 2, scale: 1.01 }}
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ delay: index * 0.03 }}
                             >
-                              {service.name.length > 45
-                                ? `${service.name.substring(0, 45)}...`
-                                : service.name}
-                            </h4>
-                            <p
-                              className={`text-xs leading-relaxed ${
-                                isScrolled ? "text-gray-600" : "text-[#6B5B4F]"
-                              }`}
-                            >
-                              {service.description.length > 60
-                                ? `${service.description.substring(0, 60)}...`
-                                : service.description}
-                            </p>
-                          </div>
-                          <div className="shrink-0">
+                              <div className="w-8 h-8 flex items-center justify-center bg-[#A76B3F]/10 rounded-lg shrink-0 group-hover/item:bg-[#A76B3F]/20 transition-colors duration-300">
+                                <img
+                                  src={service.icon}
+                                  alt={service.name}
+                                  className="w-4 h-4 object-contain"
+                                />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <h4
+                                  className={`text-sm font-medium leading-tight mb-1 group-hover/item:text-[#A76B3F] transition-colors duration-300 ${
+                                    isScrolled
+                                      ? "text-[#2A1A12]"
+                                      : "text-[#4E3C2A]"
+                                  }`}
+                                >
+                                  {service.name.length > 45
+                                    ? `${service.name.substring(0, 45)}...`
+                                    : service.name}
+                                </h4>
+                                <p
+                                  className={`text-xs leading-relaxed ${
+                                    isScrolled
+                                      ? "text-gray-600"
+                                      : "text-[#6B5B4F]"
+                                  }`}
+                                >
+                                  {service.description.length > 60
+                                    ? `${service.description.substring(
+                                        0,
+                                        60
+                                      )}...`
+                                    : service.description}
+                                </p>
+                              </div>
+                              <div className="shrink-0">
+                                <svg
+                                  className={`w-4 h-4 transition-transform duration-300 group-hover/item:translate-x-1 ${
+                                    isScrolled
+                                      ? "text-gray-400"
+                                      : "text-[#8B7355]"
+                                  }`}
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M9 5l7 7-7 7"
+                                  />
+                                </svg>
+                              </div>
+                            </motion.div>
+                          ))}
+                        </div>
+
+                        <div className="mt-3 pt-3 border-t border-gray-200">
+                          <motion.div
+                            onClick={() => {
+                              setIsServicesOpen(false);
+                              handleNavigation("services");
+                            }}
+                            className="flex items-center justify-center space-x-2 py-2 px-4 bg-[#A76B3F] text-white rounded-lg hover:bg-[#7B4A2E] transition-colors duration-300 text-sm font-medium cursor-pointer"
+                            whileHover={{ scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
+                          >
+                            <span>{t("header.viewAllServices")}</span>
                             <svg
-                              className={`w-4 h-4 transition-transform duration-300 group-hover/item:translate-x-1 ${
-                                isScrolled ? "text-gray-400" : "text-[#8B7355]"
-                              }`}
+                              className="w-4 h-4"
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
@@ -311,39 +363,15 @@ export function Header({
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                                 strokeWidth={2}
-                                d="M9 5l7 7-7 7"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"
                               />
                             </svg>
-                          </div>
-                        </motion.div>
-                      ))}
-                    </div>
-
-                    <div className="mt-3 pt-3 border-t border-gray-200">
-                      <motion.div
-                        onClick={() => handleNavigation("services")}
-                        className="flex items-center justify-center space-x-2 py-2 px-4 bg-[#A76B3F] text-white rounded-lg hover:bg-[#7B4A2E] transition-colors duration-300 text-sm font-medium cursor-pointer"
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                      >
-                        <span>{t("header.viewAllServices")}</span>
-                        <svg
-                          className="w-4 h-4"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          />
-                        </svg>
-                      </motion.div>
-                    </div>
-                  </div>
-                </motion.div>
+                          </motion.div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               <motion.div

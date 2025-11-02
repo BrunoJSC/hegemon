@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" fill="none">
+  <!-- Montanhas com mais detalhes -->
+  <g id="mountains">
+    <!-- Montanha traseira esquerda (mais clara) -->
+    <path d="M50 450 L180 280 L220 320 L280 250 L350 450 Z" fill="#C9A876"/>
+    
+    <!-- Montanha traseira direita -->
+    <path d="M650 450 L720 300 L780 350 L850 280 L950 450 Z" fill="#B8956A"/>
+    
+    <!-- Montanha principal esquerda (grande) -->
+    <path d="M150 450 L300 200 L320 230 L360 180 L380 210 L420 150 L480 450 Z" fill="#A0826D"/>
+    
+    <!-- Detalhes de luz/neve na montanha esquerda -->
+    <path d="M300 200 L320 230 L310 225 Z" fill="#D4B896"/>
+    <path d="M360 180 L380 210 L370 195 Z" fill="#E5D4B8"/>
+    <path d="M420 150 L440 190 L430 170 Z" fill="#D4B896"/>
+    
+    <!-- Sombras na montanha esquerda -->
+    <path d="M300 200 L280 240 L150 450 L200 450 Z" fill="#8B6F47" opacity="0.7"/>
+    <path d="M360 180 L340 220 L250 450 L300 450 Z" fill="#7A5C3E" opacity="0.6"/>
+    
+    <!-- Montanha principal direita (grande) -->
+    <path d="M450 450 L550 220 L580 260 L620 200 L650 240 L700 180 L800 450 Z" fill="#8B6F47"/>
+    
+    <!-- Detalhes de luz na montanha direita -->
+    <path d="M550 220 L570 250 L560 235 Z" fill="#C9A876"/>
+    <path d="M620 200 L640 230 L630 215 Z" fill="#D4B896"/>
+    <path d="M700 180 L720 220 L710 200 Z" fill="#C9A876"/>
+    
+    <!-- Sombras na montanha direita -->
+    <path d="M700 180 L720 220 L800 450 L750 450 Z" fill="#6B5344" opacity="0.8"/>
+    <path d="M620 200 L640 240 L700 450 L650 450 Z" fill="#5D4A3A" opacity="0.7"/>
+    
+    <!-- Montanha central (pico mais alto) -->
+    <path d="M300 450 L450 120 L470 150 L500 100 L530 140 L550 450 Z" fill="#9B7A5A"/>
+    
+    <!-- Neve/luz no pico central -->
+    <path d="M500 100 L510 130 L505 115 Z" fill="#E5D4B8"/>
+    <path d="M500 100 L490 130 L495 115 Z" fill="#F0E5D0"/>
+    <path d="M470 150 L480 180 L475 165 Z" fill="#D4B896"/>
+    <path d="M530 140 L540 170 L535 155 Z" fill="#D4B896"/>
+    
+    <!-- Sombra central -->
+    <path d="M500 100 L480 150 L300 450 L380 450 Z" fill="#7A5C3E" opacity="0.6"/>
+    
+    <!-- Montanha frontal esquerda (escura) -->
+    <path d="M100 450 L220 280 L250 310 L300 250 L380 450 Z" fill="#5D4A3A"/>
+    
+    <!-- Montanha frontal direita (escura) -->
+    <path d="M600 450 L680 300 L720 330 L760 280 L900 450 Z" fill="#6B5344"/>
+  </g>
+  
+  <!-- Texto HEGEMON -->
+  <g id="text" transform="translate(500, 580)" text-anchor="middle">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="110" font-weight="400" fill="#2A1A12" letter-spacing="10">
+      HEGEMON
+    </text>
+  </g>
+  
+  <!-- Texto CONSULTORIA -->
+  <g id="subtext" transform="translate(500, 640)" text-anchor="middle">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="38" font-weight="300" fill="#4A3A2A" letter-spacing="14">
+      CONSULTORIA
+    </text>
+  </g>
+</svg>
