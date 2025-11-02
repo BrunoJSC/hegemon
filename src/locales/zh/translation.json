@@ -75,7 +75,11 @@
       "headphone": "耳机",
       "speaker": "蓝牙音箱",
       "school": "学习用品",
-      "toys": "玩具"
+      "toys": "玩具",
+      "stroller": "婴儿车",
+      "carSeat": "婴儿汽车座椅",
+      "cookware": "炊具",
+      "walker": "学步车"
     }
   },
   "about": {

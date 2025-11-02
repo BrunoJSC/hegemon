@@ -75,7 +75,11 @@
       "headphone": "Fone de Ouvido",
       "speaker": "Caixa de Som Bluetooth",
       "school": "Artigos Escolares",
-      "toys": "Brinquedos"
+      "toys": "Brinquedos",
+      "stroller": "Carrinho de Bebê",
+      "carSeat": "Cadeirinha de Bebê",
+      "cookware": "Panelas",
+      "walker": "Andador"
     }
   },
   "about": {
@@ -225,7 +229,7 @@
     "service5": {
       "title": "Inspeção & Controle de Qualidade",
       "description": "Na Hegemon, garantimos que cada produto atenda aos mais...",
-      "fullDescription": "Oferecemos serviços completos de inspeção e controle de qualidade para produtos importados. Nossa equipe local garante que cada produto atenda aos mais altos padrões de qualidade antes do embarque.",
+      "fullDescription": "Oferecemos serviços completos de inspeção e controle de qualidade para produtos importados1. Nossa equipe local garante que cada produto atenda aos mais altos padrões de qualidade antes do embarque.",
       "benefits": {
         "0": "Inspeção in loco",
         "1": "Redução de produtos defeituosos",

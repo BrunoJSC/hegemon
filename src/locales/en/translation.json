@@ -75,7 +75,11 @@
       "headphone": "Headphones",
       "speaker": "Bluetooth Speaker",
       "school": "School Supplies",
-      "toys": "Toys"
+      "toys": "Toys",
+      "stroller": "Baby Stroller",
+      "carSeat": "Baby Car Seat",
+      "cookware": "Cookware",
+      "walker": "Baby Walker"
     }
   },
   "about": {

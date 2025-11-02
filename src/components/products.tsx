@@ -18,19 +18,19 @@ export function Products() {
       id: 2,
       image: "/power.jpg",
       title: t("products.items.charger"),
-      badge: "ANATEL",
+      badge: "INMETRO",
     },
     {
       id: 3,
       image: "/fone.png",
       title: t("products.items.headphone"),
-      badge: "ANATEL",
+      badge: "INMETRO",
     },
     {
       id: 4,
       image: "/caixa.jpg",
       title: t("products.items.speaker"),
-      badge: "ANATEL",
+      badge: "INMETRO",
     },
     {
       id: 5,
@@ -42,6 +42,30 @@ export function Products() {
       id: 6,
       image: "/brinquedo.png",
       title: t("products.items.toys"),
+      badge: "INMETRO",
+    },
+    {
+      id: 7,
+      image: "/carrinho.png",
+      title: t("products.items.stroller"),
+      badge: "INMETRO",
+    },
+    {
+      id: 8,
+      image: "/cadeirinha.png",
+      title: t("products.items.carSeat"),
+      badge: "INMETRO",
+    },
+    {
+      id: 9,
+      image: "/panelas.png",
+      title: t("products.items.cookware"),
+      badge: "INMETRO",
+    },
+    {
+      id: 10,
+      image: "/andador.png",
+      title: t("products.items.walker"),
       badge: "INMETRO",
     },
   ];
