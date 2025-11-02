@@ -1,7 +1,12 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
+import { lazy, Suspense } from "react";
 import { Header } from "../header";
-import { Footer } from "../footer";
 import { useNavigate } from "react-router-dom";
+
+// Lazy load do Footer
+const Footer = lazy(() =>
+  import("../footer").then((module) => ({ default: module.Footer }))
+);
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -27,7 +32,9 @@ export function MainLayout({ children, isHomePage = false }: MainLayoutProps) {
         isHomePage={isHomePage}
       />
       {children}
-      <Footer />
+      <Suspense fallback={<div className="h-20" />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

@@ -79,11 +79,7 @@ export function ContactFormPage({
         title="Contato - Hegemon"
         description="Entre em contato conosco para mais informações sobre nossos serviços de certificação e consultoria."
       />
-      <Header
-        onServiceClick={onServiceClick}
-        onNavigateHome={onBack}
-        isHomePage={false}
-      />
+      <Header onServiceClick={onServiceClick} isHomePage={false} />
 
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

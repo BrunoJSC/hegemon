@@ -42,7 +42,6 @@ export function ServiceDetailPage({
         <Header
           onServiceClick={onServiceClick}
           onContactClick={onContactClick}
-          onNavigateHome={onBack}
           isHomePage={false}
         />
         <div className="py-20 text-center">
@@ -70,7 +69,6 @@ export function ServiceDetailPage({
       <Header
         onServiceClick={onServiceClick}
         onContactClick={onContactClick}
-        onNavigateHome={onBack}
         isHomePage={false}
       />
       <section className="py-20">
