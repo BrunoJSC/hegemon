@@ -12,12 +12,12 @@ export function Product({ image, title, badge }: ProductProps) {
   const { t } = useTranslation();
   return (
     <motion.div
-      className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
+      className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group h-full flex flex-col"
       whileHover={{ y: -5, scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
       {/* Image Container */}
-      <div className="relative overflow-hidden h-48 sm:h-56">
+      <div className="relative overflow-hidden h-56 flex-shrink-0 bg-white">
         <motion.img
           src={image}
           alt={title}
@@ -45,17 +45,17 @@ export function Product({ image, title, badge }: ProductProps) {
 
       {/* Content */}
       <motion.div
-        className="p-4 sm:p-6"
+        className="p-4 sm:p-6 flex flex-col flex-grow"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        <h3 className="text-lg sm:text-xl font-bold text-[#2A1A12] mb-2 group-hover:text-[#A76B3F] transition-colors duration-300">
+        <h3 className="text-lg sm:text-xl font-bold text-[#2A1A12] mb-3 group-hover:text-[#A76B3F] transition-colors duration-300 min-h-[3.5rem] flex items-center">
           {title}
         </h3>
 
         <motion.button
-          className="text-[#A76B3F] font-semibold text-sm hover:text-[#8B4513] transition-colors duration-300"
+          className="text-[#A76B3F] font-semibold text-sm hover:text-[#8B4513] transition-colors duration-300 mt-auto"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >

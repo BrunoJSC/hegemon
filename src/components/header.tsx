@@ -645,6 +645,13 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
                   </motion.div>
                 </motion.div>
 
+                {/* Mobile Language Selector */}
+                <motion.div className="px-4 pt-2">
+                  <div className="flex items-center justify-center">
+                    <LanguageSelector />
+                  </div>
+                </motion.div>
+
                 {/* Mobile Phone */}
                 <motion.div className="px-4 pt-2">
                   <motion.a

@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function LanguageSelector() {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const languages = [
     { code: "pt", name: "Português", flag: "🇧🇷" },
@@ -20,6 +30,33 @@ export function LanguageSelector() {
     setIsOpen(false);
   };
 
+  // Versão inline para mobile
+  if (isMobile) {
+    return (
+      <div className="flex items-center justify-center gap-2 py-2">
+        {languages.map((lang) => (
+          <motion.button
+            key={lang.code}
+            onClick={() => changeLanguage(lang.code)}
+            className={`flex flex-col items-center px-3 py-2 rounded-lg transition-all duration-200 ${
+              currentLanguage.code === lang.code
+                ? "bg-[#A76B3F] text-white"
+                : "bg-white/50 hover:bg-[#A76B3F]/10"
+            }`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span className="text-2xl mb-1">{lang.flag}</span>
+            <span className="text-xs font-medium">
+              {lang.code.toUpperCase()}
+            </span>
+          </motion.button>
+        ))}
+      </div>
+    );
+  }
+
+  // Versão dropdown para desktop
   return (
     <div className="relative">
       <motion.button
@@ -29,7 +66,7 @@ export function LanguageSelector() {
         whileTap={{ scale: 0.95 }}
       >
         <span className="text-2xl">{currentLanguage.flag}</span>
-        <span className="hidden sm:inline text-sm font-medium text-[#2A1A12]">
+        <span className="text-sm font-medium text-[#2A1A12]">
           {currentLanguage.code.toUpperCase()}
         </span>
         <motion.svg
