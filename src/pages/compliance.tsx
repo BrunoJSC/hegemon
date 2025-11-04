@@ -232,29 +232,13 @@ export function CompliancePage() {
               <h2 className="text-2xl font-bold text-[#A76B3F] mb-6">
                 {t("compliancePage.areasTitle")}
               </h2>
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-[#F6EBD8] p-4 rounded-lg text-center">
-                  <h3 className="font-semibold text-[#2A1A12]">
+              <div className="flex justify-center">
+                <div className="bg-[#F6EBD8] p-6 rounded-lg text-center max-w-md">
+                  <h3 className="font-semibold text-[#2A1A12] text-lg">
                     {t("compliancePage.area1Title")}
                   </h3>
                   <p className="text-sm text-[#4E3C2A] mt-2">
                     {t("compliancePage.area1Text")}
-                  </p>
-                </div>
-                <div className="bg-[#F6EBD8] p-4 rounded-lg text-center">
-                  <h3 className="font-semibold text-[#2A1A12]">
-                    {t("compliancePage.area2Title")}
-                  </h3>
-                  <p className="text-sm text-[#4E3C2A] mt-2">
-                    {t("compliancePage.area2Text")}
-                  </p>
-                </div>
-                <div className="bg-[#F6EBD8] p-4 rounded-lg text-center">
-                  <h3 className="font-semibold text-[#2A1A12]">
-                    {t("compliancePage.area3Title")}
-                  </h3>
-                  <p className="text-sm text-[#4E3C2A] mt-2">
-                    {t("compliancePage.area3Text")}
                   </p>
                 </div>
               </div>

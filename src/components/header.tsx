@@ -100,8 +100,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
       name: "Consultoria Reguladora",
       id: "7",
       icon: "/testing.svg",
-      description:
-        "Consultoria completa para certificações do Inmetro, Anvisa e Anatel.",
+      description: "Consultoria completa para certificações do Inmetro.",
     },
     {
       name: "Cumprimento de Exigências",

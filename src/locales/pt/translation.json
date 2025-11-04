@@ -46,7 +46,7 @@
     },
     "service7": {
       "title": "Consultoria Reguladora",
-      "description": "Consultoria completa para certificações do Inmetro, Anvisa e Anatel."
+      "description": "Consultoria completa para certificações do Inmetro."
     },
     "service8": {
       "title": "Cumprimento de Exigências",
@@ -69,6 +69,7 @@
     "badge": "PRODUTOS",
     "title": "Confira Alguns os Produtos que Podem Obter Certificação",
     "learnMore": "Saiba mais",
+    "close": "Fechar",
     "items": {
       "appliances": "Eletrodomésticos",
       "charger": "Carregador de Celular",
@@ -82,6 +83,48 @@
       "walker": "Andador",
       "highChair": "Cadeira Alta para Crianças",
       "plasticChair": "Cadeira Plástica Monobloco"
+    },
+    "details": {
+      "toys": {
+        "title": "Brinquedos",
+        "description": "Brinquedos precisam de certificação INMETRO para garantir a segurança das crianças. A certificação avalia riscos como peças pequenas, materiais tóxicos e bordas cortantes.",
+        "requirements": "Ensaios mecânicos, químicos e de inflamabilidade conforme normas ABNT NBR NM 300 e ABNT NBR NM 300-3."
+      },
+      "school": {
+        "title": "Artigos Escolares",
+        "description": "Materiais escolares como lápis, canetas, borrachas e mochilas necessitam certificação para garantir que não contenham substâncias nocivas à saúde.",
+        "requirements": "Análises químicas e testes de segurança conforme regulamentação do INMETRO."
+      },
+      "cookware": {
+        "title": "Panelas",
+        "description": "Panelas e utensílios de cozinha devem ser certificados para garantir que não liberem substâncias tóxicas durante o uso e aquecimento.",
+        "requirements": "Testes de migração de metais pesados e conformidade com normas de segurança alimentar."
+      },
+      "walker": {
+        "title": "Andador",
+        "description": "Andadores infantis precisam de certificação rigorosa devido aos riscos de acidentes. A certificação avalia estabilidade, resistência e segurança.",
+        "requirements": "Ensaios de estabilidade, resistência mecânica e conformidade com ABNT NBR 15860-1."
+      },
+      "highChair": {
+        "title": "Cadeira Alta para Crianças",
+        "description": "Cadeiras altas (cadeirões) devem ser certificadas para prevenir quedas e garantir a segurança da criança durante as refeições.",
+        "requirements": "Testes de estabilidade, resistência do cinto de segurança e conformidade com ABNT NBR 15817-1."
+      },
+      "stroller": {
+        "title": "Carrinho de Bebê",
+        "description": "Carrinhos de bebê necessitam certificação para garantir segurança em freios, estabilidade, resistência e ausência de pontos de aprisionamento.",
+        "requirements": "Ensaios conforme ABNT NBR 15803-1 e ABNT NBR 15803-2."
+      },
+      "carSeat": {
+        "title": "Cadeirinha de Bebê",
+        "description": "Cadeirinhas para automóveis são obrigatoriamente certificadas pelo INMETRO para garantir proteção em caso de acidentes.",
+        "requirements": "Testes de impacto, resistência e conformidade com Resolução CONTRAN 277/08."
+      },
+      "plasticChair": {
+        "title": "Cadeira Plástica Monobloco",
+        "description": "Cadeiras plásticas devem ser certificadas para garantir resistência adequada e segurança durante o uso.",
+        "requirements": "Testes de resistência estrutural e conformidade com normas ABNT."
+      }
     }
   },
   "about": {
@@ -282,10 +325,10 @@
     },
     "service7": {
       "title": "Consultoria Reguladora",
-      "description": "Consultoria completa para certificações do Inmetro, Anvisa e Anatel.",
-      "fullDescription": "Oferecemos consultoria especializada para certificações junto aos principais órgãos reguladores brasileiros: Inmetro, Anvisa e Anatel. Nossa equipe conhece profundamente os requisitos e processos de cada órgão.",
+      "description": "Consultoria completa para certificações do Inmetro.",
+      "fullDescription": "Oferecemos consultoria especializada para certificações junto ao Inmetro. Nossa equipe conhece profundamente os requisitos e processos do órgão regulador.",
       "benefits": {
-        "0": "Expertise em múltiplos órgãos reguladores",
+        "0": "Expertise em certificações Inmetro",
         "1": "Agilidade nos processos de certificação",
         "2": "Redução de custos com retrabalho",
         "3": "Orientação estratégica",
