@@ -189,7 +189,7 @@ export function Product({ image, title, badge, detailKey }: ProductProps) {
                             </svg>
                           </div>
                           <h3 className="text-xl font-bold text-[#2A1A12]">
-                            Sobre o Produto
+                            {t("products.aboutProduct")}
                           </h3>
                         </div>
                         <p className="text-[#4E3C2A] leading-relaxed">
@@ -221,7 +221,7 @@ export function Product({ image, title, badge, detailKey }: ProductProps) {
                             </svg>
                           </div>
                           <h3 className="text-xl font-bold text-[#A76B3F]">
-                            Requisitos de Certificação
+                            {t("products.certificationRequirements")}
                           </h3>
                         </div>
                         <p className="text-[#4E3C2A] leading-relaxed">
@@ -250,13 +250,10 @@ export function Product({ image, title, badge, detailKey }: ProductProps) {
                           </svg>
                           <div>
                             <p className="font-semibold text-amber-900 mb-1">
-                              Importante
+                              {t("products.importantTitle")}
                             </p>
                             <p className="text-sm text-amber-800 leading-relaxed">
-                              A certificação INMETRO é obrigatória para
-                              comercialização deste produto no Brasil. Entre em
-                              contato conosco para iniciar o processo de
-                              certificação.
+                              {t("products.importantMessage")}
                             </p>
                           </div>
                         </div>
@@ -299,7 +296,7 @@ export function Product({ image, title, badge, detailKey }: ProductProps) {
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                           />
                         </svg>
-                        Solicitar Certificação
+                        {t("products.requestCertification")}
                       </motion.button>
                       <motion.button
                         onClick={() => setIsDialogOpen(false)}

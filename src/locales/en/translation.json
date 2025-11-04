@@ -70,6 +70,11 @@
     "title": "Check Out Some Products That Can Obtain Certification",
     "learnMore": "Learn more",
     "close": "Close",
+    "aboutProduct": "About the Product",
+    "certificationRequirements": "Certification Requirements",
+    "importantTitle": "Important",
+    "importantMessage": "INMETRO certification is mandatory for the commercialization of this product in Brazil. Contact us to start the certification process.",
+    "requestCertification": "Request Certification",
     "items": {
       "appliances": "Home Appliances",
       "charger": "Cell Phone Charger",
@@ -82,48 +87,54 @@
       "cookware": "Cookware",
       "walker": "Baby Walker",
       "highChair": "High Chair for Children",
-      "plasticChair": "Plastic Monoblock Chair"
+      "plasticChair": "Plastic Monoblock Chair",
+      "crib": "Cribs"
     },
     "details": {
       "toys": {
         "title": "Toys",
         "description": "Toys require INMETRO certification to ensure children's safety. Certification evaluates risks such as small parts, toxic materials, and sharp edges.",
-        "requirements": "Mechanical, chemical, and flammability tests according to ABNT NBR NM 300 and ABNT NBR NM 300-3 standards."
+        "requirements": "Inmetro Ordinance No. 302, dated July 12, 2021. Total certification duration: 5 years. Annual maintenance (model 5)."
       },
       "school": {
         "title": "School Supplies",
         "description": "School materials such as pencils, pens, erasers, and backpacks require certification to ensure they do not contain substances harmful to health.",
-        "requirements": "Chemical analyses and safety tests according to INMETRO regulations."
+        "requirements": "Inmetro Ordinance No. 423, dated October 8, 2021. Total certification duration: 3 years. Annual maintenance (model 5)."
       },
       "cookware": {
         "title": "Cookware",
         "description": "Pots and kitchen utensils must be certified to ensure they do not release toxic substances during use and heating.",
-        "requirements": "Heavy metal migration tests and compliance with food safety standards."
+        "requirements": "Inmetro Ordinance No. 167, dated April 23, 2025. Pressure cooker: Total certification duration 4 years, annual maintenance (model 5). Domestic utensils: Total certification duration 4 years, biennial maintenance (model 5)."
       },
       "walker": {
         "title": "Baby Walker",
         "description": "Baby walkers require rigorous certification due to accident risks. Certification evaluates stability, resistance, and safety.",
-        "requirements": "Stability tests, mechanical resistance, and compliance with ABNT NBR 15860-1."
+        "requirements": "Inmetro Ordinance No. 129, dated March 19, 2021. Total certification duration: 4 years. Annual maintenance (model 5)."
       },
       "highChair": {
         "title": "High Chair for Children",
         "description": "High chairs must be certified to prevent falls and ensure child safety during meals.",
-        "requirements": "Stability tests, safety belt resistance, and compliance with ABNT NBR 15817-1."
+        "requirements": "Inmetro Ordinance No. 168, dated April 14, 2021. Total certification duration: 4 years. Annual maintenance (model 5)."
       },
       "stroller": {
         "title": "Baby Stroller",
         "description": "Baby strollers require certification to ensure safety in brakes, stability, resistance, and absence of entrapment points.",
-        "requirements": "Tests according to ABNT NBR 15803-1 and ABNT NBR 15803-2."
+        "requirements": "Inmetro Ordinance No. 11, dated January 2, 2025. Total certification duration: 3 years. Annual maintenance (model 5)."
       },
       "carSeat": {
         "title": "Baby Car Seat",
         "description": "Car seats are mandatorily certified by INMETRO to ensure protection in case of accidents.",
-        "requirements": "Impact tests, resistance, and compliance with CONTRAN Resolution 277/08."
+        "requirements": "Inmetro Ordinance No. 246, dated June 7, 2021. Total certification duration: 4 years. Annual maintenance (model 5)."
       },
       "plasticChair": {
         "title": "Plastic Monoblock Chair",
         "description": "Plastic chairs must be certified to ensure adequate resistance and safety during use.",
-        "requirements": "Structural resistance tests and compliance with ABNT standards."
+        "requirements": "Inmetro Ordinance No. 166, dated April 14, 2021. Total certification duration: 3 years. Semi-annual maintenance (model 5)."
+      },
+      "crib": {
+        "title": "Cribs",
+        "description": "Baby cribs must be certified to ensure safety and prevent accidents with babies during sleep.",
+        "requirements": "Inmetro Ordinance No. 143, dated March 22, 2021. Total certification duration: 3 years. Maintenance every 18 months (model 5)."
       }
     }
   },

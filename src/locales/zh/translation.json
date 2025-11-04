@@ -70,6 +70,11 @@
     "title": "查看一些可以获得认证的产品",
     "learnMore": "了解更多",
     "close": "关闭",
+    "aboutProduct": "关于产品",
+    "certificationRequirements": "认证要求",
+    "importantTitle": "重要提示",
+    "importantMessage": "INMETRO认证是在巴西销售此产品的强制性要求。请联系我们开始认证流程。",
+    "requestCertification": "申请认证",
     "items": {
       "appliances": "家用电器",
       "charger": "手机充电器",
@@ -82,48 +87,54 @@
       "cookware": "炊具",
       "walker": "学步车",
       "highChair": "儿童高脚椅",
-      "plasticChair": "塑料单体椅"
+      "plasticChair": "塑料单体椅",
+      "crib": "婴儿床"
     },
     "details": {
       "toys": {
         "title": "玩具",
         "description": "玩具需要INMETRO认证以确保儿童安全。认证评估小零件、有毒材料和锋利边缘等风险。",
-        "requirements": "根据ABNT NBR NM 300和ABNT NBR NM 300-3标准进行机械、化学和可燃性测试。"
+        "requirements": "Inmetro第302号法令，2021年7月12日。认证总期限：5年。年度维护（模式5）。"
       },
       "school": {
         "title": "学习用品",
         "description": "铅笔、钢笔、橡皮和书包等学习用品需要认证，以确保不含有害健康的物质。",
-        "requirements": "根据INMETRO法规进行化学分析和安全测试。"
+        "requirements": "Inmetro第423号法令，2021年10月8日。认证总期限：3年。年度维护（模式5）。"
       },
       "cookware": {
         "title": "炊具",
         "description": "锅具和厨房用具必须经过认证，以确保在使用和加热过程中不会释放有毒物质。",
-        "requirements": "重金属迁移测试和符合食品安全标准。"
+        "requirements": "Inmetro第167号法令，2025年4月23日。压力锅：认证总期限4年，年度维护（模式5）。家用器具：认证总期限4年，两年一次维护（模式5）。"
       },
       "walker": {
         "title": "学步车",
         "description": "婴儿学步车由于事故风险需要严格认证。认证评估稳定性、耐用性和安全性。",
-        "requirements": "稳定性测试、机械强度和符合ABNT NBR 15860-1标准。"
+        "requirements": "Inmetro第129号法令，2021年3月19日。认证总期限：4年。年度维护（模式5）。"
       },
       "highChair": {
         "title": "儿童高脚椅",
         "description": "高脚椅必须经过认证，以防止跌落并确保儿童在用餐时的安全。",
-        "requirements": "稳定性测试、安全带强度和符合ABNT NBR 15817-1标准。"
+        "requirements": "Inmetro第168号法令，2021年4月14日。认证总期限：4年。年度维护（模式5）。"
       },
       "stroller": {
         "title": "婴儿车",
         "description": "婴儿车需要认证以确保刹车、稳定性、耐用性和无夹持点的安全性。",
-        "requirements": "根据ABNT NBR 15803-1和ABNT NBR 15803-2进行测试。"
+        "requirements": "Inmetro第11号法令，2025年1月2日。认证总期限：3年。年度维护（模式5）。"
       },
       "carSeat": {
         "title": "婴儿汽车座椅",
         "description": "汽车座椅必须经过INMETRO强制认证，以确保在事故中的保护。",
-        "requirements": "冲击测试、耐用性和符合CONTRAN第277/08号决议。"
+        "requirements": "Inmetro第246号法令，2021年6月7日。认证总期限：4年。年度维护（模式5）。"
       },
       "plasticChair": {
         "title": "塑料单体椅",
         "description": "塑料椅子必须经过认证，以确保在使用过程中具有足够的强度和安全性。",
-        "requirements": "结构强度测试和符合ABNT标准。"
+        "requirements": "Inmetro第166号法令，2021年4月14日。认证总期限：3年。半年度维护（模式5）。"
+      },
+      "crib": {
+        "title": "婴儿床",
+        "description": "婴儿床必须经过认证，以确保安全并防止婴儿在睡眠期间发生事故。",
+        "requirements": "Inmetro第143号法令，2021年3月22日。认证总期限：3年。每18个月维护一次（模式5）。"
       }
     }
   },

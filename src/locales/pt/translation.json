@@ -70,6 +70,11 @@
     "title": "Confira Alguns os Produtos que Podem Obter Certificação",
     "learnMore": "Saiba mais",
     "close": "Fechar",
+    "aboutProduct": "Sobre o Produto",
+    "certificationRequirements": "Requisitos de Certificação",
+    "importantTitle": "Importante",
+    "importantMessage": "A certificação INMETRO é obrigatória para comercialização deste produto no Brasil. Entre em contato conosco para iniciar o processo de certificação.",
+    "requestCertification": "Solicitar Certificação",
     "items": {
       "appliances": "Eletrodomésticos",
       "charger": "Carregador de Celular",
@@ -82,48 +87,54 @@
       "cookware": "Panelas",
       "walker": "Andador",
       "highChair": "Cadeira Alta para Crianças",
-      "plasticChair": "Cadeira Plástica Monobloco"
+      "plasticChair": "Cadeira Plástica Monobloco",
+      "crib": "Berços"
     },
     "details": {
       "toys": {
         "title": "Brinquedos",
         "description": "Brinquedos precisam de certificação INMETRO para garantir a segurança das crianças. A certificação avalia riscos como peças pequenas, materiais tóxicos e bordas cortantes.",
-        "requirements": "Ensaios mecânicos, químicos e de inflamabilidade conforme normas ABNT NBR NM 300 e ABNT NBR NM 300-3."
+        "requirements": "Portaria Inmetro n° 302, de 12 de julho de 2021. Duração total da certificação: 5 anos. Manutenções anuais (modelo 5)."
       },
       "school": {
         "title": "Artigos Escolares",
         "description": "Materiais escolares como lápis, canetas, borrachas e mochilas necessitam certificação para garantir que não contenham substâncias nocivas à saúde.",
-        "requirements": "Análises químicas e testes de segurança conforme regulamentação do INMETRO."
+        "requirements": "Portaria Inmetro nº 423, de 8 de outubro de 2021. Duração total da certificação: 3 anos. Manutenções anuais (modelo 5)."
       },
       "cookware": {
         "title": "Panelas",
         "description": "Panelas e utensílios de cozinha devem ser certificados para garantir que não liberem substâncias tóxicas durante o uso e aquecimento.",
-        "requirements": "Testes de migração de metais pesados e conformidade com normas de segurança alimentar."
+        "requirements": "Portaria Inmetro nº 167, de 23 de abril de 2025. Panela de pressão: Duração total da certificação 4 anos, manutenções anuais (modelo 5). Utensílios domésticos: Duração total da certificação 4 anos, manutenções bienais (modelo 5)."
       },
       "walker": {
         "title": "Andador",
         "description": "Andadores infantis precisam de certificação rigorosa devido aos riscos de acidentes. A certificação avalia estabilidade, resistência e segurança.",
-        "requirements": "Ensaios de estabilidade, resistência mecânica e conformidade com ABNT NBR 15860-1."
+        "requirements": "Portaria Inmetro nº 129, de 19 de março de 2021. Duração total da certificação: 4 anos. Manutenções anuais (modelo 5)."
       },
       "highChair": {
         "title": "Cadeira Alta para Crianças",
         "description": "Cadeiras altas (cadeirões) devem ser certificadas para prevenir quedas e garantir a segurança da criança durante as refeições.",
-        "requirements": "Testes de estabilidade, resistência do cinto de segurança e conformidade com ABNT NBR 15817-1."
+        "requirements": "Portaria Inmetro nº 168, de 14 de abril de 2021. Duração total da certificação: 4 anos. Manutenções anuais (modelo 5)."
       },
       "stroller": {
         "title": "Carrinho de Bebê",
         "description": "Carrinhos de bebê necessitam certificação para garantir segurança em freios, estabilidade, resistência e ausência de pontos de aprisionamento.",
-        "requirements": "Ensaios conforme ABNT NBR 15803-1 e ABNT NBR 15803-2."
+        "requirements": "Portaria Inmetro nº 11, de 2 de janeiro de 2025. Duração total da certificação: 3 anos. Manutenções anuais (modelo 5)."
       },
       "carSeat": {
         "title": "Cadeirinha de Bebê",
         "description": "Cadeirinhas para automóveis são obrigatoriamente certificadas pelo INMETRO para garantir proteção em caso de acidentes.",
-        "requirements": "Testes de impacto, resistência e conformidade com Resolução CONTRAN 277/08."
+        "requirements": "Portaria Inmetro nº 246, de 7 de junho de 2021. Duração total da certificação: 4 anos. Manutenções anuais (modelo 5)."
       },
       "plasticChair": {
         "title": "Cadeira Plástica Monobloco",
         "description": "Cadeiras plásticas devem ser certificadas para garantir resistência adequada e segurança durante o uso.",
-        "requirements": "Testes de resistência estrutural e conformidade com normas ABNT."
+        "requirements": "Portaria Inmetro nº 166, de 14 de abril de 2021. Duração total da certificação: 3 anos. Manutenções semestrais (modelo 5)."
+      },
+      "crib": {
+        "title": "Berços",
+        "description": "Berços infantis devem ser certificados para garantir a segurança e prevenir acidentes com bebês durante o sono.",
+        "requirements": "Portaria Inmetro nº 143, de 22 de março de 2021. Duração total da certificação: 3 anos. Manutenções a cada 18 meses (modelo 5)."
       }
     }
   },
