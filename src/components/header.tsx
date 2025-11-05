@@ -182,9 +182,9 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
             whileTap={{ scale: 0.95 }}
           >
             <img
-              src="/logo.svg"
+              src="/logo.png"
               alt="Hegemon"
-              className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-24 lg:h-24 object-contain transition-transform duration-300"
+              className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 object-contain transition-transform duration-300"
             />
           </motion.div>
 
