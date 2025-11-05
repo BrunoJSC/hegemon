@@ -184,7 +184,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
             <img
               src="/logo.png"
               alt="Hegemon"
-              className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 object-contain transition-transform duration-300"
+              className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 object-contain transition-transform duration-300"
             />
           </motion.div>
 
