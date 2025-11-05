@@ -73,12 +73,9 @@ export function Footer() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mb-6"
             >
-              <img
-                src="/logo.svg"
-                alt="Hegemon"
-                className="w-20 h-20 object-contain mb-4"
-              />
-              <h3 className="text-xl font-bold text-[#A76B3F] mb-4">Hegemon</h3>
+              <h3 className="text-2xl font-bold text-[#A76B3F] mb-4">
+                Hegemon
+              </h3>
             </motion.div>
 
             <motion.p

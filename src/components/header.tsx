@@ -138,7 +138,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between py-2 lg:py-3">
+        <div className="flex items-center justify-between py-0.5 lg:py-1">
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMobileMenu}
