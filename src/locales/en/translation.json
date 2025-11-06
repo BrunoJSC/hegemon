@@ -76,18 +76,18 @@
     "importantMessage": "INMETRO certification is mandatory for the commercialization of this product in Brazil. Contact us to start the certification process.",
     "requestCertification": "Request Certification",
     "items": {
-      "appliances": "Home Appliances",
-      "charger": "Cell Phone Charger",
+      "appliances": "Home appliances",
+      "charger": "Cell phone charger",
       "headphone": "Headphones",
-      "speaker": "Bluetooth Speaker",
-      "school": "School Supplies",
+      "speaker": "Bluetooth speaker",
+      "school": "School supplies",
       "toys": "Toys",
-      "stroller": "Baby Stroller",
-      "carSeat": "Baby Car Seat",
+      "stroller": "Baby stroller",
+      "carSeat": "Baby car seat",
       "cookware": "Cookware",
-      "walker": "Baby Walker",
-      "highChair": "High Chair for Children",
-      "plasticChair": "Plastic Monoblock Chair",
+      "walker": "Baby walker",
+      "highChair": "High chair for children",
+      "plasticChair": "Plastic monoblock chair",
       "crib": "Cribs"
     },
     "details": {
@@ -97,7 +97,7 @@
         "requirements": "Inmetro Ordinance No. 302, dated July 12, 2021. Total certification duration: 5 years. Annual maintenance (model 5)."
       },
       "school": {
-        "title": "School Supplies",
+        "title": "School supplies",
         "description": "School materials such as pencils, pens, erasers, and backpacks require certification to ensure they do not contain substances harmful to health.",
         "requirements": "Inmetro Ordinance No. 423, dated October 8, 2021. Total certification duration: 3 years. Annual maintenance (model 5)."
       },
@@ -107,27 +107,27 @@
         "requirements": "Inmetro Ordinance No. 167, dated April 23, 2025. Pressure cooker: Total certification duration 4 years, annual maintenance (model 5). Domestic utensils: Total certification duration 4 years, biennial maintenance (model 5)."
       },
       "walker": {
-        "title": "Baby Walker",
+        "title": "Baby walker",
         "description": "Baby walkers require rigorous certification due to accident risks. Certification evaluates stability, resistance, and safety.",
         "requirements": "Inmetro Ordinance No. 129, dated March 19, 2021. Total certification duration: 4 years. Annual maintenance (model 5)."
       },
       "highChair": {
-        "title": "High Chair for Children",
+        "title": "High chair for children",
         "description": "High chairs must be certified to prevent falls and ensure child safety during meals.",
         "requirements": "Inmetro Ordinance No. 168, dated April 14, 2021. Total certification duration: 4 years. Annual maintenance (model 5)."
       },
       "stroller": {
-        "title": "Baby Stroller",
+        "title": "Baby stroller",
         "description": "Baby strollers require certification to ensure safety in brakes, stability, resistance, and absence of entrapment points.",
         "requirements": "Inmetro Ordinance No. 11, dated January 2, 2025. Total certification duration: 3 years. Annual maintenance (model 5)."
       },
       "carSeat": {
-        "title": "Baby Car Seat",
+        "title": "Baby car seat",
         "description": "Car seats are mandatorily certified by INMETRO to ensure protection in case of accidents.",
         "requirements": "Inmetro Ordinance No. 246, dated June 7, 2021. Total certification duration: 4 years. Annual maintenance (model 5)."
       },
       "plasticChair": {
-        "title": "Plastic Monoblock Chair",
+        "title": "Plastic monoblock chair",
         "description": "Plastic chairs must be certified to ensure adequate resistance and safety during use.",
         "requirements": "Inmetro Ordinance No. 166, dated April 14, 2021. Total certification duration: 3 years. Semi-annual maintenance (model 5)."
       },
@@ -147,8 +147,8 @@
     "feature2Desc": "Specialized professionals to lead your business to regulatory success.",
     "feature3Title": "Personalized support",
     "feature3Desc": "Tailored service for each client's specific needs.",
-    "feature4Title": "Multi-sector operations",
-    "feature4Desc": "Consulting for various areas, from electronics to health and telecommunications processes.",
+    "feature4Title": "Specialized expertise",
+    "feature4Desc": "Consulting for various areas, from electronics to children's products and household items.",
     "whoWeAre": "WHO WE ARE",
     "companyName": "Hegemon",
     "companySubtitle": "Certification consulting",

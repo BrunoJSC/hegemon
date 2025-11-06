@@ -20,115 +20,115 @@
     "description2": "Oferecemos consultoria especializada para manter sua empresa sempre em conformidade com as normas.",
     "button2": "CONHEÇA NOSSOS SERVIÇOS",
     "badge3": "SUPORTE TÉCNICO",
-    "title3": "Defesa Técnica em Autuações e Processos",
+    "title3": "Defesa técnica em autuações e processos",
     "description3": "Conte com nossa expertise para defender sua empresa em processos do INMETRO, IPEM e outros órgãos.",
     "button3": "FALE CONOSCO"
   },
   "services": {
     "badge": "NOSSOS SERVIÇOS",
     "title": "Certificação rápida, eficiente e sem complicações",
-    "learnMore": "Saiba Mais",
+    "learnMore": "Saiba mais",
     "service1": {
-      "title": "Defesa Técnica em Autuações do INMETRO e IPEM",
+      "title": "Defesa técnica em autuações do INMETRO e IPEM",
       "description": "Enfrentar uma autuação do INMETRO ou IPEM pode ser um desafio complexo para..."
     },
     "service4": {
-      "title": "Boas Práticas de Distribuição (BPD) - Certificação",
+      "title": "Boas práticas de distribuição (BPD) - Certificação",
       "description": "A Diretriz da UE 'Boas Práticas na Distribuição' é destinada às empresas do..."
     },
     "service5": {
-      "title": "Inspeção & Controle de Qualidade",
+      "title": "Inspeção & controle de qualidade",
       "description": "Na Hegemon, garantimos que cada produto atenda aos mais..."
     },
     "service6": {
-      "title": "Desenvolvimento de Produto & Outsourcing Internacional",
+      "title": "Desenvolvimento de produto & outsourcing internacional",
       "description": "Atuar como ponte estratégica entre o mercado brasileiro e os polos..."
     },
     "service7": {
-      "title": "Consultoria Reguladora",
+      "title": "Consultoria reguladora",
       "description": "Consultoria completa para certificações do Inmetro."
     },
     "service8": {
-      "title": "Cumprimento de Exigências",
+      "title": "Cumprimento de exigências",
       "description": "Ajudando cada cliente a entender e cumprir as exigências específicas de..."
     },
     "service10": {
-      "title": "Processos Burocráticos",
+      "title": "Processos burocráticos",
       "description": "Facilidade nos processos burocráticos e técnicos, economizando tempo e..."
     },
     "service11": {
-      "title": "Orientação Rotulagem de Produtos",
+      "title": "Orientação rotulagem de produtos",
       "description": "Na Hegemon, oferecemos um serviço especializado em..."
     },
     "service12": {
-      "title": "Processo de Registro Simplificado",
+      "title": "Processo de registro simplificado",
       "description": "Com uma equipe de especialistas altamente especializados, a..."
     }
   },
   "products": {
     "badge": "PRODUTOS",
-    "title": "Confira alguns os produtos que podem obter certificação",
+    "title": "Confira alguns dos produtos que podem obter certificação",
     "learnMore": "Saiba mais",
     "close": "Fechar",
-    "aboutProduct": "Sobre o Produto",
+    "aboutProduct": "Sobre o produto",
     "certificationRequirements": "informações adicionais [revisar nos iguais]",
     "importantTitle": "Importante",
     "importantMessage": "A certificação INMETRO é obrigatória para comercialização deste produto no Brasil. Entre em contato conosco para iniciar o processo de certificação.",
-    "requestCertification": "Solicitar Certificação",
+    "requestCertification": "Solicitar certificação",
     "items": {
       "appliances": "Eletrodomésticos",
-      "charger": "Carregador de Celular",
-      "headphone": "Fone de Ouvido",
-      "speaker": "Caixa de Som Bluetooth",
-      "school": "Artigos Escolares",
+      "charger": "Carregador de celular",
+      "headphone": "Fone de ouvido",
+      "speaker": "Caixa de som bluetooth",
+      "school": "Artigos escolares",
       "toys": "Brinquedos",
-      "stroller": "Carrinho de Bebê",
-      "carSeat": "Cadeirinha de Bebê",
+      "stroller": "Carrinho de bebê",
+      "carSeat": "Cadeirinha de bebê",
       "cookware": "Panelas",
       "walker": "Andador",
-      "highChair": "Cadeira Alta para Crianças",
-      "plasticChair": "Cadeira Plástica Monobloco",
+      "highChair": "Cadeira alta para crianças",
+      "plasticChair": "Cadeira plástica monobloco",
       "crib": "Berços"
     },
     "details": {
       "toys": {
         "title": "Brinquedos",
-        "description": "Brinquedos precisam de certificação INMETRO para garantir a segurança das crianças. A certificação avalia riscos como peças pequenas, materiais tóxicos e bordas cortantes.",
+        "description": "Qualquer produto projetado ou claramente destinado para o uso em brincadeiras por crianças menores de 14 (quatorze) anos de idade.",
         "requirements": "Portaria Inmetro n° 302, de 12 de julho de 2021. Duração total da certificação: 5 anos. Manutenções anuais (modelo 5)."
       },
       "school": {
-        "title": "Artigos Escolares",
-        "description": "Materiais escolares como lápis, canetas, borrachas e mochilas necessitam certificação para garantir que não contenham substâncias nocivas à saúde.",
+        "title": "Artigos escolares",
+        "description": "Qualquer objeto ou material, podendo ser produzido com motivos ou personagens infantis, projetado para uso por crianças menores de 14 anos, com ou sem funcionalidade lúdica, a ser utilizado no ambiente escolar e/ou em atividades educativas.",
         "requirements": "Portaria Inmetro nº 423, de 8 de outubro de 2021. Duração total da certificação: 3 anos. Manutenções anuais (modelo 5)."
       },
       "cookware": {
         "title": "Panelas",
-        "description": "Panelas e utensílios de cozinha devem ser certificados para garantir que não liberem substâncias tóxicas durante o uso e aquecimento.",
+        "description": "Utensílio doméstico destinado a uso no forno ou no fogão com volumetria de até 17L. Panela de pressão: Utensílio utilizado para preparação ou cozimento de alimentos com pressão interna, projetado para ser utilizado em fonte externa de calor, com pressão de vapor (pressão normal de trabalho) compreendida entre 70 kPa e 150 kPa.",
         "requirements": "Portaria Inmetro nº 167, de 23 de abril de 2025. Panela de pressão: Duração total da certificação 4 anos, manutenções anuais (modelo 5). Utensílios domésticos: Duração total da certificação 4 anos, manutenções bienais (modelo 5)."
       },
       "walker": {
         "title": "Andador",
-        "description": "Andadores infantis precisam de certificação rigorosa devido aos riscos de acidentes. A certificação avalia estabilidade, resistência e segurança.",
+        "description": "Estrutura com rodas na qual uma criança é colocada em seu interior em posição parcialmente sentada, com os pés tocando o piso, que permite sua movimentação ao redor com o auxílio do apoio oferecido pela estrutura.",
         "requirements": "Portaria Inmetro nº 129, de 19 de março de 2021. Duração total da certificação: 4 anos. Manutenções anuais (modelo 5)."
       },
       "highChair": {
-        "title": "Cadeira Alta para Crianças",
-        "description": "Cadeiras altas (cadeirões) devem ser certificadas para prevenir quedas e garantir a segurança da criança durante as refeições.",
+        "title": "Cadeira alta para crianças",
+        "description": "É a cadeira de alimentação com apoio diretamente no piso, projetada para elevar a criança aproximadamente até a altura da mesa de refeição de adultos, destinada a reter a criança e capaz de mantê-la em uma posição sentada devido à sua própria coordenação. Inclui modelos desmontáveis ou não, com ou sem bandeja, de capacidade de carga máxima de 23 kg.",
         "requirements": "Portaria Inmetro nº 168, de 14 de abril de 2021. Duração total da certificação: 4 anos. Manutenções anuais (modelo 5)."
       },
       "stroller": {
-        "title": "Carrinho de Bebê",
+        "title": "Carrinho de bebê",
         "description": "Carrinhos de bebê necessitam certificação para garantir segurança em freios, estabilidade, resistência e ausência de pontos de aprisionamento.",
         "requirements": "Portaria Inmetro nº 11, de 2 de janeiro de 2025. Duração total da certificação: 3 anos. Manutenções anuais (modelo 5)."
       },
       "carSeat": {
-        "title": "Cadeirinha de Bebê",
-        "description": "Cadeirinhas para automóveis são obrigatoriamente certificadas pelo INMETRO para garantir proteção em caso de acidentes.",
+        "title": "Cadeirinha de bebê",
+        "description": "Conjunto de componentes para a retenção da criança, capaz de ser fixado no assento do veículo rodoviário automotor, podendo este conjunto de componentes incluir uma combinação de tiras/cadarços ou componentes flexíveis com um fecho, dispositivos de ajuste, elementos de fixação e, em alguns casos, um dispositivo adicional, tal como um berço portátil, um sistema de transporte de bebês, uma cadeira adicional e/ou um escudo contra impacto, sendo projetado de modo a diminuir o risco de ferimentos ao usuário, em caso de colisão ou de desaceleração brusca do veículo, através da limitação da mobilidade do corpo da criança.",
         "requirements": "Portaria Inmetro nº 246, de 7 de junho de 2021. Duração total da certificação: 4 anos. Manutenções anuais (modelo 5)."
       },
       "plasticChair": {
-        "title": "Cadeira Plástica Monobloco",
-        "description": "Cadeiras plásticas devem ser certificadas para garantir resistência adequada e segurança durante o uso.",
+        "title": "Cadeira plástica monobloco",
+        "description": "Cadeira plástica produzida pelo processo de injeção, em uma única etapa, contendo costas em posição fixa, sem partes móveis, com ou sem braço, destinadas ao assentamento de uma pessoa independente de seu desenho ou formato.",
         "requirements": "Portaria Inmetro nº 166, de 14 de abril de 2021. Duração total da certificação: 3 anos. Manutenções semestrais (modelo 5)."
       },
       "crib": {
@@ -147,18 +147,18 @@
     "feature2Desc": "Profissionais especializados para conduzir seu negócio ao sucesso regulatório.",
     "feature3Title": "Suporte personalizado",
     "feature3Desc": "Atendimento sob medida para as necessidades específicas de cada cliente.",
-    "feature4Title": "Atuação multissetorial",
-    "feature4Desc": "Consultoria para diversas áreas, desde eletrônicos até processos de saúde e telecomunicações.",
+    "feature4Title": "Atuação especializada",
+    "feature4Desc": "Consultoria para diversas áreas, desde eletrônicos até produtos infantis e utensílios domésticos.",
     "whoWeAre": "QUEM SOMOS",
     "companyName": "Hegemon",
-    "companySubtitle": "Consultoria em Certificação",
+    "companySubtitle": "Consultoria em certificação",
     "description1": "Na Hegemon Consultoria, acreditamos que a certificação de produtos junto ao INMETRO é mais do que um requisito técnico — é uma oportunidade de fortalecer a credibilidade, a segurança e o valor de marca de cada empresa. Por isso, oferecemos consultoria de certificação de produtos com foco em excelência, transparência e parceria, ajudando nossos clientes a navegar com segurança pelo universo da avaliação da conformidade e das normas técnicas brasileiras.",
     "description2": "Nossa equipe é formada por especialistas com ampla experiência em consultoria regulatória, certificação INMETRO e gestão de conformidade técnica. Atuamos em todas as etapas do processo — desde o diagnóstico inicial, análise documental e acompanhamento de ensaios laboratoriais até o relacionamento com organismos acreditados. Cada projeto é conduzido com rigor técnico e um atendimento humano e personalizado, garantindo agilidade, clareza e tranquilidade a quem confia em nós.",
     "description3": "Mais do que prestar uma consultoria, nosso propósito é criar conexões de confiança e resultados sustentáveis. Por isso, nossa missão é tornar a certificação INMETRO acessível, segura e eficiente, oferecendo soluções que simplificam a complexidade regulatória e fortalecem a competitividade dos nossos clientes no mercado. Cada atendimento é uma parceria, cada certificação, uma conquista compartilhada.",
     "description4": "Nossos valores refletem o que somos e como atuamos: confiança como base de toda relação; transparência em cada etapa do processo; excelência técnica que garante resultados; empatia para compreender cada necessidade; e comprometimento para transformar desafios em conquistas. Também acreditamos na evolução constante, porque qualidade e aprendizado caminham lado a lado.",
     "description5": "Na Hegemon, hegemonia não é estar acima — é fazer o melhor, juntos. Somos movidos pelo propósito de elevar padrões, promover segurança e inspirar confiança em cada certificação. Hegemon Consultoria – Certificação com propósito, parceria e resultados que transformam.",
-    "stat1": "Certificações Concluídas",
-    "stat2": "Taxa de Aprovação"
+    "stat1": "Certificações concluídas",
+    "stat2": "Taxa de aprovação"
   },
   "contact": {
     "badge": "ENTRE EM CONTATO",
@@ -167,7 +167,7 @@
     "speakWithSpecialist": "Fale com um especialista",
     "ctaDescription": "Clique no botão abaixo e converse diretamente com nossa equipe especializada em certificações. Atendimento rápido e personalizado.",
     "whatsappButton": "FALAR NO WHATSAPP",
-    "contactInfo": "Informações de Contato",
+    "contactInfo": "Informações de contato",
     "phone": "Telefone",
     "email": "E-mail",
     "location": "Localização",
@@ -177,19 +177,19 @@
   },
   "footer": {
     "description": "Especialistas em certificação e conformidade regulatória. Garantimos que sua empresa atenda todas as exigências com agilidade e eficiência.",
-    "quickLinks": "Links Rápidos",
-    "ourServices": "Nossos Serviços",
-    "service1": "Consultoria Reguladora",
-    "service2": "Cumprimento de Exigências",
-    "service3": "Defesa Técnica INMETRO",
+    "quickLinks": "Links rápidos",
+    "ourServices": "Nossos serviços",
+    "service1": "Consultoria reguladora",
+    "service2": "Cumprimento de exigências",
+    "service3": "Defesa técnica INMETRO",
     "contactTitle": "Contato",
     "phone": "Telefone",
     "email": "Email",
     "address": "Endereço",
     "addressValue": "São Paulo, SP\nBrasil",
     "rights": "Todos os direitos reservados.",
-    "privacy": "Política de Privacidade",
-    "terms": "Termos de Uso"
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso"
   },
   "whatsapp": {
     "message": "Oi! 👋Que bom ter você por aqui! 🚀Sua mensagem já chegou e nosso time vai te responder o quanto antes.Enquanto isso, fique à vontade pra contar um pouquinho do que precisa. 💬"
@@ -197,22 +197,22 @@
   "serviceDetail": {
     "notFound": "Serviço não encontrado",
     "backToHome": "Voltar para página inicial",
-    "overview": "Visão Geral",
+    "overview": "Visão geral",
     "benefits": "Benefícios",
     "process": "Processo",
     "requirements": "Requisitos",
     "interested": "Interessado neste serviço?",
     "interestedDesc": "Entre em contato conosco para mais informações e orçamento personalizado.",
-    "requestQuote": "Solicitar Orçamento"
+    "requestQuote": "Solicitar orçamento"
   },
   "contactForm": {
-    "title": "Entre em Contato",
+    "title": "Entre em contato",
     "subtitle": "Preencha o formulário abaixo e nossa equipe entrará em contato em breve",
-    "fullName": "Nome Completo",
+    "fullName": "Nome completo",
     "email": "E-mail",
     "phone": "Telefone",
     "company": "Empresa",
-    "serviceInterest": "Serviço de Interesse",
+    "serviceInterest": "Serviço de interesse",
     "selectService": "Selecione um serviço",
     "message": "Mensagem",
     "placeholderName": "Seu nome",
@@ -223,17 +223,17 @@
     "successMessage": "Mensagem enviada com sucesso! Entraremos em contato em breve.",
     "errorMessage": "Erro ao enviar mensagem. Tente novamente.",
     "sending": "Enviando...",
-    "sendMessage": "Enviar Mensagem",
-    "contactInfo": "Informações de Contato",
+    "sendMessage": "Enviar mensagem",
+    "contactInfo": "Informações de contato",
     "whatsappTitle": "WhatsApp",
     "whatsappDesc": "Prefere falar pelo WhatsApp? Clique no botão abaixo para iniciar uma conversa.",
     "chatWhatsapp": "Falar no WhatsApp",
-    "businessHours": "Horário de Atendimento",
+    "businessHours": "Horário de atendimento",
     "businessHoursValue": "Segunda a Sexta: 9h às 18h"
   },
   "servicesData": {
     "service1": {
-      "title": "Defesa Técnica em Autuações do INMETRO e IPEM",
+      "title": "Defesa técnica em autuações do INMETRO e IPEM",
       "description": "Enfrentar uma autuação do INMETRO ou IPEM pode ser um desafio complexo para...",
       "fullDescription": "Enfrentar uma autuação do INMETRO ou IPEM pode ser um desafio complexo para qualquer empresa. Nossa equipe especializada oferece defesa técnica completa, analisando cada aspecto da autuação e preparando a documentação necessária para contestação.",
       "benefits": {
@@ -258,7 +258,7 @@
       }
     },
     "service4": {
-      "title": "Boas Práticas de Distribuição (BPD) - Certificação",
+      "title": "Boas práticas de distribuição (BPD) - Certificação",
       "description": "A Diretriz da UE 'Boas Práticas na Distribuição' é destinada às empresas do...",
       "fullDescription": "A certificação em Boas Práticas de Distribuição (BPD) é essencial para empresas que atuam na distribuição de produtos regulados. Auxiliamos na implementação e certificação conforme as diretrizes nacionais e internacionais.",
       "benefits": {
@@ -283,7 +283,7 @@
       }
     },
     "service5": {
-      "title": "Inspeção & Controle de Qualidade",
+      "title": "Inspeção & controle de qualidade",
       "description": "Na Hegemon, garantimos que cada produto atenda aos mais...",
       "fullDescription": "Oferecemos serviços completos de inspeção e controle de qualidade para produtos importados1. Nossa equipe local garante que cada produto atenda aos mais altos padrões de qualidade antes do embarque.",
       "benefits": {
@@ -309,7 +309,7 @@
       }
     },
     "service6": {
-      "title": "Desenvolvimento de Produto & Outsourcing Internacional",
+      "title": "Desenvolvimento de produto & outsourcing internacional",
       "description": "Atuar como ponte estratégica entre o mercado brasileiro e os polos...",
       "fullDescription": "Atuamos como ponte estratégica entre o mercado brasileiro e os principais polos de manufatura internacional. Desenvolvemos produtos customizados e gerenciamos todo o processo de outsourcing.",
       "benefits": {
@@ -335,7 +335,7 @@
       }
     },
     "service7": {
-      "title": "Consultoria Reguladora",
+      "title": "Consultoria reguladora",
       "description": "Consultoria completa para certificações do Inmetro.",
       "fullDescription": "Oferecemos consultoria especializada para certificações junto ao Inmetro. Nossa equipe conhece profundamente os requisitos e processos do órgão regulador.",
       "benefits": {
@@ -361,7 +361,7 @@
       }
     },
     "service8": {
-      "title": "Cumprimento de Exigências",
+      "title": "Cumprimento de exigências",
       "description": "Ajudando cada cliente a entender e cumprir as exigências específicas de...",
       "fullDescription": "Auxiliamos empresas a entenderem e cumprirem todas as exigências regulatórias específicas de seu segmento. Oferecemos suporte completo para adequação às normas e regulamentos aplicáveis.",
       "benefits": {
@@ -385,7 +385,7 @@
       }
     },
     "service10": {
-      "title": "Processos Burocráticos",
+      "title": "Processos burocráticos",
       "description": "Facilidade nos processos burocráticos e técnicos, economizando tempo e...",
       "fullDescription": "Simplificamos todos os processos burocráticos e técnicos necessários para certificações e licenciamentos. Nossa equipe cuida de toda a papelada, economizando seu tempo e recursos.",
       "benefits": {
@@ -409,7 +409,7 @@
       }
     },
     "service11": {
-      "title": "Orientação Rotulagem de Produtos",
+      "title": "Orientação rotulagem de produtos",
       "description": "Na Hegemon, oferecemos um serviço especializado em...",
       "fullDescription": "Oferecemos serviço especializado em orientação para rotulagem de produtos, garantindo conformidade com todas as normas do Inmetro, Anvisa e legislação aplicável. Evite problemas com fiscalização e recalls.",
       "benefits": {
@@ -434,7 +434,7 @@
       }
     },
     "service12": {
-      "title": "Processo de Registro Simplificado",
+      "title": "Processo de registro simplificado",
       "description": "Com uma equipe de especialistas altamente especializados, a...",
       "fullDescription": "Com uma equipe de especialistas altamente qualificados, oferecemos processo de registro simplificado para diversos tipos de produtos. Tornamos o complexo processo de registro mais rápido e eficiente.",
       "benefits": {
@@ -460,13 +460,13 @@
     }
   },
   "compliancePage": {
-    "badge": "Acompanhamento Personalizado",
-    "title": "Garantimos que sua Empresa Cumpra Todas as Exigências",
+    "badge": "Acompanhamento personalizado",
+    "title": "Garantimos que sua empresa cumpra todas as exigências",
     "subtitle": "Ao seu lado em cada etapa, garantindo que sua empresa compreenda e cumpra todas as exigências regulatórias.",
-    "missionTitle": "Nossa Missão",
+    "missionTitle": "Nossa missão",
     "missionText1": "Na Hegemon Consultoria, entendemos que navegar pelo complexo mundo das regulamentações pode ser desafiador. Por isso, oferecemos um acompanhamento personalizado que garante que sua empresa não apenas cumpra, mas compreenda profundamente todas as exigências regulatórias aplicáveis ao seu negócio.",
     "missionText2": "Nosso compromisso é estar ao seu lado em cada etapa do processo, transformando a conformidade regulatória de um desafio em uma vantagem competitiva.",
-    "howWeWorkTitle": "Como Trabalhamos",
+    "howWeWorkTitle": "Como trabalhamos",
     "step1Title": "Diagnóstico Completo",
     "step1Text": "Analisamos sua empresa, produtos e processos para identificar todas as exigências regulatórias aplicáveis.",
     "step2Title": "Plano de Ação Personalizado",
@@ -475,16 +475,16 @@
     "step3Text": "Estamos presentes em cada etapa, orientando, esclarecendo dúvidas e garantindo que tudo seja feito corretamente.",
     "step4Title": "Capacitação da Equipe",
     "step4Text": "Treinamos sua equipe para que compreendam as exigências e possam manter a conformidade de forma autônoma.",
-    "benefitsTitle": "Benefícios do Nosso Acompanhamento",
+    "benefitsTitle": "Benefícios do nosso acompanhamento",
     "benefit1Title": "Tranquilidade",
     "benefit1Text": "Tenha certeza de que está em conformidade com todas as normas.",
-    "benefit2Title": "Economia de Tempo",
+    "benefit2Title": "Economia de tempo",
     "benefit2Text": "Foque no seu negócio enquanto cuidamos da burocracia.",
-    "benefit3Title": "Evite Multas",
+    "benefit3Title": "Evite multas",
     "benefit3Text": "Previna autuações e penalidades por não conformidade.",
     "benefit4Title": "Credibilidade",
     "benefit4Text": "Fortaleça a confiança de clientes e parceiros.",
-    "areasTitle": "Áreas de Atuação",
+    "areasTitle": "Áreas de atuação",
     "area1Title": "INMETRO",
     "area1Text": "Certificação de produtos e conformidade técnica",
     "area2Title": "ANVISA",
@@ -496,13 +496,13 @@
     "ctaButton": "Fale com um especialista"
   },
   "technicalDefensePage": {
-    "badge": "Suporte Técnico",
-    "title": "Defesa Técnica em Autuações e Processos",
+    "badge": "Suporte técnico",
+    "title": "Defesa técnica em autuações e processos",
     "subtitle": "Conte com nossa expertise para defender sua empresa em processos do INMETRO, IPEM e outros órgãos reguladores.",
-    "protectionTitle": "Proteção Especializada para Sua Empresa",
+    "protectionTitle": "Proteção especializada para sua empresa",
     "protectionText1": "Receber uma autuação do INMETRO, IPEM ou outros órgãos fiscalizadores pode ser um momento crítico para qualquer empresa. Nossa equipe de especialistas está preparada para oferecer a defesa técnica mais robusta e eficaz do mercado.",
     "protectionText2": "Com anos de experiência e profundo conhecimento das normas técnicas e procedimentos regulatórios, desenvolvemos estratégias personalizadas para cada caso, buscando sempre a melhor solução para nossos clientes.",
-    "whenNeedTitle": "Quando Você Precisa de Defesa Técnica",
+    "whenNeedTitle": "Quando você precisa de defesa técnica",
     "situation1Title": "Autuações INMETRO",
     "situation1Text": "Notificações e multas por não conformidade de produtos",
     "situation2Title": "Fiscalizações IPEM",
@@ -512,38 +512,38 @@
     "situation4Title": "Processos Administrativos",
     "situation4Text": "Defesa em processos junto aos órgãos reguladores",
     "howWeActTitle": "Como Atuamos na Sua Defesa",
-    "step1Title": "Análise Detalhada do Caso",
+    "step1Title": "Análise detalhada do caso",
     "step1Text": "Estudamos minuciosamente toda a documentação, autuação e evidências para identificar os melhores argumentos de defesa.",
-    "step2Title": "Levantamento de Evidências Técnicas",
+    "step2Title": "Levantamento de evidências técnicas",
     "step2Text": "Coletamos laudos, certificados, documentos e todas as evidências técnicas que fortaleçam sua defesa.",
-    "step3Title": "Elaboração da Defesa Técnica",
+    "step3Title": "Elaboração da defesa técnica",
     "step3Text": "Preparamos uma defesa técnica robusta, fundamentada em normas, regulamentos e jurisprudência.",
-    "step4Title": "Protocolo e Acompanhamento",
+    "step4Title": "Protocolo e acompanhamento",
     "step4Text": "Protocolamos a defesa nos órgãos competentes e acompanhamos todo o processo até a decisão final.",
-    "step5Title": "Recursos e Medidas Adicionais",
+    "step5Title": "Recursos e medidas adicionais",
     "step5Text": "Se necessário, preparamos recursos administrativos e orientamos sobre medidas judiciais cabíveis.",
-    "resultsTitle": "Resultados que Alcançamos",
+    "resultsTitle": "Resultados que alcançamos",
     "result1Value": "85%",
-    "result1Title": "Taxa de Sucesso",
+    "result1Title": "Taxa de sucesso",
     "result1Text": "Em defesas técnicas",
     "result2Value": "70%",
-    "result2Title": "Redução de Multas",
+    "result2Title": "Redução de multas",
     "result2Text": "Média alcançada",
     "result3Value": "100+",
-    "result3Title": "Casos Atendidos",
+    "result3Title": "Casos atendidos",
     "result3Text": "Com sucesso",
-    "differentialsTitle": "Nossos Diferenciais",
-    "differential1Title": "Expertise Comprovada",
+    "differentialsTitle": "Nossos diferenciais",
+    "differential1Title": "Expertise comprovada",
     "differential1Text": "Anos de experiência em defesas técnicas junto aos principais órgãos reguladores.",
-    "differential2Title": "Conhecimento Técnico Profundo",
+    "differential2Title": "Conhecimento técnico profundo",
     "differential2Text": "Domínio completo das normas técnicas, regulamentos e procedimentos administrativos.",
-    "differential3Title": "Agilidade no Atendimento",
+    "differential3Title": "Agilidade no atendimento",
     "differential3Text": "Resposta rápida e cumprimento rigoroso de prazos processuais.",
-    "differential4Title": "Estratégia Personalizada",
+    "differential4Title": "Estratégia personalizada",
     "differential4Text": "Cada caso é único e merece uma estratégia específica e bem fundamentada.",
-    "urgentCtaTitle": "Recebeu uma Autuação? Aja Rápido!",
+    "urgentCtaTitle": "Recebeu uma autuação? Aja rápido!",
     "urgentCtaSubtitle": "Os prazos para defesa são curtos. Não perca tempo!",
     "urgentCtaDescription": "Entre em contato imediatamente e proteja sua empresa.",
-    "contactNow": "Fale Conosco Agora"
+    "contactNow": "Fale conosco agora"
   }
 }
