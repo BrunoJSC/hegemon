@@ -26,7 +26,7 @@
   },
   "services": {
     "badge": "NOSSOS SERVIÇOS",
-    "title": "Certificação Rápida, Eficiente e Sem Complicações",
+    "title": "Certificação rápida, eficiente e sem complicações",
     "learnMore": "Saiba Mais",
     "service1": {
       "title": "Defesa Técnica em Autuações do INMETRO e IPEM",
@@ -67,11 +67,11 @@
   },
   "products": {
     "badge": "PRODUTOS",
-    "title": "Confira Alguns os Produtos que Podem Obter Certificação",
+    "title": "Confira alguns os produtos que podem obter certificação",
     "learnMore": "Saiba mais",
     "close": "Fechar",
     "aboutProduct": "Sobre o Produto",
-    "certificationRequirements": "Requisitos de Certificação",
+    "certificationRequirements": "informações adicionais [revisar nos iguais]",
     "importantTitle": "Importante",
     "importantMessage": "A certificação INMETRO é obrigatória para comercialização deste produto no Brasil. Entre em contato conosco para iniciar o processo de certificação.",
     "requestCertification": "Solicitar Certificação",
@@ -140,14 +140,14 @@
   },
   "about": {
     "badge": "CONFIANÇA & TRANSPARÊNCIA",
-    "title": "Parceira Ideal para Navegar com Tranquilidade pelos Processos de Certificação",
-    "feature1Title": "Especialistas em Certificações",
+    "title": "Parceira ideal para navegar com tranquilidade pelos processos de certificação",
+    "feature1Title": "Especialistas em certificações",
     "feature1Desc": "Experiência comprovada em certificações das principais áreas e setores.",
-    "feature2Title": "Equipe Qualificada",
+    "feature2Title": "Equipe qualificada",
     "feature2Desc": "Profissionais especializados para conduzir seu negócio ao sucesso regulatório.",
-    "feature3Title": "Suporte Personalizado",
+    "feature3Title": "Suporte personalizado",
     "feature3Desc": "Atendimento sob medida para as necessidades específicas de cada cliente.",
-    "feature4Title": "Atuação Multissetorial",
+    "feature4Title": "Atuação multissetorial",
     "feature4Desc": "Consultoria para diversas áreas, desde eletrônicos até processos de saúde e telecomunicações.",
     "whoWeAre": "QUEM SOMOS",
     "companyName": "Hegemon",
@@ -162,9 +162,9 @@
   },
   "contact": {
     "badge": "ENTRE EM CONTATO",
-    "title": "Pronto para Certificar seu Produto?",
+    "title": "Pronto para certificar seu produto?",
     "subtitle": "Nossa equipe está pronta para ajudar você a navegar pelos processos de certificação com agilidade e transparência",
-    "speakWithSpecialist": "Fale com um Especialista",
+    "speakWithSpecialist": "Fale com um especialista",
     "ctaDescription": "Clique no botão abaixo e converse diretamente com nossa equipe especializada em certificações. Atendimento rápido e personalizado.",
     "whatsappButton": "FALAR NO WHATSAPP",
     "contactInfo": "Informações de Contato",
@@ -493,7 +493,7 @@
     "area3Text": "Homologação de equipamentos de telecomunicações",
     "ctaTitle": "Pronto para Garantir a Conformidade da Sua Empresa?",
     "ctaText": "Entre em contato conosco e descubra como podemos ajudar sua empresa a cumprir todas as exigências regulatórias.",
-    "ctaButton": "Fale com um Especialista"
+    "ctaButton": "Fale com um especialista"
   },
   "technicalDefensePage": {
     "badge": "Suporte Técnico",

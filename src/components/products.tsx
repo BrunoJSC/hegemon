@@ -59,7 +59,14 @@ export function Products() {
     },
     {
       id: 12,
-      image: "/cadeira-plastica.png",
+      image: "/cadeira-plastico.png",
+      title: t("products.items.plasticChair"),
+      badge: "INMETRO",
+      detailKey: "plasticChair",
+    },
+    {
+      id: 13,
+      image: "/berco.png",
       title: t("products.items.plasticChair"),
       badge: "INMETRO",
       detailKey: "plasticChair",
