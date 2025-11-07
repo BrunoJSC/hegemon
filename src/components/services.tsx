@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { Card } from "./layout/card";
 import { useTranslation } from "react-i18next";
+import { prefetchOnHover } from "../utils/prefetch";
 
 interface ServicesProps {
   onServiceClick?: (serviceId: string) => void;
@@ -130,6 +131,7 @@ export const Services: React.FC<ServicesProps> = ({ onServiceClick }) => {
             >
               <div
                 onClick={() => onServiceClick?.(servico.id.toString())}
+                {...prefetchOnHover(`/servicos/${servico.id}`)}
                 className="cursor-pointer"
               >
                 <Card {...servico} />

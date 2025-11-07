@@ -71,7 +71,7 @@
     "learnMore": "Saiba mais",
     "close": "Fechar",
     "aboutProduct": "Sobre o produto",
-    "certificationRequirements": "informações adicionais [revisar nos iguais]",
+    "certificationRequirements": "Informações adicionais",
     "importantTitle": "Importante",
     "importantMessage": "A certificação INMETRO é obrigatória para comercialização deste produto no Brasil. Entre em contato conosco para iniciar o processo de certificação.",
     "requestCertification": "Solicitar certificação",
@@ -82,8 +82,8 @@
       "speaker": "Caixa de som bluetooth",
       "school": "Artigos escolares",
       "toys": "Brinquedos",
-      "stroller": "Carrinho de bebê",
-      "carSeat": "Cadeirinha de bebê",
+      "stroller": "Carrinhos",
+      "carSeat": "Dispositivo de retenção para crianças (DRC)",
       "cookware": "Panelas",
       "walker": "Andador",
       "highChair": "Cadeira alta para crianças",
@@ -117,13 +117,13 @@
         "requirements": "Portaria Inmetro nº 168, de 14 de abril de 2021. Duração total da certificação: 4 anos. Manutenções anuais (modelo 5)."
       },
       "stroller": {
-        "title": "Carrinho de bebê",
-        "description": "Carrinhos de bebê necessitam certificação para garantir segurança em freios, estabilidade, resistência e ausência de pontos de aprisionamento.",
+        "title": "Carrinhos",
+        "description": "Carrinho tipo berço: carrinho para transporte de bebês, ainda incapazes de sentar-se sem auxílio, geralmente na posição horizontal, composto de um chassi e um ou mais cestos para bebês e/ou unidade(s) de assento. Carrinho tipo passeio: carrinho para o transporte de crianças, geralmente na posição sentada, semirreclinada ou reclinada, composto de um chassi e um ou mais cestos para bebês e/ou unidade(s) de assento.",
         "requirements": "Portaria Inmetro nº 11, de 2 de janeiro de 2025. Duração total da certificação: 3 anos. Manutenções anuais (modelo 5)."
       },
       "carSeat": {
-        "title": "Cadeirinha de bebê",
-        "description": "Conjunto de componentes para a retenção da criança, capaz de ser fixado no assento do veículo rodoviário automotor, podendo este conjunto de componentes incluir uma combinação de tiras/cadarços ou componentes flexíveis com um fecho, dispositivos de ajuste, elementos de fixação e, em alguns casos, um dispositivo adicional, tal como um berço portátil, um sistema de transporte de bebês, uma cadeira adicional e/ou um escudo contra impacto, sendo projetado de modo a diminuir o risco de ferimentos ao usuário, em caso de colisão ou de desaceleração brusca do veículo, através da limitação da mobilidade do corpo da criança.",
+        "title": "Dispositivo de retenção para crianças (DRC)",
+        "description": "Conjunto de componentes que pode incluir uma combinação de cadarço ou componentes flexíveis com um fecho, dispositivos de ajuste, elementos de fixação e, em alguns casos, um dispositivo adicional, como um berço portátil, um sistema de transporte de bebês, uma cadeira adicional e/ou um escudo contra impacto, capaz de ser fixado em um veículo rodoviário automotor.",
         "requirements": "Portaria Inmetro nº 246, de 7 de junho de 2021. Duração total da certificação: 4 anos. Manutenções anuais (modelo 5)."
       },
       "plasticChair": {

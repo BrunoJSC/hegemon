@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { LanguageSelector } from "./language-selector";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router-dom";
+import { prefetchOnHover } from "../utils/prefetch";
 
 interface HeaderProps {
   onServiceClick?: (serviceId: string) => void;
@@ -193,6 +194,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
             <nav className="flex space-x-6 xl:space-x-8">
               <motion.div
                 onClick={() => handleNavigation("home")}
+                {...prefetchOnHover("/")}
                 className={`font-medium transition-colors duration-300 cursor-pointer ${
                   isScrolled
                     ? "text-[#2A1A12] hover:text-[#A76B3F]"
@@ -205,6 +207,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
 
               <motion.div
                 onClick={() => handleNavigation("about")}
+                {...prefetchOnHover("/sobre")}
                 className={`font-medium transition-colors duration-300 cursor-pointer ${
                   isScrolled
                     ? "text-[#2A1A12] hover:text-[#A76B3F]"
@@ -274,6 +277,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
                                 setIsServicesOpen(false);
                                 onServiceClick?.(service.id);
                               }}
+                              {...prefetchOnHover(`/servicos/${service.id}`)}
                               className={`flex items-start space-x-3 p-3 rounded-lg transition-all duration-300 cursor-pointer group/item ${
                                 isScrolled
                                   ? "hover:bg-gray-50 hover:shadow-sm"
@@ -391,6 +395,7 @@ export function Header({ onServiceClick, onContactClick }: HeaderProps = {}) {
 
               <motion.div
                 onClick={onContactClick}
+                {...prefetchOnHover("/contato")}
                 className={`px-4 py-2 rounded-full border-2 transition-all duration-300 font-medium text-sm xl:text-base cursor-pointer ${
                   isScrolled
                     ? "bg-[#A76B3F] text-white border-[#A76B3F] hover:bg-white hover:text-[#A76B3F]"

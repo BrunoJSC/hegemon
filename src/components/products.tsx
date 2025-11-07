@@ -67,9 +67,9 @@ export function Products() {
     {
       id: 13,
       image: "/berco.png",
-      title: t("products.items.plasticChair"),
+      title: t("products.items.crib"),
       badge: "INMETRO",
-      detailKey: "plasticChair",
+      detailKey: "crib",
     },
   ];
 
