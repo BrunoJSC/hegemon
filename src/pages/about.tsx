@@ -1,5 +1,7 @@
 import { MainLayout } from "../components/layout/main-layout";
 import { SEO } from "../components/seo";
+import { Hreflang } from "../components/hreflang";
+import { Breadcrumbs } from "../components/breadcrumbs";
 import { About } from "../components/about";
 import { useEffect } from "react";
 
@@ -16,6 +18,8 @@ export function AboutPage() {
         keywords="sobre Hegemon, quem somos, consultoria certificação, equipe especializada, experiência INMETRO"
         type="website"
       />
+      <Hreflang />
+      <Breadcrumbs />
       <About />
     </MainLayout>
   );

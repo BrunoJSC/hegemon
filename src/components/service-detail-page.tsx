@@ -3,6 +3,9 @@ import { motion } from "motion/react";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { SEO } from "./seo";
+import { Breadcrumbs } from "./breadcrumbs";
+import { StructuredData } from "./structured-data";
+import { Hreflang } from "./hreflang";
 import { getServicesData } from "../data/services-data";
 import { useTranslation } from "react-i18next";
 
@@ -60,12 +63,45 @@ export function ServiceDetailPage({
     );
   }
 
+  const siteUrl = window.location.origin;
+
+  // Structured Data para Service
+  const serviceStructuredData = {
+    serviceType: service.title,
+    name: service.title,
+    description: service.fullDescription,
+    provider: {
+      "@type": "Organization",
+      name: "Hegemon Consultoria",
+      url: siteUrl,
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "Brasil",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: service.title,
+      itemListElement: service.benefits?.map((benefit) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: benefit,
+        },
+      })),
+    },
+  };
+
   return (
     <div className="min-h-screen">
       <SEO
-        title={`${service.title} - Hegemon`}
-        description={service.description}
+        title={`${service.title} - Hegemon Consultoria`}
+        description={service.fullDescription || service.description}
+        keywords={`${service.title}, certificação INMETRO, consultoria regulatória`}
+        type="website"
       />
+      <StructuredData type="Service" data={serviceStructuredData} />
+      <Hreflang />
       <Header
         onServiceClick={onServiceClick}
         onContactClick={onContactClick}
@@ -78,18 +114,21 @@ export function ServiceDetailPage({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            <Breadcrumbs />
             <div className="mb-8">
               <button
                 onClick={onBack}
                 className="text-[#A76B3F] hover:text-[#7B4A2E] font-medium mb-4 inline-block"
+                aria-label={t("serviceDetail.backToHome")}
               >
                 ← {t("serviceDetail.backToHome")}
               </button>
               <div className="flex items-center mb-6">
                 <img
                   src={service.icon}
-                  alt={service.title}
+                  alt={`Ícone do serviço ${service.title}`}
                   className="w-16 h-16 mr-4"
+                  loading="eager"
                 />
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
                   {service.title}

@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { SEO } from "./seo";
+import { Breadcrumbs } from "./breadcrumbs";
 import { useTranslation } from "react-i18next";
 
 interface ContactFormPageProps {
@@ -83,6 +84,7 @@ export function ContactFormPage({
 
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs />
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -91,6 +93,7 @@ export function ContactFormPage({
             <button
               onClick={onBack}
               className="text-[#A76B3F] hover:text-[#7B4A2E] font-medium mb-8 inline-block"
+              aria-label={t("serviceDetail.backToHome")}
             >
               ← {t("serviceDetail.backToHome")}
             </button>

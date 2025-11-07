@@ -8,19 +8,28 @@ interface SEOProps {
   image?: string;
   type?: "website" | "article";
   author?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  noindex?: boolean;
+  nofollow?: boolean;
 }
 
 export function SEO({
   title,
   description,
   keywords = "certificação INMETRO, consultoria regulatória, certificação produtos, ANVISA, ANATEL, conformidade técnica, certificação Brasil",
-  image = "/logo.svg",
+  image = "/logo.png",
   type = "website",
   author = "Hegemon Consultoria",
+  publishedTime,
+  modifiedTime,
+  noindex = false,
+  nofollow = false,
 }: SEOProps) {
   const location = useLocation();
   const siteUrl = window.location.origin;
   const currentUrl = `${siteUrl}${location.pathname}`;
+  const fullImageUrl = image.startsWith("http") ? image : `${siteUrl}${image}`;
 
   useEffect(() => {
     // Title
@@ -36,28 +45,100 @@ export function SEO({
     updateMetaTag("og:description", description, "property");
     updateMetaTag("og:type", type, "property");
     updateMetaTag("og:url", currentUrl, "property");
-    updateMetaTag("og:image", `${siteUrl}${image}`, "property");
+    updateMetaTag("og:image", fullImageUrl, "property");
+    updateMetaTag("og:image:width", "1200", "property");
+    updateMetaTag("og:image:height", "630", "property");
+    updateMetaTag("og:image:alt", title, "property");
     updateMetaTag("og:site_name", "Hegemon Consultoria", "property");
     updateMetaTag("og:locale", "pt_BR", "property");
+    
+    if (publishedTime) {
+      updateMetaTag("og:published_time", publishedTime, "property");
+    }
+    if (modifiedTime) {
+      updateMetaTag("og:modified_time", modifiedTime, "property");
+    }
+    if (author) {
+      updateMetaTag("og:author", author, "property");
+    }
 
     // Twitter Card
     updateMetaTag("twitter:card", "summary_large_image", "name");
     updateMetaTag("twitter:title", title, "name");
     updateMetaTag("twitter:description", description, "name");
-    updateMetaTag("twitter:image", `${siteUrl}${image}`, "name");
+    updateMetaTag("twitter:image", fullImageUrl, "name");
+    updateMetaTag("twitter:image:alt", title, "name");
+    updateMetaTag("twitter:site", "@hegemonconsultoria", "name"); // Adicionar quando tiver Twitter
+    updateMetaTag("twitter:creator", "@hegemonconsultoria", "name");
+
+    // Article meta tags (se for artigo)
+    if (type === "article") {
+      if (publishedTime) {
+        updateMetaTag("article:published_time", publishedTime, "property");
+      }
+      if (modifiedTime) {
+        updateMetaTag("article:modified_time", modifiedTime, "property");
+      }
+      if (author) {
+        updateMetaTag("article:author", author, "property");
+      }
+      updateMetaTag("article:section", "Consultoria", "property");
+      updateMetaTag("article:tag", keywords, "property");
+    }
 
     // Canonical URL
     updateLinkTag("canonical", currentUrl);
 
     // Robots
-    updateMetaTag("robots", "index, follow", "name");
+    const robotsContent = noindex
+      ? nofollow
+        ? "noindex, nofollow"
+        : "noindex, follow"
+      : nofollow
+      ? "index, nofollow"
+      : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+    updateMetaTag("robots", robotsContent, "name");
 
     // Viewport (já deve estar no HTML, mas garantir)
     updateMetaTag("viewport", "width=device-width, initial-scale=1.0", "name");
 
     // Theme color
     updateMetaTag("theme-color", "#A76B3F", "name");
-  }, [title, description, keywords, image, type, author, currentUrl, siteUrl]);
+
+    // Additional SEO meta tags
+    updateMetaTag("format-detection", "telephone=yes", "name");
+    updateMetaTag("mobile-web-app-capable", "yes", "name");
+    updateMetaTag("apple-mobile-web-app-capable", "yes", "name");
+    updateMetaTag("apple-mobile-web-app-status-bar-style", "default", "name");
+    updateMetaTag("apple-mobile-web-app-title", "Hegemon", "name");
+
+    // Language
+    updateMetaTag("language", "Portuguese", "name");
+    // content-language usando httpEquiv
+    let contentLang = document.querySelector('meta[http-equiv="content-language"]') as HTMLMetaElement;
+    if (contentLang) {
+      contentLang.content = "pt-BR";
+    } else {
+      contentLang = document.createElement("meta");
+      contentLang.setAttribute("http-equiv", "content-language");
+      contentLang.content = "pt-BR";
+      document.head.appendChild(contentLang);
+    }
+  }, [
+    title,
+    description,
+    keywords,
+    image,
+    type,
+    author,
+    currentUrl,
+    siteUrl,
+    fullImageUrl,
+    publishedTime,
+    modifiedTime,
+    noindex,
+    nofollow,
+  ]);
 
   return null;
 }

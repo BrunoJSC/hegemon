@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { MainLayout } from "../components/layout/main-layout";
 import { SEO } from "../components/seo";
+import { Hreflang } from "../components/hreflang";
+import { Breadcrumbs } from "../components/breadcrumbs";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
@@ -21,9 +23,10 @@ export function TechnicalDefensePage() {
         keywords="defesa técnica INMETRO, defesa IPEM, autuações, processos regulatórios, suporte técnico, contestação multas"
         type="article"
       />
-
+      <Hreflang />
       <section className="py-20 bg-[#F6EBD8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs />
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}

@@ -5,6 +5,8 @@ import { About } from "../components/about";
 import { Contact } from "../components/contact";
 import { MainLayout } from "../components/layout/main-layout";
 import { SEO } from "../components/seo";
+import { StructuredData } from "../components/structured-data";
+import { Hreflang } from "../components/hreflang";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -43,6 +45,21 @@ export function HomePage() {
         description="Especialistas em certificação de produtos junto ao INMETRO, ANVISA e ANATEL. Consultoria regulatória completa, defesa técnica em autuações e conformidade técnica. Certificação rápida, eficiente e sem complicações."
         keywords="certificação INMETRO, consultoria INMETRO, certificação produtos, ANVISA, ANATEL, conformidade técnica, defesa técnica IPEM, consultoria regulatória Brasil"
         type="website"
+      />
+      <Hreflang />
+      <StructuredData type="Organization" />
+      <StructuredData
+        type="WebSite"
+        data={{
+          potentialAction: {
+            "@type": "SearchAction",
+            target: {
+              "@type": "EntryPoint",
+              urlTemplate: "https://hegemon.com.br/?s={search_term_string}",
+            },
+            "query-input": "required name=search_term_string",
+          },
+        }}
       />
       <div id="home">
         <Hero />

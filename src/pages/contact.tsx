@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { ContactFormPage } from "../components/contact-form-page";
 import { SEO } from "../components/seo";
+import { Hreflang } from "../components/hreflang";
 import { useEffect } from "react";
 
 export function ContactPage() {
@@ -26,6 +27,7 @@ export function ContactPage() {
         keywords="contato Hegemon, orçamento certificação INMETRO, consultoria certificação, falar com especialista"
         type="website"
       />
+      <Hreflang />
       <ContactFormPage
         onBack={handleBack}
         onServiceClick={handleServiceClick}
