@@ -54,10 +54,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "sw.js": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  ]
 }
